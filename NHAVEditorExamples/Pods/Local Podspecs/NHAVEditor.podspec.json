@@ -1,0 +1,26 @@
+{
+  "name": "NHAVEditor",
+  "version": "0.0.1",
+  "summary": "基于 AVFoundation 框架封装的 iOS视频编辑工具",
+  "description": "基于 AVFoundation 框架封装的 iOS视频编辑工具",
+  "homepage": "https://github.com/nenhall/NHAVEditor",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "nenhall": "nenhall@126.com"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "git": "https://github.com/nenhall/NHAVEditor.git",
+    "tag": "0.0.1"
+  },
+  "source_files": [
+    "NHAVEditor",
+    "NHAVEditor/**/*.{h,m}"
+  ],
+  "frameworks": "AVFoundation"
+}

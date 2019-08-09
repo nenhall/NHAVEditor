@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="NHViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VO1-ca-6Uf"/>
+                        <viewControllerLayoutGuide type="bottom" id="Sip-pJ-1bv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fUg-l1-7vx" customClass="NHDisplayView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="233"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yN1-Aa-oQC">
+                                        <rect key="frame" x="182" y="91.5" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="FAm-Vm-DFZ"/>
+                                            <constraint firstAttribute="width" constant="50" id="IOY-lY-8pa"/>
+                                        </constraints>
+                                        <state key="normal" image="bofang"/>
+                                        <state key="selected" image="zanting"/>
+                                        <connections>
+                                            <action selector="playButtonAction:" destination="fUg-l1-7vx" eventType="touchUpInside" id="yhG-sN-7fQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="yN1-Aa-oQC" firstAttribute="centerX" secondItem="fUg-l1-7vx" secondAttribute="centerX" id="Qb8-fw-Bah"/>
+                                    <constraint firstItem="yN1-Aa-oQC" firstAttribute="centerY" secondItem="fUg-l1-7vx" secondAttribute="centerY" id="Sl7-EA-0hK"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="playButton" destination="yN1-Aa-oQC" id="b2f-wp-KdT"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FKL-Xk-G2M">
+                                <rect key="frame" x="0.0" y="672" width="414" height="190"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngR-pJ-UZK">
+                                        <rect key="frame" x="10" y="0.0" width="394" height="50"/>
+                                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="RAe-cu-1JN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="add watermark">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="shake"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="curve" value="spring"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="addWatermarkAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gD6-m3-yUe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTf-oy-yjm">
+                                        <rect key="frame" x="10" y="70" width="394" height="50"/>
+                                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="add music">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addMusicAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nJ6-SJ-Y0W"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TS4-dk-Mn2">
+                                        <rect key="frame" x="10" y="140" width="394" height="50"/>
+                                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="export">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="exportAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Yy-Yd-JNe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="TS4-dk-Mn2" secondAttribute="bottom" id="8Yg-O0-Kpm"/>
+                                    <constraint firstItem="dTf-oy-yjm" firstAttribute="leading" secondItem="ngR-pJ-UZK" secondAttribute="leading" id="8hP-Zz-Osx"/>
+                                    <constraint firstAttribute="trailing" secondItem="ngR-pJ-UZK" secondAttribute="trailing" constant="10" id="EQ8-AC-GSD"/>
+                                    <constraint firstItem="TS4-dk-Mn2" firstAttribute="leading" secondItem="ngR-pJ-UZK" secondAttribute="leading" id="Jhw-Fo-ZEn"/>
+                                    <constraint firstItem="TS4-dk-Mn2" firstAttribute="top" secondItem="dTf-oy-yjm" secondAttribute="bottom" constant="20" id="KxI-Wf-31e"/>
+                                    <constraint firstItem="ngR-pJ-UZK" firstAttribute="top" secondItem="FKL-Xk-G2M" secondAttribute="top" id="PlE-Cu-RXu"/>
+                                    <constraint firstItem="ngR-pJ-UZK" firstAttribute="leading" secondItem="FKL-Xk-G2M" secondAttribute="leading" constant="10" id="bu2-Gw-wHP"/>
+                                    <constraint firstItem="TS4-dk-Mn2" firstAttribute="height" secondItem="ngR-pJ-UZK" secondAttribute="height" id="d2Q-af-oPl"/>
+                                    <constraint firstItem="dTf-oy-yjm" firstAttribute="top" secondItem="ngR-pJ-UZK" secondAttribute="bottom" constant="20" id="jm3-4P-eZK"/>
+                                    <constraint firstItem="dTf-oy-yjm" firstAttribute="width" secondItem="ngR-pJ-UZK" secondAttribute="width" id="rQW-sK-Fw1"/>
+                                    <constraint firstItem="dTf-oy-yjm" firstAttribute="height" secondItem="ngR-pJ-UZK" secondAttribute="height" id="xwQ-cb-xNV"/>
+                                    <constraint firstItem="TS4-dk-Mn2" firstAttribute="width" secondItem="ngR-pJ-UZK" secondAttribute="width" id="yMi-it-XtE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fUg-l1-7vx" secondAttribute="trailing" id="Ggf-s3-Jtd"/>
+                            <constraint firstItem="FKL-Xk-G2M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RaJ-xj-Rxh"/>
+                            <constraint firstItem="fUg-l1-7vx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="c9n-wM-BrU"/>
+                            <constraint firstAttribute="trailing" secondItem="FKL-Xk-G2M" secondAttribute="trailing" id="cgu-6J-yQg"/>
+                            <constraint firstItem="fUg-l1-7vx" firstAttribute="top" secondItem="VO1-ca-6Uf" secondAttribute="bottom" id="isd-5t-QvE"/>
+                            <constraint firstItem="fUg-l1-7vx" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="9/16" id="l1w-gD-8gd"/>
+                            <constraint firstItem="Sip-pJ-1bv" firstAttribute="top" secondItem="FKL-Xk-G2M" secondAttribute="bottom" id="yr4-QL-KTe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="displayView" destination="fUg-l1-7vx" id="OEk-HZ-Ra8"/>
+                        <outlet property="exportButton" destination="TS4-dk-Mn2" id="y2J-JS-XH4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10.144927536231885" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bofang" width="64" height="64"/>
+        <image name="zanting" width="64" height="64"/>
+    </resources>
+</document>

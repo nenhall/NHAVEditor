@@ -1,0 +1,650 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD751F2922F57ED500340C8D /* NHDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD751F2822F57ED500340C8D /* NHDisplayView.m */; };
+		DD7520AC22F58C0200340C8D /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75208F22F58C0100340C8D /* Spring.swift */; };
+		DD7520AD22F58C0200340C8D /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75209022F58C0100340C8D /* DesignableImageView.swift */; };
+		DD7520AE22F58C0200340C8D /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD75209122F58C0100340C8D /* LoadingView.xib */; };
+		DD7520AF22F58C0200340C8D /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75209222F58C0100340C8D /* DesignableView.swift */; };
+		DD7520B022F58C0200340C8D /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75209322F58C0100340C8D /* DesignableTextField.swift */; };
+		DD7520B122F58C0200340C8D /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75209422F58C0100340C8D /* SoundPlayer.swift */; };
+		DD7520B222F58C0200340C8D /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75209522F58C0100340C8D /* AsyncImageView.swift */; };
+		DD7520B322F58C0200340C8D /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75209622F58C0100340C8D /* UnwindSegue.swift */; };
+		DD7520B422F58C0200340C8D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75209722F58C0100340C8D /* LoadingView.swift */; };
+		DD7520B522F58C0200340C8D /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75209822F58C0100340C8D /* DesignableTextView.swift */; };
+		DD7520B622F58C0200340C8D /* SpringLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75209922F58C0100340C8D /* SpringLabel.swift */; };
+		DD7520B722F58C0200340C8D /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75209A22F58C0100340C8D /* ImageLoader.swift */; };
+		DD7520B822F58C0200340C8D /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75209B22F58C0100340C8D /* TransitionManager.swift */; };
+		DD7520B922F58C0200340C8D /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75209C22F58C0100340C8D /* SpringAnimation.swift */; };
+		DD7520BA22F58C0200340C8D /* SpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75209E22F58C0200340C8D /* SpringButton.swift */; };
+		DD7520BB22F58C0200340C8D /* DesignableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75209F22F58C0200340C8D /* DesignableTabBarController.swift */; };
+		DD7520BC22F58C0200340C8D /* SpringTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7520A022F58C0200340C8D /* SpringTextField.swift */; };
+		DD7520BD22F58C0200340C8D /* SpringImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7520A122F58C0200340C8D /* SpringImageView.swift */; };
+		DD7520BE22F58C0200340C8D /* SpringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7520A222F58C0200340C8D /* SpringView.swift */; };
+		DD7520BF22F58C0200340C8D /* SpringTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7520A322F58C0200340C8D /* SpringTextView.swift */; };
+		DD7520C022F58C0200340C8D /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7520A422F58C0200340C8D /* TransitionZoom.swift */; };
+		DD7520C122F58C0200340C8D /* AutoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7520A522F58C0200340C8D /* AutoTextView.swift */; };
+		DD7520C222F58C0200340C8D /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7520A622F58C0200340C8D /* DesignableLabel.swift */; };
+		DD7520C322F58C0200340C8D /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7520A722F58C0200340C8D /* Misc.swift */; };
+		DD7520C422F58C0200340C8D /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7520A822F58C0200340C8D /* AsyncButton.swift */; };
+		DD7520C522F58C0200340C8D /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7520A922F58C0200340C8D /* BlurView.swift */; };
+		DD7520C622F58C0200340C8D /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7520AA22F58C0200340C8D /* KeyboardLayoutConstraint.swift */; };
+		DD7520C722F58C0200340C8D /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7520AB22F58C0200340C8D /* DesignableButton.swift */; };
+		DD7520D422F5939900340C8D /* NHMediaCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7520D222F5939900340C8D /* NHMediaCommand.m */; };
+		DD7520D522F5939900340C8D /* NHAVEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7520D322F5939900340C8D /* NHAVEditor.m */; };
+		DD7520D922F5A1BC00340C8D /* NHAddAudioCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7520D822F5A1BC00340C8D /* NHAddAudioCommand.m */; };
+		DDB61AB522F568BE00EDC3C6 /* Бамбинтон-Зая.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DDB61AB422F568BE00EDC3C6 /* Бамбинтон-Зая.mp4 */; };
+		DDB61AB722F5691500EDC3C6 /* 黑龙-38度6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDB61AB622F5691500EDC3C6 /* 黑龙-38度6.mp3 */; };
+		DDB61ABA22F5748C00EDC3C6 /* NHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB61AB922F5748C00EDC3C6 /* NHViewController.m */; };
+		DDB61ABC22F574BD00EDC3C6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB61ABB22F574BD00EDC3C6 /* AVFoundation.framework */; };
+		DDC9984122FD198700651D89 /* NSDate+NH.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC9984022FD198700651D89 /* NSDate+NH.m */; };
+		DDC9984722FD1C5300651D89 /* NHAddWatermarkCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC9984622FD1C5300651D89 /* NHAddWatermarkCommand.m */; };
+		DDC9984A22FD1C7A00651D89 /* NHMediaExportCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC9984922FD1C7A00651D89 /* NHMediaExportCommand.m */; };
+		DDC9985222FD60F100651D89 /* 一生有你-赵海洋.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDC9985122FD60F100651D89 /* 一生有你-赵海洋.mp3 */; };
+		DDC9985422FD61EA00651D89 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC9985322FD61EA00651D89 /* logo.png */; };
+		DDD9AA9A22F5271500A77702 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD9AA9922F5271500A77702 /* AppDelegate.m */; };
+		DDD9AAA022F5271500A77702 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDD9AA9E22F5271500A77702 /* Main.storyboard */; };
+		DDD9AAA222F5271600A77702 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDD9AAA122F5271600A77702 /* Assets.xcassets */; };
+		DDD9AAA522F5271600A77702 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDD9AAA322F5271600A77702 /* LaunchScreen.storyboard */; };
+		DDD9AAA822F5271600A77702 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD9AAA722F5271600A77702 /* main.m */; };
+		FC4249C7BCE9C0CDF84E8A9D /* Pods_NHAVEditorExamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2776AB7BC82B5C5FA84053A0 /* Pods_NHAVEditorExamples.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2776AB7BC82B5C5FA84053A0 /* Pods_NHAVEditorExamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NHAVEditorExamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98363D3779A452B47E34410D /* Pods-NHAVEditorExamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHAVEditorExamples.debug.xcconfig"; path = "Target Support Files/Pods-NHAVEditorExamples/Pods-NHAVEditorExamples.debug.xcconfig"; sourceTree = "<group>"; };
+		9B6C0CF4BE57C407F9B6C7BD /* Pods-NHAVEditorExamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHAVEditorExamples.release.xcconfig"; path = "Target Support Files/Pods-NHAVEditorExamples/Pods-NHAVEditorExamples.release.xcconfig"; sourceTree = "<group>"; };
+		DD751F2722F57ED500340C8D /* NHDisplayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHDisplayView.h; sourceTree = "<group>"; };
+		DD751F2822F57ED500340C8D /* NHDisplayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHDisplayView.m; sourceTree = "<group>"; };
+		DD75208F22F58C0100340C8D /* Spring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spring.swift; sourceTree = "<group>"; };
+		DD75209022F58C0100340C8D /* DesignableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableImageView.swift; sourceTree = "<group>"; };
+		DD75209122F58C0100340C8D /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		DD75209222F58C0100340C8D /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		DD75209322F58C0100340C8D /* DesignableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
+		DD75209422F58C0100340C8D /* SoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		DD75209522F58C0100340C8D /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		DD75209622F58C0100340C8D /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
+		DD75209722F58C0100340C8D /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		DD75209822F58C0100340C8D /* DesignableTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextView.swift; sourceTree = "<group>"; };
+		DD75209922F58C0100340C8D /* SpringLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringLabel.swift; sourceTree = "<group>"; };
+		DD75209A22F58C0100340C8D /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		DD75209B22F58C0100340C8D /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
+		DD75209C22F58C0100340C8D /* SpringAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringAnimation.swift; sourceTree = "<group>"; };
+		DD75209D22F58C0100340C8D /* Spring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spring.h; sourceTree = "<group>"; };
+		DD75209E22F58C0200340C8D /* SpringButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringButton.swift; sourceTree = "<group>"; };
+		DD75209F22F58C0200340C8D /* DesignableTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTabBarController.swift; sourceTree = "<group>"; };
+		DD7520A022F58C0200340C8D /* SpringTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringTextField.swift; sourceTree = "<group>"; };
+		DD7520A122F58C0200340C8D /* SpringImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringImageView.swift; sourceTree = "<group>"; };
+		DD7520A222F58C0200340C8D /* SpringView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringView.swift; sourceTree = "<group>"; };
+		DD7520A322F58C0200340C8D /* SpringTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringTextView.swift; sourceTree = "<group>"; };
+		DD7520A422F58C0200340C8D /* TransitionZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionZoom.swift; sourceTree = "<group>"; };
+		DD7520A522F58C0200340C8D /* AutoTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoTextView.swift; sourceTree = "<group>"; };
+		DD7520A622F58C0200340C8D /* DesignableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableLabel.swift; sourceTree = "<group>"; };
+		DD7520A722F58C0200340C8D /* Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
+		DD7520A822F58C0200340C8D /* AsyncButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
+		DD7520A922F58C0200340C8D /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		DD7520AA22F58C0200340C8D /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
+		DD7520AB22F58C0200340C8D /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		DD7520C822F58C8A00340C8D /* NHAVEditorExamples-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NHAVEditorExamples-Swift.h"; sourceTree = "<group>"; };
+		DD7520D022F5939900340C8D /* NHMediaCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHMediaCommand.h; sourceTree = "<group>"; };
+		DD7520D122F5939900340C8D /* NHAVEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHAVEditor.h; sourceTree = "<group>"; };
+		DD7520D222F5939900340C8D /* NHMediaCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHMediaCommand.m; sourceTree = "<group>"; };
+		DD7520D322F5939900340C8D /* NHAVEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHAVEditor.m; sourceTree = "<group>"; };
+		DD7520D622F5944100340C8D /* NHAVEditorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHAVEditorProtocol.h; sourceTree = "<group>"; };
+		DD7520D722F5A1BC00340C8D /* NHAddAudioCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHAddAudioCommand.h; sourceTree = "<group>"; };
+		DD7520D822F5A1BC00340C8D /* NHAddAudioCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHAddAudioCommand.m; sourceTree = "<group>"; };
+		DD9DC4D822F5AA10002EB113 /* NHMediaCommandProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHMediaCommandProtocol.h; sourceTree = "<group>"; };
+		DDB61AB422F568BE00EDC3C6 /* Бамбинтон-Зая.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Бамбинтон-Зая.mp4"; sourceTree = "<group>"; };
+		DDB61AB622F5691500EDC3C6 /* 黑龙-38度6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "黑龙-38度6.mp3"; sourceTree = "<group>"; };
+		DDB61AB822F5748C00EDC3C6 /* NHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHViewController.h; sourceTree = "<group>"; };
+		DDB61AB922F5748C00EDC3C6 /* NHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHViewController.m; sourceTree = "<group>"; };
+		DDB61ABB22F574BD00EDC3C6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		DDC9983F22FD198700651D89 /* NSDate+NH.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+NH.h"; sourceTree = "<group>"; };
+		DDC9984022FD198700651D89 /* NSDate+NH.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+NH.m"; sourceTree = "<group>"; };
+		DDC9984522FD1C5300651D89 /* NHAddWatermarkCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHAddWatermarkCommand.h; sourceTree = "<group>"; };
+		DDC9984622FD1C5300651D89 /* NHAddWatermarkCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHAddWatermarkCommand.m; sourceTree = "<group>"; };
+		DDC9984822FD1C7A00651D89 /* NHMediaExportCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHMediaExportCommand.h; sourceTree = "<group>"; };
+		DDC9984922FD1C7A00651D89 /* NHMediaExportCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHMediaExportCommand.m; sourceTree = "<group>"; };
+		DDC9985122FD60F100651D89 /* 一生有你-赵海洋.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "一生有你-赵海洋.mp3"; sourceTree = "<group>"; };
+		DDC9985322FD61EA00651D89 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		DDC9986A22FD89F300651D89 /* NHAVEditorHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHAVEditorHeader.h; sourceTree = "<group>"; };
+		DDD9AA9522F5271500A77702 /* NHAVEditorExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NHAVEditorExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDD9AA9822F5271500A77702 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DDD9AA9922F5271500A77702 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DDD9AA9F22F5271500A77702 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DDD9AAA122F5271600A77702 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDD9AAA422F5271600A77702 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DDD9AAA622F5271600A77702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDD9AAA722F5271600A77702 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDD9AA9222F5271500A77702 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDB61ABC22F574BD00EDC3C6 /* AVFoundation.framework in Frameworks */,
+				FC4249C7BCE9C0CDF84E8A9D /* Pods_NHAVEditorExamples.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FF3EA24008BB81E2CDD64B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98363D3779A452B47E34410D /* Pods-NHAVEditorExamples.debug.xcconfig */,
+				9B6C0CF4BE57C407F9B6C7BD /* Pods-NHAVEditorExamples.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7B772784DD8CE94E441419C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDB61ABB22F574BD00EDC3C6 /* AVFoundation.framework */,
+				2776AB7BC82B5C5FA84053A0 /* Pods_NHAVEditorExamples.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD751FA222F589F600340C8D /* Spring */ = {
+			isa = PBXGroup;
+			children = (
+				DD7520A822F58C0200340C8D /* AsyncButton.swift */,
+				DD75209522F58C0100340C8D /* AsyncImageView.swift */,
+				DD7520A522F58C0200340C8D /* AutoTextView.swift */,
+				DD7520A922F58C0200340C8D /* BlurView.swift */,
+				DD7520AB22F58C0200340C8D /* DesignableButton.swift */,
+				DD75209022F58C0100340C8D /* DesignableImageView.swift */,
+				DD7520A622F58C0200340C8D /* DesignableLabel.swift */,
+				DD75209F22F58C0200340C8D /* DesignableTabBarController.swift */,
+				DD75209322F58C0100340C8D /* DesignableTextField.swift */,
+				DD75209822F58C0100340C8D /* DesignableTextView.swift */,
+				DD75209222F58C0100340C8D /* DesignableView.swift */,
+				DD75209A22F58C0100340C8D /* ImageLoader.swift */,
+				DD7520AA22F58C0200340C8D /* KeyboardLayoutConstraint.swift */,
+				DD75209722F58C0100340C8D /* LoadingView.swift */,
+				DD75209122F58C0100340C8D /* LoadingView.xib */,
+				DD7520A722F58C0200340C8D /* Misc.swift */,
+				DD75209422F58C0100340C8D /* SoundPlayer.swift */,
+				DD75209D22F58C0100340C8D /* Spring.h */,
+				DD75208F22F58C0100340C8D /* Spring.swift */,
+				DD75209C22F58C0100340C8D /* SpringAnimation.swift */,
+				DD75209E22F58C0200340C8D /* SpringButton.swift */,
+				DD7520A122F58C0200340C8D /* SpringImageView.swift */,
+				DD75209922F58C0100340C8D /* SpringLabel.swift */,
+				DD7520A022F58C0200340C8D /* SpringTextField.swift */,
+				DD7520A322F58C0200340C8D /* SpringTextView.swift */,
+				DD7520A222F58C0200340C8D /* SpringView.swift */,
+				DD75209B22F58C0100340C8D /* TransitionManager.swift */,
+				DD7520A422F58C0200340C8D /* TransitionZoom.swift */,
+				DD75209622F58C0100340C8D /* UnwindSegue.swift */,
+				DD7520C822F58C8A00340C8D /* NHAVEditorExamples-Swift.h */,
+			);
+			path = Spring;
+			sourceTree = "<group>";
+		};
+		DD7520CF22F5939900340C8D /* NHAVEditor */ = {
+			isa = PBXGroup;
+			children = (
+				DDC9986822FD883A00651D89 /* Unit */,
+				DD7520D122F5939900340C8D /* NHAVEditor.h */,
+				DD7520D322F5939900340C8D /* NHAVEditor.m */,
+				DD7520D622F5944100340C8D /* NHAVEditorProtocol.h */,
+				DD9DC4D822F5AA10002EB113 /* NHMediaCommandProtocol.h */,
+				DD7520D022F5939900340C8D /* NHMediaCommand.h */,
+				DD7520D222F5939900340C8D /* NHMediaCommand.m */,
+				DD7520D722F5A1BC00340C8D /* NHAddAudioCommand.h */,
+				DD7520D822F5A1BC00340C8D /* NHAddAudioCommand.m */,
+				DDC9984522FD1C5300651D89 /* NHAddWatermarkCommand.h */,
+				DDC9984622FD1C5300651D89 /* NHAddWatermarkCommand.m */,
+				DDC9984822FD1C7A00651D89 /* NHMediaExportCommand.h */,
+				DDC9984922FD1C7A00651D89 /* NHMediaExportCommand.m */,
+				DDC9983F22FD198700651D89 /* NSDate+NH.h */,
+				DDC9984022FD198700651D89 /* NSDate+NH.m */,
+			);
+			name = NHAVEditor;
+			path = ../../NHAVEditor;
+			sourceTree = "<group>";
+		};
+		DDB61AB322F568A400EDC3C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DDC9985322FD61EA00651D89 /* logo.png */,
+				DDC9985122FD60F100651D89 /* 一生有你-赵海洋.mp3 */,
+				DDB61AB622F5691500EDC3C6 /* 黑龙-38度6.mp3 */,
+				DDB61AB422F568BE00EDC3C6 /* Бамбинтон-Зая.mp4 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DDB61ABD22F5790A00EDC3C6 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				DD751FA222F589F600340C8D /* Spring */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		DDC9986822FD883A00651D89 /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+				DDC9986A22FD89F300651D89 /* NHAVEditorHeader.h */,
+			);
+			path = Unit;
+			sourceTree = "<group>";
+		};
+		DDD9AA8C22F5271500A77702 = {
+			isa = PBXGroup;
+			children = (
+				DDD9AA9722F5271500A77702 /* NHAVEditorExamples */,
+				DDD9AA9622F5271500A77702 /* Products */,
+				3FF3EA24008BB81E2CDD64B1 /* Pods */,
+				7B772784DD8CE94E441419C9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DDD9AA9622F5271500A77702 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDD9AA9522F5271500A77702 /* NHAVEditorExamples.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDD9AA9722F5271500A77702 /* NHAVEditorExamples */ = {
+			isa = PBXGroup;
+			children = (
+				DDB61AB322F568A400EDC3C6 /* Resources */,
+				DDB61ABD22F5790A00EDC3C6 /* Libraries */,
+				DD7520CF22F5939900340C8D /* NHAVEditor */,
+				DDD9AA9822F5271500A77702 /* AppDelegate.h */,
+				DDD9AA9922F5271500A77702 /* AppDelegate.m */,
+				DDB61AB822F5748C00EDC3C6 /* NHViewController.h */,
+				DDB61AB922F5748C00EDC3C6 /* NHViewController.m */,
+				DD751F2722F57ED500340C8D /* NHDisplayView.h */,
+				DD751F2822F57ED500340C8D /* NHDisplayView.m */,
+				DDD9AA9E22F5271500A77702 /* Main.storyboard */,
+				DDD9AAA122F5271600A77702 /* Assets.xcassets */,
+				DDD9AAA322F5271600A77702 /* LaunchScreen.storyboard */,
+				DDD9AAA622F5271600A77702 /* Info.plist */,
+				DDD9AAA722F5271600A77702 /* main.m */,
+			);
+			path = NHAVEditorExamples;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDD9AA9422F5271500A77702 /* NHAVEditorExamples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDD9AAAB22F5271600A77702 /* Build configuration list for PBXNativeTarget "NHAVEditorExamples" */;
+			buildPhases = (
+				82DFC4FE3C4AE51C232CC907 /* [CP] Check Pods Manifest.lock */,
+				DDD9AA9122F5271500A77702 /* Sources */,
+				DDD9AA9222F5271500A77702 /* Frameworks */,
+				DDD9AA9322F5271500A77702 /* Resources */,
+				62ED16EA74166BAA3876446F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NHAVEditorExamples;
+			productName = NHAVEditorExamples;
+			productReference = DDD9AA9522F5271500A77702 /* NHAVEditorExamples.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDD9AA8D22F5271500A77702 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NH;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = XiuDan;
+				TargetAttributes = {
+					DDD9AA9422F5271500A77702 = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+					};
+				};
+			};
+			buildConfigurationList = DDD9AA9022F5271500A77702 /* Build configuration list for PBXProject "NHAVEditorExamples" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDD9AA8C22F5271500A77702;
+			productRefGroup = DDD9AA9622F5271500A77702 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDD9AA9422F5271500A77702 /* NHAVEditorExamples */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDD9AA9322F5271500A77702 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD9AAA522F5271600A77702 /* LaunchScreen.storyboard in Resources */,
+				DDC9985422FD61EA00651D89 /* logo.png in Resources */,
+				DDD9AAA222F5271600A77702 /* Assets.xcassets in Resources */,
+				DDB61AB722F5691500EDC3C6 /* 黑龙-38度6.mp3 in Resources */,
+				DD7520AE22F58C0200340C8D /* LoadingView.xib in Resources */,
+				DDD9AAA022F5271500A77702 /* Main.storyboard in Resources */,
+				DDC9985222FD60F100651D89 /* 一生有你-赵海洋.mp3 in Resources */,
+				DDB61AB522F568BE00EDC3C6 /* Бамбинтон-Зая.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62ED16EA74166BAA3876446F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NHAVEditorExamples/Pods-NHAVEditorExamples-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NHAVEditorExamples/Pods-NHAVEditorExamples-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NHAVEditorExamples/Pods-NHAVEditorExamples-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82DFC4FE3C4AE51C232CC907 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NHAVEditorExamples-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDD9AA9122F5271500A77702 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD7520D422F5939900340C8D /* NHMediaCommand.m in Sources */,
+				DD7520BB22F58C0200340C8D /* DesignableTabBarController.swift in Sources */,
+				DDD9AAA822F5271600A77702 /* main.m in Sources */,
+				DD7520BD22F58C0200340C8D /* SpringImageView.swift in Sources */,
+				DDC9984122FD198700651D89 /* NSDate+NH.m in Sources */,
+				DD7520C322F58C0200340C8D /* Misc.swift in Sources */,
+				DD7520B922F58C0200340C8D /* SpringAnimation.swift in Sources */,
+				DD7520C222F58C0200340C8D /* DesignableLabel.swift in Sources */,
+				DD7520AC22F58C0200340C8D /* Spring.swift in Sources */,
+				DD7520B722F58C0200340C8D /* ImageLoader.swift in Sources */,
+				DD751F2922F57ED500340C8D /* NHDisplayView.m in Sources */,
+				DD7520B222F58C0200340C8D /* AsyncImageView.swift in Sources */,
+				DD7520B022F58C0200340C8D /* DesignableTextField.swift in Sources */,
+				DD7520D922F5A1BC00340C8D /* NHAddAudioCommand.m in Sources */,
+				DD7520B422F58C0200340C8D /* LoadingView.swift in Sources */,
+				DD7520B122F58C0200340C8D /* SoundPlayer.swift in Sources */,
+				DDC9984A22FD1C7A00651D89 /* NHMediaExportCommand.m in Sources */,
+				DD7520B822F58C0200340C8D /* TransitionManager.swift in Sources */,
+				DDB61ABA22F5748C00EDC3C6 /* NHViewController.m in Sources */,
+				DD7520BC22F58C0200340C8D /* SpringTextField.swift in Sources */,
+				DD7520B322F58C0200340C8D /* UnwindSegue.swift in Sources */,
+				DD7520C022F58C0200340C8D /* TransitionZoom.swift in Sources */,
+				DD7520C522F58C0200340C8D /* BlurView.swift in Sources */,
+				DDC9984722FD1C5300651D89 /* NHAddWatermarkCommand.m in Sources */,
+				DD7520BF22F58C0200340C8D /* SpringTextView.swift in Sources */,
+				DD7520B622F58C0200340C8D /* SpringLabel.swift in Sources */,
+				DD7520AF22F58C0200340C8D /* DesignableView.swift in Sources */,
+				DD7520C122F58C0200340C8D /* AutoTextView.swift in Sources */,
+				DD7520C622F58C0200340C8D /* KeyboardLayoutConstraint.swift in Sources */,
+				DD7520D522F5939900340C8D /* NHAVEditor.m in Sources */,
+				DD7520C422F58C0200340C8D /* AsyncButton.swift in Sources */,
+				DD7520BE22F58C0200340C8D /* SpringView.swift in Sources */,
+				DD7520BA22F58C0200340C8D /* SpringButton.swift in Sources */,
+				DD7520C722F58C0200340C8D /* DesignableButton.swift in Sources */,
+				DD7520B522F58C0200340C8D /* DesignableTextView.swift in Sources */,
+				DD7520AD22F58C0200340C8D /* DesignableImageView.swift in Sources */,
+				DDD9AA9A22F5271500A77702 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DDD9AA9E22F5271500A77702 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDD9AA9F22F5271500A77702 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DDD9AAA322F5271600A77702 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDD9AAA422F5271600A77702 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDD9AAA922F5271600A77702 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DDD9AAAA22F5271600A77702 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDD9AAAC22F5271600A77702 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98363D3779A452B47E34410D /* Pods-NHAVEditorExamples.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PE9T4WTY22;
+				INFOPLIST_FILE = NHAVEditorExamples/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = XiuDan.NHAVEditorExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PRODUCT_MODULE_NAME)-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DDD9AAAD22F5271600A77702 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B6C0CF4BE57C407F9B6C7BD /* Pods-NHAVEditorExamples.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PE9T4WTY22;
+				INFOPLIST_FILE = NHAVEditorExamples/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = XiuDan.NHAVEditorExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PRODUCT_MODULE_NAME)-Swift.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDD9AA9022F5271500A77702 /* Build configuration list for PBXProject "NHAVEditorExamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDD9AAA922F5271600A77702 /* Debug */,
+				DDD9AAAA22F5271600A77702 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDD9AAAB22F5271600A77702 /* Build configuration list for PBXNativeTarget "NHAVEditorExamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDD9AAAC22F5271600A77702 /* Debug */,
+				DDD9AAAD22F5271600A77702 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDD9AA8D22F5271500A77702 /* Project object */;
+}
