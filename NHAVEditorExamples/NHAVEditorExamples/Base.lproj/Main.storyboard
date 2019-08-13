@@ -59,11 +59,6 @@
                                         <state key="normal" title="add watermark">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="shake"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="curve" value="spring"/>
-                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="addWatermarkAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gD6-m3-yUe"/>
                                         </connections>

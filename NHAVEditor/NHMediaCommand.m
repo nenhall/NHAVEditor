@@ -18,7 +18,6 @@
     self.mComposition = composition;
     self.mVideoComposition = videoComposition;
     self.mAudioMix = audioMix;
-    [self setOutputURL:nil];
   }
   return self;
 }
@@ -29,10 +28,6 @@
   return [[NHMediaCommand alloc] initWithComposition:composition
                                     videoComposition:videoComposition
                                             audioMix:audioMix];
-}
-
-- (void)setOutputURL:(NSURL *)outputURL {
-  
 }
 
 - (void)performWithAsset:(AVAsset *)asset {

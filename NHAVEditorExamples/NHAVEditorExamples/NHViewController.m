@@ -7,18 +7,19 @@
 //
 
 #import "NHViewController.h"
-#import "NHAVEditorExamples-Swift.h"
 #import "NHDisplayView.h"
 #import <MBProgressHUD+NHAdd.h>
 #import "NHAVEditor.h"
+#import "NHAVEditorHeader.h"
+
 
 #define kMp3Path [[NSBundle mainBundle] pathForResource:@"黑龙-38度6" ofType:@"mp3"]
 #define kMp4Path [[NSBundle mainBundle] pathForResource:@"Бамбинтон-Зая" ofType:@"mp4"]
 
 
 @interface NHViewController ()<NHAVEditorProtocol>
-@property (weak, nonatomic) IBOutlet NHDisplayView *displayView;
-@property (weak, nonatomic) IBOutlet UIButton *exportButton;
+@property (weak, nonatomic  ) IBOutlet NHDisplayView *displayView;
+@property (weak, nonatomic  ) IBOutlet UIButton *exportButton;
 @property (nonatomic, strong) NHAVEditor *mediaEditor;
 @property (nonatomic, strong) CALayer *watermarkLayer;
 
@@ -38,40 +39,47 @@
 #pragma mark - edit command
 #pragma mark -
 - (IBAction)addWatermarkAction:(UIButton *)sender {
-  [self.mediaEditor addWatermarkWithLayer:self.watermarkLayer completedBlock:^(NSURL * _Nullable mediaUrl, NSError * _Nullable error) {
-    
+  [self.mediaEditor addWatermarkWithLayer:self.watermarkLayer customConfig:nil completedBlock:^(NSURL * _Nullable outputURL, NSError * _Nullable error) {
+    NHLog(@"合成完成:%@", outputURL);
   }];
-  
 }
 
 - (IBAction)addMusicAction:(UIButton *)sender {
-  [self.mediaEditor addAudioWithAudioURL:[NSURL fileURLWithPath:kMp3Path] completedBlock:^(NSURL * _Nullable mediaUrl, NSError * _Nullable error) {
-    
+  [self.mediaEditor addAudioWithAudioURL:[NSURL fileURLWithPath:kMp3Path] customConfig:^(NHAudioConfig * _Nonnull config) {
+    config.startVolume = -1.0;
+    config.endVolume = 1.0;
+  } completedBlock:^(NSURL * _Nullable outputURL, NSError * _Nullable error) {
+    NHLog(@"合成完成:%@", outputURL);
   }];
-  
 }
 
 - (IBAction)exportAction:(UIButton *)sender {
-  [self.mediaEditor exportMediaWithOutputURL:nil
-                                  presetName:AVAssetExportPreset1280x720
-                              outputFileType:AVFileTypeQuickTimeMovie
-                              completedBlock:^(NSURL * _Nullable mediaUrl, NSError * _Nullable error) {
-    
+  [MBProgressHUD showLoadToView:self.view title:@"正在导出..."];
+  __weak __typeof(self)ws = self;
+  [self.mediaEditor exportMediaWithOutputURL:nil customConfig:^(NHExporyConfig * _Nonnull config) {
+    config.presetName = AVAssetExportPreset1280x720;
+    config.outputFileType = AVFileTypeQuickTimeMovie;
+  } completedBlock:^(NSURL * _Nullable outputURL, NSError * _Nullable error) {
+    NSLog(@"合成完成:%@", outputURL);
+    dispatch_async(dispatch_get_main_queue(), ^{
+      [MBProgressHUD hideHUDForView:ws.view];
+    });
   }];
 }
 
 #pragma mark - NHAVEditorProtocol
 #pragma mark -
 - (void)editorCompositioning:(NHAVEditor *)editor progress:(CGFloat)progress {
-  NSLog(@"合成进度:%.02f",progress);
+  NHLog(@"合成进度:%.02f",progress);
 }
 
-- (void)editorCompositioned:(NHAVEditor *)editor outputUrl:(NSURL *)outputUrl error:(NSError *)error {
-  NSLog(@"合成完成:%@", outputUrl);
+- (void)editorCompositioned:(NHAVEditor *)editor outputURL:(NSURL *)outputURL error:(NSError *)error {
+  NHLog(@"合成完成:%@", outputURL);
 }
 
-- (void)editorExportCompleted:(NHAVEditor *)editor outputUrl:(NSURL *)outputUrl error:(NSError *)error {
-  NSLog(@"导出完成:%@", outputUrl);
+- (void)editorExportCompleted:(NHAVEditor *)editor outputURL:(NSURL *)outputURL error:(NSError *)error {
+  NHLog(@"导出完成:%@", outputURL);
+  [_displayView setPlayUrl:outputURL];
 }
 
 
@@ -82,23 +90,24 @@
 }
 
 - (CALayer *)watermarkLayer {
-  
   _watermarkLayer = [CALayer layer];
-  _watermarkLayer.bounds = CGRectMake(0, 0, _displayView.videoSize.width, _displayView.videoSize.height);
-  
+  _watermarkLayer.frame = CGRectMake(0, 0, [self logoImage].size.width, [self logoImage].size.height);
+ 
   CALayer *imageLayer = [CALayer layer];
   imageLayer.frame = CGRectMake(0, 0, [self logoImage].size.width, [self logoImage].size.height);
-  imageLayer.contents = [self logoImage];
+  imageLayer.contents = (__bridge id)[self logoImage].CGImage;
   [_watermarkLayer addSublayer:imageLayer];
   
   CATextLayer *titleLayer = [CATextLayer layer];
   titleLayer.string = @"38度6-黑龙";
+  titleLayer.fontSize = 18.0;
+  titleLayer.font = (__bridge CFTypeRef)@"PingFangSC-Regular";
   titleLayer.foregroundColor = [UIColor whiteColor].CGColor;
   titleLayer.shadowOpacity = 0.5;
   titleLayer.alignmentMode = kCAAlignmentCenter;
-  titleLayer.bounds = CGRectMake(0, 0, 100, 100);
+  titleLayer.frame = CGRectMake(0, 0, 100, 100);
   [_watermarkLayer addSublayer:titleLayer];
-  [self.view.layer addSublayer:_watermarkLayer];
+
   return _watermarkLayer;
 }
 

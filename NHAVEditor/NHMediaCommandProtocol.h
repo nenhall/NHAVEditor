@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class NHMediaCommand;
 
 @protocol NHMediaCommandProtocol <NSObject>
+@optional;
 
 - (void)mediaCompositioning:(NHMediaCommand *)editor progress:(CGFloat)progress;
 

@@ -11,10 +11,17 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NHMediaExportCommand : NHMediaCommand
-@property (nonatomic, copy  ) NSURL *_Nullable outputURL;
-@property (nonatomic, strong) AVAssetExportSession *exportSession;
-@property (nonatomic, assign) NSString *exportPresetName;
-@property (nonatomic, copy  ) AVFileType outputFileType;
+
+/**
+ 视频导出地址
+ */
+@property (nonatomic, copy  ) NSURL *outputURL;
+@property (nonatomic, strong, readonly) AVAssetExportSession *exportSession;
+
+/**
+ 自定义配置
+ */
+@property (nonatomic, strong) NHExporyConfig *config;
 
 @end
 

@@ -11,7 +11,16 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NHAddAudioCommand : NHMediaCommand
-@property (nonatomic, copy) NSURL *audioURL;
+
+/**
+ 自定义配置
+ */
+@property (nonatomic, strong) NHAudioConfig *config;
+
+/**
+ 输入音频路径
+ */
+@property (nonatomic, copy) NSURL *inputAudioURL;
 
 
 @end

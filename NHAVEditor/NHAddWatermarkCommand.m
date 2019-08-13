@@ -9,6 +9,7 @@
 #import "NHAddWatermarkCommand.h"
 
 @implementation NHAddWatermarkCommand
+
 + (instancetype)commandWithComposition:(AVMutableComposition *)composition
                       videoComposition:(AVMutableVideoComposition *)videoComposition
                               audioMix:(AVMutableAudioMix *)audioMix {
@@ -37,7 +38,7 @@
   CMTime insetionPoint = kCMTimeZero;
   NSError *error = nil;
   
-  
+  // Step 1
   if (!self.mComposition) {
     self.mComposition = [AVMutableComposition composition];
     CMTimeRange iTimeRange = CMTimeRangeMake(kCMTimeZero, [asset duration]);
@@ -53,22 +54,40 @@
     }
   }
   
+  // Step 2
   if ([[self.mComposition tracksWithMediaType:AVMediaTypeVideo] count] != 0) {
     if (!self.mVideoComposition) {
       self.mVideoComposition = [AVMutableVideoComposition videoComposition];
-      self.mVideoComposition.frameDuration = CMTimeMake(1, 30);
+      self.mVideoComposition.frameDuration = CMTimeMake(1, 30); //fps
       self.mVideoComposition.renderSize = assetVideoTrack.naturalSize;
       
+      AVAssetTrack *videoTrack = [self.mComposition tracksWithMediaType:AVMediaTypeVideo].firstObject;
+      
+      // 一个视频轨道，包含了这个轨道上的所有视频素材
+      AVMutableVideoCompositionLayerInstruction *vcLayerInstruction = [AVMutableVideoCompositionLayerInstruction videoCompositionLayerInstructionWithAssetTrack:videoTrack];
+      //      [vcLayerInstruction setOpacity:0.0 atTime:[self.mComposition duration]];
+      
+      if (!CMTIMERANGE_IS_INVALID(self.config.transformTimeRange)) {
+        [vcLayerInstruction setTransformRampFromStartTransform:self.config.startTransform
+                                                toEndTransform:self.config.endTransform
+                                                     timeRange:self.config.transformTimeRange];
+      }
+      
+      if (!CMTIMERANGE_IS_INVALID(self.config.opacityTimeRange)) {
+        [vcLayerInstruction setOpacityRampFromStartOpacity:self.config.startOpacity
+                                              toEndOpacity:self.config.endOpacity
+                                                 timeRange:self.config.opacityTimeRange];
+      }
+
+      // 管理所有视频轨道，水印添加在这
       AVMutableVideoCompositionInstruction *vcInstruction = [AVMutableVideoCompositionInstruction videoCompositionInstruction];
       vcInstruction.timeRange = CMTimeRangeMake(kCMTimeZero, [self.mComposition duration]);
-      
-      AVAssetTrack *videoTrack = [self.mComposition tracksWithMediaType:AVMediaTypeVideo].firstObject;
-      AVMutableVideoCompositionLayerInstruction *vcLayerInstruction = [AVMutableVideoCompositionLayerInstruction videoCompositionLayerInstructionWithAssetTrack:videoTrack];
       vcInstruction.layerInstructions = @[ vcLayerInstruction ];
-      self.mVideoComposition.instructions = @[ vcLayerInstruction ];
+      self.mVideoComposition.instructions = @[ vcInstruction ];
     }
   }
   
+  // Step 3
   if (self.delegate && [self.delegate respondsToSelector:@selector(mediaCompositioned:outputURL:error:)]) {
     [self.delegate mediaCompositioned:self outputURL:nil error:error];
   }

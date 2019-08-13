@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 #import "NHMediaCommandProtocol.h"
+#import "NHMediaConfig.h"
 
 
 NS_ASSUME_NONNULL_BEGIN

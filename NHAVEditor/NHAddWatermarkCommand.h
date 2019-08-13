@@ -16,6 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, strong) CALayer *watermarkLayer;
 
+/**
+ 自定义配置
+ */
+@property (nonatomic, strong) NHWatermarkConfig *config;
 
 @end
 
