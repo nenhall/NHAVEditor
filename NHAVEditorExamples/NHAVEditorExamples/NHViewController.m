@@ -123,6 +123,12 @@
     keyAnimation.duration = 2.0;
     keyAnimation.repeatCount = MAXFLOAT;
     keyAnimation.toValue = @(M_PI * 2.0);
+    
+    /**
+     把动画加到视频，一定要设两面个属性: `beginTime 、removedOnCompletion`
+     beginTime: 开始时间
+     removedOnCompletion: 动画完成后是否从之删除
+     */
     keyAnimation.beginTime = AVCoreAnimationBeginTimeAtZero;
     keyAnimation.removedOnCompletion = NO;
     [_watermarkLayer addAnimation:keyAnimation forKey:@"transform.rotation.z"];

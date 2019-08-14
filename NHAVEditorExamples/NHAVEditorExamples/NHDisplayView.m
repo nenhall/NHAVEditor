@@ -15,6 +15,7 @@
 @property (nonatomic, strong) AVPlayerItem *currentPlayItem;
 @property (nonatomic, weak) AVPlayerLayer *playerLayer;
 @property (nonatomic, weak) IBOutlet UIButton *playButton;
+@property (nonatomic, assign) CGSize videoSize;
 
 @end
 
@@ -42,30 +43,36 @@
 }
 
 - (void)resetPlayer {
-  [_playerLayer removeFromSuperlayer];
+  [_player pause];
   
   _asset = [AVAsset assetWithURL:_playUrl];
-  NSArray *assetKeys = @[@"playable",
-                         @"hasProtectedContent"];
-  _currentPlayItem = [[AVPlayerItem alloc] initWithAsset:_asset automaticallyLoadedAssetKeys:assetKeys];
+  NSArray *assetKeys = @[@"playable", @"hasProtectedContent"];
+  NSArray *loadkeys = @[@"duration", @"tracks", @"commonMetadata"];
   
-  
-  if (!_player) {
-    _player = [[AVPlayer alloc] initWithPlayerItem:_currentPlayItem];
-    AVPlayerLayer *playerLayer = [AVPlayerLayer playerLayerWithPlayer:_player];
-    playerLayer.frame = self.bounds;
-    [self.layer addSublayer:playerLayer];
-    _playerLayer = playerLayer;
+  __weak __typeof(self)ws = self;
+  [_asset loadValuesAsynchronouslyForKeys:loadkeys completionHandler:^{
+   AVPlayerItem *newPlayItem = [[AVPlayerItem alloc] initWithAsset:ws.asset automaticallyLoadedAssetKeys:assetKeys];
+    ws.currentPlayItem = newPlayItem;
     
-  } else {
-    [_player replaceCurrentItemWithPlayerItem:_currentPlayItem];
-  }
-  
-  for (AVAssetTrack *track in _asset.tracks) {
-    if ([track.mediaType isEqualToString:AVMediaTypeVideo]) {
-      _videoSize = track.naturalSize;
+    if (!ws.player) {
+      ws.player = [[AVPlayer alloc] initWithPlayerItem:ws.currentPlayItem];
+      AVPlayerLayer *playerLayer = [AVPlayerLayer playerLayerWithPlayer:ws.player];
+      playerLayer.frame = self.bounds;
+      [self.layer addSublayer:playerLayer];
+      ws.playerLayer = playerLayer;
+    } else {
+      [ws.player replaceCurrentItemWithPlayerItem:newPlayItem];
+      if (@available(iOS 10.0, *)) {
+        [ws.player reasonForWaitingToPlay];
+      }
     }
-  }
+    
+    for (AVAssetTrack *track in ws.asset.tracks) {
+      if ([track.mediaType isEqualToString:AVMediaTypeVideo]) {
+        ws.videoSize = track.naturalSize;
+      }
+    }
+  }];
 }
 
 - (IBAction)playButtonAction:(UIButton *)sender {
