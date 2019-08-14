@@ -12,6 +12,9 @@
 		DD7520D422F5939900340C8D /* NHMediaCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7520D222F5939900340C8D /* NHMediaCommand.m */; };
 		DD7520D522F5939900340C8D /* NHAVEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7520D322F5939900340C8D /* NHAVEditor.m */; };
 		DD7520D922F5A1BC00340C8D /* NHAddAudioCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7520D822F5A1BC00340C8D /* NHAddAudioCommand.m */; };
+		DDAAEF9A23039FA700B56F65 /* NHThread.m in Sources */ = {isa = PBXBuildFile; fileRef = DDAAEF9923039FA700B56F65 /* NHThread.m */; };
+		DDAAEF9D2303A6E700B56F65 /* NHProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDAAEF9C2303A6E700B56F65 /* NHProxy.m */; };
+		DDAAEFA02303A7F200B56F65 /* NHTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = DDAAEF9F2303A7F200B56F65 /* NHTimer.m */; };
 		DDB61AB522F568BE00EDC3C6 /* Бамбинтон-Зая.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DDB61AB422F568BE00EDC3C6 /* Бамбинтон-Зая.mp4 */; };
 		DDB61AB722F5691500EDC3C6 /* 黑龙-38度6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDB61AB622F5691500EDC3C6 /* 黑龙-38度6.mp3 */; };
 		DDB61ABA22F5748C00EDC3C6 /* NHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB61AB922F5748C00EDC3C6 /* NHViewController.m */; };
@@ -46,6 +49,12 @@
 		DD7520D722F5A1BC00340C8D /* NHAddAudioCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHAddAudioCommand.h; sourceTree = "<group>"; };
 		DD7520D822F5A1BC00340C8D /* NHAddAudioCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHAddAudioCommand.m; sourceTree = "<group>"; };
 		DD9DC4D822F5AA10002EB113 /* NHMediaCommandProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHMediaCommandProtocol.h; sourceTree = "<group>"; };
+		DDAAEF9823039FA700B56F65 /* NHThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHThread.h; sourceTree = "<group>"; };
+		DDAAEF9923039FA700B56F65 /* NHThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHThread.m; sourceTree = "<group>"; };
+		DDAAEF9B2303A6E700B56F65 /* NHProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHProxy.h; sourceTree = "<group>"; };
+		DDAAEF9C2303A6E700B56F65 /* NHProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHProxy.m; sourceTree = "<group>"; };
+		DDAAEF9E2303A7F200B56F65 /* NHTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHTimer.h; sourceTree = "<group>"; };
+		DDAAEF9F2303A7F200B56F65 /* NHTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHTimer.m; sourceTree = "<group>"; };
 		DDB61AB422F568BE00EDC3C6 /* Бамбинтон-Зая.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Бамбинтон-Зая.mp4"; sourceTree = "<group>"; };
 		DDB61AB622F5691500EDC3C6 /* 黑龙-38度6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "黑龙-38度6.mp3"; sourceTree = "<group>"; };
 		DDB61AB822F5748C00EDC3C6 /* NHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHViewController.h; sourceTree = "<group>"; };
@@ -152,6 +161,12 @@
 				DDC9986A22FD89F300651D89 /* NHAVEditorHeader.h */,
 				DDDAAB4C23014F4400AA33B5 /* NHMediaConfig.h */,
 				DDDAAB4D23014F4400AA33B5 /* NHMediaConfig.m */,
+				DDAAEF9823039FA700B56F65 /* NHThread.h */,
+				DDAAEF9923039FA700B56F65 /* NHThread.m */,
+				DDAAEF9B2303A6E700B56F65 /* NHProxy.h */,
+				DDAAEF9C2303A6E700B56F65 /* NHProxy.m */,
+				DDAAEF9E2303A7F200B56F65 /* NHTimer.h */,
+				DDAAEF9F2303A7F200B56F65 /* NHTimer.m */,
 			);
 			path = Unit;
 			sourceTree = "<group>";
@@ -317,16 +332,19 @@
 			files = (
 				DDDAAB4E23014F4400AA33B5 /* NHMediaConfig.m in Sources */,
 				DD7520D422F5939900340C8D /* NHMediaCommand.m in Sources */,
+				DDAAEF9D2303A6E700B56F65 /* NHProxy.m in Sources */,
 				DDD9AAA822F5271600A77702 /* main.m in Sources */,
 				DDC9984122FD198700651D89 /* NSDate+NH.m in Sources */,
 				DD751F2922F57ED500340C8D /* NHDisplayView.m in Sources */,
 				DD7520D922F5A1BC00340C8D /* NHAddAudioCommand.m in Sources */,
 				DDC9984A22FD1C7A00651D89 /* NHMediaExportCommand.m in Sources */,
+				DDAAEFA02303A7F200B56F65 /* NHTimer.m in Sources */,
 				DDB61ABA22F5748C00EDC3C6 /* NHViewController.m in Sources */,
 				DDC9984722FD1C5300651D89 /* NHAddWatermarkCommand.m in Sources */,
 				DD7520D522F5939900340C8D /* NHAVEditor.m in Sources */,
 				DD6EF97323025B9900F98868 /* NSData+NH.m in Sources */,
 				DDD9AA9A22F5271500A77702 /* AppDelegate.m in Sources */,
+				DDAAEF9A23039FA700B56F65 /* NHThread.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,7 +12,8 @@
 #import "NHMediaExportCommand.h"
 #import "NSDate+NH.h"
 #import "NHAVEditorHeader.h"
-
+#import "NHThread.h"
+#import "NHTimer.h"
 
 @interface NHAVEditor ()<NHMediaCommandProtocol>
 @property (nonatomic, copy  ) NSURL *audioUrl;
@@ -36,10 +37,13 @@
 @property (nonatomic, assign) NSString *exportPresetName;
 /** 视频导出的文件类型 default：AVFileTypeQuickTimeMovie */
 @property (nonatomic, copy  ) AVFileType outputFileType;
+@property (nonatomic, strong) NHThread *compositionThread;
+
 
 @end
 
 @implementation NHAVEditor
+static NSString *getProgressTimerFlg = @"getProgressTimerFlg";
 
 - (instancetype)init {
   self = [super init];
@@ -66,8 +70,8 @@
 #pragma mark - private method
 #pragma mark -
 - (void)initAvEditorConfig {
-  _compositionQueue = dispatch_queue_create("com.nh.av.editor", DISPATCH_QUEUE_SERIAL);
-
+  _compositionQueue = dispatch_queue_create("com.nh.av.editor.queue", DISPATCH_QUEUE_SERIAL);
+  _compositionThread = [[NHThread alloc] init];
   
 }
 
@@ -95,7 +99,10 @@
     self.mediaCommandCompletedBlock = completedBlock;
   }
   _waterMLayer = layer;
-  [self addWatermark:config];
+  __weak __typeof(self)ws = self;
+  [self.compositionThread executeTask:^{
+    [ws addWatermark:config];
+  }];
 }
 
 - (void)addAudioWithAudioURL:(NSURL *)audioURL customConfig:(void (^_Nullable)(NHAudioConfig * _Nonnull))customConfig completedBlock:(NHEditCompletedBlock)completedBlock {
@@ -109,7 +116,10 @@
     self.mediaCommandCompletedBlock = completedBlock;
   }
   _audioUrl = audioURL;
-  [self addAudio:config];
+  __weak __typeof(self)ws = self;
+  [self.compositionThread executeTask:^{
+    [ws addAudio:config];
+  }];
 }
 
 - (void)exportMediaWithOutputURL:(NSURL *_Nullable)outputURL
@@ -124,7 +134,12 @@
   if (completedBlock) {
     self.mediaCommandCompletedBlock = completedBlock;
   }
-  [self exportMedia:config];
+  
+  __weak __typeof(self)ws = self;
+  [self.compositionThread executeTask:^{
+    [ws exportMedia:config];
+  }];
+//  [self exportMedia:config];
 }
 
 - (void)addAudio:(NHAudioConfig *)config {
@@ -167,6 +182,18 @@
     [animationLayer addSublayer:_waterMLayer];
     
     _videoComposition.animationTool = [AVVideoCompositionCoreAnimationTool videoCompositionCoreAnimationToolWithPostProcessingAsVideoLayer:videoLayer inLayer:animationLayer];
+  }
+  
+  [NHTimer timerWithTimeInterval:1.0 start:0 target:self action:@selector(updateExportProgress) repeats:YES async:YES onlyFlag:getProgressTimerFlg];
+}
+
+- (void)updateExportProgress {
+  CGFloat progress = _exportCommand.exportSession.progress;
+  if (progress == 1.0) {
+    [NHTimer cancelTask:getProgressTimerFlg];
+  }
+  if (self.delegate && [self.delegate respondsToSelector:@selector(editorCompositioning:progress:)]) {
+    [self.delegate editorCompositioning:self progress:progress];
   }
 }
 
@@ -213,6 +240,7 @@
 }
 
 - (void)cancelComposition {
+  [NHTimer cancelTask:getProgressTimerFlg];
   [_exportCommand.exportSession cancelExport];
   _isCancelComposition = YES;
 }
@@ -251,6 +279,7 @@
   if (_mediaCommandCompletedBlock) {
     _mediaCommandCompletedBlock(outputURL, error);
   }
+  
   if (self.delegate && [self.delegate respondsToSelector:@selector(editorExportCompleted:outputURL:error:)]) {
     [self.delegate editorExportCompleted:self outputURL:outputURL error:error];
   }

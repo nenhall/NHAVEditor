@@ -11,6 +11,7 @@
 #import <MBProgressHUD+NHAdd.h>
 #import "NHAVEditor.h"
 #import "NHAVEditorHeader.h"
+#import <CoreImage/CoreImage.h>
 
 
 #define kMp3Path [[NSBundle mainBundle] pathForResource:@"黑龙-38度6" ofType:@"mp3"]
@@ -22,6 +23,7 @@
 @property (weak, nonatomic  ) IBOutlet UIButton *exportButton;
 @property (nonatomic, strong) NHAVEditor *mediaEditor;
 @property (nonatomic, strong) CALayer *watermarkLayer;
+@property (nonatomic, assign) BOOL isOpenAnimation;
 
 @end
 
@@ -32,8 +34,6 @@
 
   [_displayView setPlayUrl:[NSURL fileURLWithPath:kMp4Path]];
   
-  
-
 }
 
 #pragma mark - edit command
@@ -54,7 +54,7 @@
 }
 
 - (IBAction)exportAction:(UIButton *)sender {
-  [MBProgressHUD showLoadToView:self.view title:@"正在导出..."];
+  [MBProgressHUD showDownToView:self.view progressStyle:NHHUDProgressDeterminateHorizontalBar title:@"正在导出..." progress:nil];
   __weak __typeof(self)ws = self;
   [self.mediaEditor exportMediaWithOutputURL:nil customConfig:^(NHExporyConfig * _Nonnull config) {
     config.presetName = AVAssetExportPreset1280x720;
@@ -67,10 +67,15 @@
   }];
 }
 
+- (IBAction)watermarkSwitch:(UISwitch *)sender {
+  _isOpenAnimation = sender.on;
+}
+
 #pragma mark - NHAVEditorProtocol
 #pragma mark -
 - (void)editorCompositioning:(NHAVEditor *)editor progress:(CGFloat)progress {
   NHLog(@"合成进度:%.02f",progress);
+  [MBProgressHUD HUDForView:self.view].progress = progress;
 }
 
 - (void)editorCompositioned:(NHAVEditor *)editor outputURL:(NSURL *)outputURL error:(NSError *)error {
@@ -80,6 +85,7 @@
 - (void)editorExportCompleted:(NHAVEditor *)editor outputURL:(NSURL *)outputURL error:(NSError *)error {
   NHLog(@"导出完成:%@", outputURL);
   [_displayView setPlayUrl:outputURL];
+
 }
 
 
@@ -91,7 +97,9 @@
 
 - (CALayer *)watermarkLayer {
   _watermarkLayer = [CALayer layer];
-  _watermarkLayer.frame = CGRectMake(0, 0, [self logoImage].size.width, [self logoImage].size.height);
+  CGFloat x = _displayView.videoSize.width - [self logoImage].size.width;
+  CGFloat y = _displayView.videoSize.height - [self logoImage].size.height;
+  _watermarkLayer.frame = CGRectMake(x, 0, [self logoImage].size.width, [self logoImage].size.height);
  
   CALayer *imageLayer = [CALayer layer];
   imageLayer.frame = CGRectMake(0, 0, [self logoImage].size.width, [self logoImage].size.height);
@@ -99,15 +107,27 @@
   [_watermarkLayer addSublayer:imageLayer];
   
   CATextLayer *titleLayer = [CATextLayer layer];
-  titleLayer.string = @"38度6-黑龙";
-  titleLayer.fontSize = 18.0;
-  titleLayer.font = (__bridge CFTypeRef)@"PingFangSC-Regular";
-  titleLayer.foregroundColor = [UIColor whiteColor].CGColor;
-  titleLayer.shadowOpacity = 0.5;
-  titleLayer.alignmentMode = kCAAlignmentCenter;
   titleLayer.frame = CGRectMake(0, 0, 100, 100);
+  titleLayer.string = @"秀蛋科技";
+  titleLayer.fontSize = 20.0;
+  titleLayer.font = (__bridge CFTypeRef)@"PingFangSC-Regular";
+  titleLayer.foregroundColor = [UIColor orangeColor].CGColor;
+  titleLayer.shadowOpacity = 0.8;
+  titleLayer.shadowColor = [UIColor blackColor].CGColor;
+  titleLayer.shadowOffset = CGSizeMake(2.0, 2.0);
+  titleLayer.alignmentMode = kCAAlignmentCenter;
   [_watermarkLayer addSublayer:titleLayer];
 
+  if (_isOpenAnimation) {
+    CABasicAnimation *keyAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    keyAnimation.duration = 2.0;
+    keyAnimation.repeatCount = MAXFLOAT;
+    keyAnimation.toValue = @(M_PI * 2.0);
+    keyAnimation.beginTime = AVCoreAnimationBeginTimeAtZero;
+    keyAnimation.removedOnCompletion = NO;
+    [_watermarkLayer addAnimation:keyAnimation forKey:@"transform.rotation.z"];
+  }
+  
   return _watermarkLayer;
 }
 

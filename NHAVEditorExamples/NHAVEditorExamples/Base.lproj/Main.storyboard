@@ -102,15 +102,43 @@
                                     <constraint firstItem="TS4-dk-Mn2" firstAttribute="width" secondItem="ngR-pJ-UZK" secondAttribute="width" id="yMi-it-XtE"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dSD-ZK-Ygg">
+                                <rect key="frame" x="0.0" y="618" width="414" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="水印动效开关" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kR-Hh-9bs">
+                                        <rect key="frame" x="10" y="11.5" width="104" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Cob-rP-ptk">
+                                        <rect key="frame" x="119" y="6.5" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="watermarkSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="Icv-bg-fsm"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="UXw-iT-DPj"/>
+                                    <constraint firstItem="6kR-Hh-9bs" firstAttribute="centerY" secondItem="dSD-ZK-Ygg" secondAttribute="centerY" id="YbN-0x-s3M"/>
+                                    <constraint firstItem="6kR-Hh-9bs" firstAttribute="leading" secondItem="dSD-ZK-Ygg" secondAttribute="leading" constant="10" id="bgk-Wd-BAo"/>
+                                    <constraint firstItem="Cob-rP-ptk" firstAttribute="leading" secondItem="6kR-Hh-9bs" secondAttribute="trailing" constant="5" id="cUA-Io-cav"/>
+                                    <constraint firstItem="Cob-rP-ptk" firstAttribute="centerY" secondItem="dSD-ZK-Ygg" secondAttribute="centerY" id="hkq-OU-Cnh"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="fUg-l1-7vx" secondAttribute="trailing" id="Ggf-s3-Jtd"/>
+                            <constraint firstAttribute="trailing" secondItem="dSD-ZK-Ygg" secondAttribute="trailing" id="Kgx-bX-9De"/>
                             <constraint firstItem="FKL-Xk-G2M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RaJ-xj-Rxh"/>
+                            <constraint firstItem="FKL-Xk-G2M" firstAttribute="top" secondItem="dSD-ZK-Ygg" secondAttribute="bottom" constant="10" id="aHT-1l-Rpx"/>
                             <constraint firstItem="fUg-l1-7vx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="c9n-wM-BrU"/>
                             <constraint firstAttribute="trailing" secondItem="FKL-Xk-G2M" secondAttribute="trailing" id="cgu-6J-yQg"/>
                             <constraint firstItem="fUg-l1-7vx" firstAttribute="top" secondItem="VO1-ca-6Uf" secondAttribute="bottom" id="isd-5t-QvE"/>
                             <constraint firstItem="fUg-l1-7vx" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="9/16" id="l1w-gD-8gd"/>
+                            <constraint firstItem="dSD-ZK-Ygg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vdr-AV-p43"/>
                             <constraint firstItem="Sip-pJ-1bv" firstAttribute="top" secondItem="FKL-Xk-G2M" secondAttribute="bottom" id="yr4-QL-KTe"/>
                         </constraints>
                     </view>

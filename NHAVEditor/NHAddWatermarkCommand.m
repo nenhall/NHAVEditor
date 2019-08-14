@@ -7,6 +7,8 @@
 //
 
 #import "NHAddWatermarkCommand.h"
+#import <CoreImage/CoreImage.h>
+#import <UIKit/UIKit.h>
 
 @implementation NHAddWatermarkCommand
 
@@ -58,7 +60,17 @@
   if ([[self.mComposition tracksWithMediaType:AVMediaTypeVideo] count] != 0) {
     if (!self.mVideoComposition) {
       self.mVideoComposition = [AVMutableVideoComposition videoComposition];
-      self.mVideoComposition.frameDuration = CMTimeMake(1, 30); //fps
+      
+//      CIFilter *watermarkFilter = [CIFilter filterWithName:@"CISourceOverCompositing"];
+//      self.mVideoComposition = [AVMutableVideoComposition videoCompositionWithAsset:asset applyingCIFiltersWithHandler:^(AVAsynchronousCIImageFilteringRequest * _Nonnull request) {
+//        CIImage *watermarkImage = [[CIImage alloc] initWithCGImage:[UIImage imageNamed:@"logo"].CGImage];
+//        CIImage *source = request.sourceImage;
+//        [watermarkFilter setValue:source forKey:kCIInputBackgroundImageKey];
+//        [watermarkFilter setValue:[watermarkImage imageByApplyingTransform:CGAffineTransformMakeScale(source.extent.size.width/watermarkImage.extent.size.width, source.extent.size.height/watermarkImage.extent.size.height)] forKey:kCIInputImageKey];
+//        [request finishWithImage:watermarkFilter.outputImage context:nil];
+//      }];
+      
+      self.mVideoComposition.frameDuration = CMTimeMake(1, 25); //fps
       self.mVideoComposition.renderSize = assetVideoTrack.naturalSize;
       
       AVAssetTrack *videoTrack = [self.mComposition tracksWithMediaType:AVMediaTypeVideo].firstObject;
