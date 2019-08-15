@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)mediaCompositioning:(NHMediaCommand *)editor progress:(CGFloat)progress;
 
-- (void)mediaCompositioned:(NHMediaCommand *)editor outputURL:(NSURL *_Nullable)outputURL error:(NSError *_Nullable)error;
+- (void)mediaCompositioned:(NHMediaCommand *)editor error:(NSError *_Nullable)error;
 
 - (void)mediaExportCompleted:(NHMediaCommand *)editor outputURL:(NSURL *_Nullable)outputURL error:(NSError *_Nullable)error;
 

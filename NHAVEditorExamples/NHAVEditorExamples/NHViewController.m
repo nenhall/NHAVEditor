@@ -8,13 +8,17 @@
 
 #import "NHViewController.h"
 #import "NHDisplayView.h"
+#import <CoreImage/CoreImage.h>
 #import <MBProgressHUD+NHAdd.h>
 #import "NHAVEditor.h"
 #import "NHAVEditorHeader.h"
-#import <CoreImage/CoreImage.h>
+#import "NHGifWriter.h"
+#import "NHMediaWriter.h"
+#import "NHCaptureViewController.h"
 
 
 #define kMp3Path [[NSBundle mainBundle] pathForResource:@"黑龙-38度6" ofType:@"mp3"]
+#define kMp3Path2 [[NSBundle mainBundle] pathForResource:@"一生有你-赵海洋" ofType:@"mp3"]
 #define kMp4Path [[NSBundle mainBundle] pathForResource:@"Бамбинтон-Зая" ofType:@"mp4"]
 
 
@@ -24,6 +28,8 @@
 @property (nonatomic, strong) NHAVEditor *mediaEditor;
 @property (nonatomic, strong) CALayer *watermarkLayer;
 @property (nonatomic, assign) BOOL isOpenAnimation;
+@property (nonatomic, strong) NHGifWriter *gifWriter;
+@property (nonatomic, strong) NHMediaWriter *mediaWriter;
 
 @end
 
@@ -36,40 +42,88 @@
   
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+  [super viewWillDisappear:animated];
+  
+  // 这部份代码未做整理，参考其使用方法就可以
+  NHCaptureViewController *capture = (NHCaptureViewController *)[self presentedViewController];
+  if ([capture isKindOfClass:[NHCaptureViewController class]]) {
+    __weak __typeof(self)ws = self;
+    [capture setDidStopCapture:^(BOOL stop) {
+      if (stop) {
+        // 完成写入
+        [ws.mediaWriter finishWriteWithCompletionHandler:^(NSURL * _Nonnull fileUrl) {
+          NHLog(@"%@",fileUrl);
+          if (fileUrl) {
+            [ws.displayView setPlayUrl:fileUrl];
+            [ws.mediaEditor resetCompositionBeforeRestarting];
+            [ws.mediaEditor setInputVideoURL:fileUrl];
+          }
+        }];
+      } else {
+        // 准备写入，保存的文件格式，请与当`fileType`对应
+        [ws.mediaWriter prepareBuildMediaWithOutpurUrl:[ws OutUrl:@"mov"]];
+//        [ws.mediaWriter beginBuildMediaWithOutpurUrl:[ws OutUrl:@"acc"]];
+      }
+    }];
+    
+    [capture setDidOutputBuffer:^(CMSampleBufferRef  _Nonnull bufferRef) {
+        CMFormatDescriptionRef des = CMSampleBufferGetFormatDescription(bufferRef);
+        CMMediaType mediaType = CMFormatDescriptionGetMediaType(des);
+      // 写入音/视频数据，暂不支持同时写入
+      if (mediaType == kCMMediaType_Audio) {
+//        [ws.mediaWriter appendAudioSampleBuffer:bufferRef];
+      } else {
+        [ws.mediaWriter appendVideoSampleBuffer:bufferRef];
+      }
+    }];
+  }
+}
+
 #pragma mark - edit command
 #pragma mark -
 - (IBAction)addWatermarkAction:(UIButton *)sender {
-  [self.mediaEditor addWatermarkWithLayer:self.watermarkLayer customConfig:nil completedBlock:^(NSURL * _Nullable outputURL, NSError * _Nullable error) {
-    NHLog(@"合成完成:%@", outputURL);
-  }];
+  [_displayView pause];
+  [MBProgressHUD showLoadToView:self.view title:@"正在添加水印..."];
+  [self.mediaEditor addWatermarkWithLayer:self.watermarkLayer customConfig:nil completedBlock:nil];
 }
 
 - (IBAction)addMusicAction:(UIButton *)sender {
-  [self.mediaEditor addAudioWithAudioURL:[NSURL fileURLWithPath:kMp3Path] customConfig:^(NHAudioConfig * _Nonnull config) {
+  [_displayView pause];
+  [MBProgressHUD showLoadToView:self.view title:@"正在添加音乐..."];
+  
+  static int index = 0;
+  NSURL *url = [NSURL fileURLWithPath:kMp3Path];
+  if (index == 1) {
+     url = [NSURL fileURLWithPath:kMp3Path2];
+  }
+  index +=1;
+  
+  [self.mediaEditor addAudioWithAudioURL:url customConfig:^(NHAudioConfig * _Nonnull config) {
     config.startVolume = -1.0;
     config.endVolume = 1.0;
-  } completedBlock:^(NSURL * _Nullable outputURL, NSError * _Nullable error) {
-    NHLog(@"合成完成:%@", outputURL);
-  }];
+  } completedBlock:nil];
 }
 
 - (IBAction)exportAction:(UIButton *)sender {
+  [_displayView pause];
+
   [MBProgressHUD showDownToView:self.view progressStyle:NHHUDProgressDeterminateHorizontalBar title:@"正在导出..." progress:nil];
-  __weak __typeof(self)ws = self;
+
   [self.mediaEditor exportMediaWithOutputURL:nil customConfig:^(NHExporyConfig * _Nonnull config) {
     config.presetName = AVAssetExportPreset1280x720;
     config.outputFileType = AVFileTypeQuickTimeMovie;
-  } completedBlock:^(NSURL * _Nullable outputURL, NSError * _Nullable error) {
-    NSLog(@"合成完成:%@", outputURL);
-    dispatch_async(dispatch_get_main_queue(), ^{
-      [MBProgressHUD hideHUDForView:ws.view];
-    });
-  }];
+  } completedBlock:nil];
 }
 
 - (IBAction)watermarkSwitch:(UISwitch *)sender {
   _isOpenAnimation = sender.on;
 }
+
+- (IBAction)resetAVEditor:(UIButton *)sender {
+  [_mediaEditor resetCompositionBeforeRestarting];
+}
+
 
 #pragma mark - NHAVEditorProtocol
 #pragma mark -
@@ -78,14 +132,22 @@
   [MBProgressHUD HUDForView:self.view].progress = progress;
 }
 
-- (void)editorCompositioned:(NHAVEditor *)editor outputURL:(NSURL *)outputURL error:(NSError *)error {
-  NHLog(@"合成完成:%@", outputURL);
+- (void)editorCompositioned:(NHAVEditor *)editor error:(NSError *)error {
+  NHLog(@"合成完成，Error:%@",error.localizedDescription);
+  [[MBProgressHUD HUDForView:self.view] hideAnimated:YES afterDelay:1.0];
 }
 
 - (void)editorExportCompleted:(NHAVEditor *)editor outputURL:(NSURL *)outputURL error:(NSError *)error {
   NHLog(@"导出完成:%@", outputURL);
   [_displayView setPlayUrl:outputURL];
-
+  
+  dispatch_async(dispatch_get_main_queue(), ^{
+    [MBProgressHUD hideHUDForView:self.view];
+  });
+  
+  [self.gifWriter buildGifFromVideo:outputURL timeInterval:@(600) completion:^(NSURL * _Nullable url, NSError * _Nullable error) {
+    NHLog(@"GIF生成完成:%@", url);
+  }];
 }
 
 
@@ -98,7 +160,7 @@
 - (CALayer *)watermarkLayer {
   _watermarkLayer = [CALayer layer];
   CGFloat x = _displayView.videoSize.width - [self logoImage].size.width;
-  CGFloat y = _displayView.videoSize.height - [self logoImage].size.height;
+//  CGFloat y = _displayView.videoSize.height - [self logoImage].size.height;
   _watermarkLayer.frame = CGRectMake(x, 0, [self logoImage].size.width, [self logoImage].size.height);
  
   CALayer *imageLayer = [CALayer layer];
@@ -137,6 +199,19 @@
   return _watermarkLayer;
 }
 
+- (NSURL *)OutUrl:(NSString *)ext {
+  NSDate *datenow = [NSDate date];//现在时间,你可以输出来看下是什么格式
+  NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+  [formatter setDateFormat:@"yyyyMMddHHmmssSS"];
+  [formatter setTimeZone:[NSTimeZone timeZoneWithName:@"Asia/Beijing"]];
+  NSString *dateString = [formatter stringFromDate: datenow];
+  NSString *name = [NSString stringWithFormat:@"%@.%@",dateString,ext];
+  NSString *path = [NSTemporaryDirectory() stringByAppendingPathComponent:name];
+  NSURL *url = [NSURL fileURLWithPath:path];
+  [[NSFileManager defaultManager] removeItemAtURL:url error:nil];
+  return url;
+}
+
 - (NHAVEditor *)mediaEditor {
   if (!_mediaEditor) {
     _mediaEditor = [[NHAVEditor alloc] initWithVideoURL:[NSURL fileURLWithPath:kMp4Path]];
@@ -145,5 +220,20 @@
   return _mediaEditor;
 }
 
+- (NHGifWriter *)gifWriter {
+  if (!_gifWriter) {
+    _gifWriter = [[NHGifWriter alloc] initWithOutputURL:nil];
+    _gifWriter.loopCount = 0;
+    _gifWriter.delayTime = 0.1;
+  }
+  return _gifWriter;
+}
+
+- (NHMediaWriter *)mediaWriter {
+  if (!_mediaWriter) {
+    _mediaWriter = [NHMediaWriter mediaWithVideoSize:_displayView.videoSize fileType:AVFileTypeQuickTimeMovie];
+  }
+  return _mediaWriter;
+}
 
 @end

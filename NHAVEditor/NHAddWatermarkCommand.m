@@ -100,8 +100,8 @@
   }
   
   // Step 3
-  if (self.delegate && [self.delegate respondsToSelector:@selector(mediaCompositioned:outputURL:error:)]) {
-    [self.delegate mediaCompositioned:self outputURL:nil error:error];
+  if (self.delegate && [self.delegate respondsToSelector:@selector(mediaCompositioned:error:)]) {
+    [self.delegate mediaCompositioned:self error:error];
   }
   
 }

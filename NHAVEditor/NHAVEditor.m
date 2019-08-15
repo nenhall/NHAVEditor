@@ -33,6 +33,8 @@
 @property (nonatomic, strong) NHAddWatermarkCommand *watermarkCommand;
 @property (nonatomic, strong) NHMediaExportCommand *exportCommand;
 @property (nonatomic, copy  ) NHEditCompletedBlock mediaCommandCompletedBlock;
+@property (nonatomic, copy  ) NHEditExportedBlock mediaExportCompletedBlock;
+
 /** 视频导出质量 default：AVAssetExportPreset1280x720 */
 @property (nonatomic, assign) NSString *exportPresetName;
 /** 视频导出的文件类型 default：AVFileTypeQuickTimeMovie */
@@ -124,7 +126,7 @@ static NSString *getProgressTimerFlg = @"getProgressTimerFlg";
 
 - (void)exportMediaWithOutputURL:(NSURL *_Nullable)outputURL
                     customConfig:(void(^_Nullable)(NHExporyConfig *config))customConfig
-                  completedBlock:(NHEditCompletedBlock)completedBlock {
+                  completedBlock:(NHEditExportedBlock)completedBlock {
   [self setOutputURL:outputURL];
   NHExporyConfig *config = nil;
   if (customConfig) {
@@ -132,7 +134,7 @@ static NSString *getProgressTimerFlg = @"getProgressTimerFlg";
     customConfig(config);
   }
   if (completedBlock) {
-    self.mediaCommandCompletedBlock = completedBlock;
+    self.mediaExportCompletedBlock = completedBlock;
   }
   
   __weak __typeof(self)ws = self;
@@ -192,9 +194,11 @@ static NSString *getProgressTimerFlg = @"getProgressTimerFlg";
   if (progress == 1.0) {
     [NHTimer cancelTask:getProgressTimerFlg];
   }
-  if (self.delegate && [self.delegate respondsToSelector:@selector(editorCompositioning:progress:)]) {
-    [self.delegate editorCompositioning:self progress:progress];
-  }
+  nh_editor_safe_do_mainQ(^{
+    if (self.delegate && [self.delegate respondsToSelector:@selector(editorCompositioning:progress:)]) {
+      [self.delegate editorCompositioning:self progress:progress];
+    }
+  });
 }
 
 - (void)exportMedia:(NHExporyConfig *)config {
@@ -223,20 +227,24 @@ static NSString *getProgressTimerFlg = @"getProgressTimerFlg";
  */
 - (BOOL)checkInputAsset {
   if (!_vInputAsset) {
-    if (self.delegate && [self.delegate respondsToSelector:@selector(editorCompositioned:outputURL:error:)]) {
-      NSError *error = NH_ERROR(400, ERR_INFO(@"输入源为空，请确认你的视频输入地址", nil, nil));
-      [self.delegate editorCompositioned:self outputURL:_outputURL error:error];
-    }
+    nh_editor_safe_do_mainQ(^{
+      if (self.delegate && [self.delegate respondsToSelector:@selector(editorCompositioned:error:)]) {
+        NSError *error = NH_ERROR(400, ERR_INFO(@"输入源为空，请确认你的视频输入地址", nil, nil));
+        [self.delegate editorCompositioned:self error:error];
+      }
+    });
     return NO;
   }
   return YES;
 }
 
-- (void)resetBeforeRestartingComposition {
-  self.composition = nil;
-  self.videoComposition = nil;
-  self.audioMix = nil;
-  self.currentProgress = 0.0;
+- (void)resetCompositionBeforeRestarting {
+  if (!_isCompositioning) {
+    self.composition = nil;
+    self.videoComposition = nil;
+    self.audioMix = nil;
+    self.currentProgress = 0.0;
+  }
 }
 
 - (void)cancelComposition {
@@ -253,36 +261,42 @@ static NSString *getProgressTimerFlg = @"getProgressTimerFlg";
   self.composition = editor.mComposition;
   self.videoComposition = editor.mVideoComposition;
   self.currentProgress = progress;
-  if (self.delegate && [self.delegate respondsToSelector:@selector(editorCompositioning:progress:)]) {
-    [self.delegate editorCompositioning:self progress:progress];
-  }
+  nh_editor_safe_do_mainQ(^{
+    if (self.delegate && [self.delegate respondsToSelector:@selector(editorCompositioning:progress:)]) {
+      [self.delegate editorCompositioning:self progress:progress];
+    }
+  });
 }
 
-- (void)mediaCompositioned:(NHMediaCommand *)editor outputURL:(NSURL *)outputURL error:(NSError *)error {
+- (void)mediaCompositioned:(NHMediaCommand *)editor error:(NSError *)error {
   self.audioMix = editor.mAudioMix;
   self.composition = editor.mComposition;
   self.videoComposition = editor.mVideoComposition;
   
   if (_mediaCommandCompletedBlock) {
-    _mediaCommandCompletedBlock(outputURL, error);
+    _mediaCommandCompletedBlock(error);
   }
-  if (self.delegate && [self.delegate respondsToSelector:@selector(editorCompositioned:outputURL:error:)]) {
-    [self.delegate editorCompositioned:self outputURL:outputURL error:error];
-  }
+  nh_editor_safe_do_mainQ(^{
+    if (self.delegate && [self.delegate respondsToSelector:@selector(editorCompositioned:error:)]) {
+      [self.delegate editorCompositioned:self error:error];
+    }
+  });
 }
 
 - (void)mediaExportCompleted:(NHMediaCommand *)editor outputURL:(NSURL *)outputURL error:(NSError *)error {
   self.audioMix = editor.mAudioMix;
   self.composition = editor.mComposition;
   self.videoComposition = editor.mVideoComposition;
+  self.waterMLayer = nil;
   
-  if (_mediaCommandCompletedBlock) {
-    _mediaCommandCompletedBlock(outputURL, error);
+  if (_mediaExportCompletedBlock) {
+    _mediaExportCompletedBlock(outputURL, error);
   }
-  
-  if (self.delegate && [self.delegate respondsToSelector:@selector(editorExportCompleted:outputURL:error:)]) {
-    [self.delegate editorExportCompleted:self outputURL:outputURL error:error];
-  }
+  nh_editor_safe_do_mainQ(^{
+    if (self.delegate && [self.delegate respondsToSelector:@selector(editorExportCompleted:outputURL:error:)]) {
+      [self.delegate editorExportCompleted:self outputURL:outputURL error:error];
+    }
+  });
 }
 
 

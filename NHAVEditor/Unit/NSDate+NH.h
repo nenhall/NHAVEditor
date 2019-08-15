@@ -12,8 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSDate (NH)
 
-//获取当前时间 （以毫秒为单位）
-//返回值格式:2019-04-19 10:33:35.886
+/**
+ 获取当前时间 （以毫秒为单位）
+
+ @return 返回值格式:2019-04-19 10:33:35.886
+ */
 + (NSString *)getNowTimeTimestamp;
 
 @end

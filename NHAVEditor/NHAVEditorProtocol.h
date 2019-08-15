@@ -23,7 +23,7 @@ typedef NS_ENUM(NSUInteger, NHAVEditorType) {
 
 - (void)editorCompositioning:(NHAVEditor *)editor progress:(CGFloat)progress;
 
-- (void)editorCompositioned:(NHAVEditor *)editor outputURL:(NSURL *_Nullable)outputURL error:(NSError *_Nullable)error;
+- (void)editorCompositioned:(NHAVEditor *)editor error:(NSError *_Nullable)error;
 
 - (void)editorExportCompleted:(NHAVEditor *)editor outputURL:(NSURL *_Nullable)outputURL error:(NSError *_Nullable)error;
 

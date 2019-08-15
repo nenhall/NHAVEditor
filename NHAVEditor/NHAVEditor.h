@@ -15,7 +15,8 @@
 NS_ASSUME_NONNULL_BEGIN
 @class NHAddAudioCommand;
 
-typedef void(^_Nullable NHEditCompletedBlock)(NSURL *_Nullable outputURL, NSError *_Nullable error);
+typedef void(^_Nullable NHEditCompletedBlock)(NSError *_Nullable error);
+typedef void(^_Nullable NHEditExportedBlock)(NSURL *_Nullable outputURL, NSError *_Nullable error);
 
 @interface NHAVEditor : NSObject
 @property (nonatomic, weak) id<NHAVEditorProtocol> delegate;
@@ -82,12 +83,12 @@ typedef void(^_Nullable NHEditCompletedBlock)(NSURL *_Nullable outputURL, NSErro
  */
 - (void)exportMediaWithOutputURL:(NSURL *_Nullable)outputURL
                     customConfig:(void(^_Nullable)(NHExporyConfig *config))customConfig
-                  completedBlock:(NHEditCompletedBlock)completedBlock;
+                  completedBlock:(NHEditExportedBlock)completedBlock;
 
 /**
- 每重新开始合成前，都需要调用下此方法，用于重置历史的水印和音频信息
+ 每重新合成新视频前，都需要调用下此方法，用于清空历史的水印、音频信息，正在合成时调用无效
  */
-- (void)resetBeforeRestartingComposition;
+- (void)resetCompositionBeforeRestarting;
 
 /**
  取消合成

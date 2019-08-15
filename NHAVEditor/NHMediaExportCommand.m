@@ -28,9 +28,9 @@
 - (void)performWithAsset:(AVAsset *)asset {
   // check outputURL
   if (![self outputURL]) {
-    if (self.delegate && [self.delegate respondsToSelector:@selector(mediaCompositioned:outputURL:error:)]) {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(mediaCompositioned:error:)]) {
       NSError *error = NH_ERROR(400, ERR_INFO(@"导出地址不能为空", nil, nil));
-      [self.delegate mediaCompositioned:self outputURL:nil error:error];
+      [self.delegate mediaCompositioned:self error:error];
     }
     return;
   }
@@ -57,38 +57,38 @@
         }
         break;
         
+      case AVAssetExportSessionStatusUnknown:
+        NHLog(@"导出状态未知：(AVAssetExportSessionStatusUnknown) - %@",ws.exportSession.error.localizedDescription);
+        if (ws.delegate && [ws.delegate respondsToSelector:@selector(mediaCompositioning:progress:)]) {
+          [ws.delegate mediaCompositioning:ws progress:ws.exportSession.progress];
+        }
+        break;
+        
+      case AVAssetExportSessionStatusWaiting:
+        NHLog(@"等待导出：%f",ws.exportSession.progress);
+        if (ws.delegate && [ws.delegate respondsToSelector:@selector(mediaCompositioning:progress:)]) {
+          [ws.delegate mediaCompositioning:ws progress:ws.exportSession.progress];
+        }
+        break;
+        
       case AVAssetExportSessionStatusCompleted:
         NHLog(@"导出完成");
-        if (ws.delegate && [ws.delegate respondsToSelector:@selector(mediaCompositioned:outputURL:error:)]) {
+        if (ws.delegate && [ws.delegate respondsToSelector:@selector(mediaExportCompleted:outputURL:error:)]) {
           [ws.delegate mediaExportCompleted:ws outputURL:ws.outputURL error:ws.exportSession.error];
         }
         break;
         
       case AVAssetExportSessionStatusFailed:
         NHLog(@"导出失败：(AVAssetExportSessionStatusFailed)%@",ws.exportSession.error.localizedDescription);
-        if (ws.delegate && [ws.delegate respondsToSelector:@selector(mediaCompositioned:outputURL:error:)]) {
-          [ws.delegate mediaCompositioned:ws outputURL:ws.outputURL error:ws.exportSession.error];
-        }
-        break;
-        
-      case AVAssetExportSessionStatusUnknown:
-        NHLog(@"导出失败：(AVAssetExportSessionStatusUnknown) - %@",ws.exportSession.error.localizedDescription);
-        if (ws.delegate && [ws.delegate respondsToSelector:@selector(mediaCompositioned:outputURL:error:)]) {
-          [ws.delegate mediaCompositioned:ws outputURL:ws.outputURL error:ws.exportSession.error];
-        }
-        break;
-        
-      case AVAssetExportSessionStatusWaiting:
-        NHLog(@"等待导出：%f",ws.exportSession.progress);
-        if (ws.delegate && [ws.delegate respondsToSelector:@selector(mediaCompositioned:outputURL:error:)]) {
-          [ws.delegate mediaCompositioned:ws outputURL:ws.outputURL error:ws.exportSession.error];
+        if (ws.delegate && [ws.delegate respondsToSelector:@selector(mediaExportCompleted:outputURL:error:)]) {
+          [ws.delegate mediaExportCompleted:ws outputURL:ws.outputURL error:ws.exportSession.error];
         }
         break;
         
       case AVAssetExportSessionStatusCancelled:
         NHLog(@"导出取消：%@",ws.exportSession.error.localizedDescription);
-        if (ws.delegate && [ws.delegate respondsToSelector:@selector(mediaCompositioned:outputURL:error:)]) {
-          [ws.delegate mediaCompositioned:ws outputURL:ws.outputURL error:ws.exportSession.error];
+        if (ws.delegate && [ws.delegate respondsToSelector:@selector(mediaExportCompleted:outputURL:error:)]) {
+          [ws.delegate mediaExportCompleted:ws outputURL:ws.outputURL error:ws.exportSession.error];
         }
         break;
     }

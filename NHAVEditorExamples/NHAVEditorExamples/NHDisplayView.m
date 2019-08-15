@@ -51,22 +51,23 @@
   
   __weak __typeof(self)ws = self;
   [_asset loadValuesAsynchronouslyForKeys:loadkeys completionHandler:^{
-   AVPlayerItem *newPlayItem = [[AVPlayerItem alloc] initWithAsset:ws.asset automaticallyLoadedAssetKeys:assetKeys];
-    ws.currentPlayItem = newPlayItem;
-    
-    if (!ws.player) {
-      ws.player = [[AVPlayer alloc] initWithPlayerItem:ws.currentPlayItem];
-      AVPlayerLayer *playerLayer = [AVPlayerLayer playerLayerWithPlayer:ws.player];
-      playerLayer.frame = self.bounds;
-      [self.layer addSublayer:playerLayer];
-      ws.playerLayer = playerLayer;
-    } else {
-      [ws.player replaceCurrentItemWithPlayerItem:newPlayItem];
+    dispatch_sync(dispatch_get_main_queue(), ^{
+      AVPlayerItem *newPlayItem = [[AVPlayerItem alloc] initWithAsset:ws.asset automaticallyLoadedAssetKeys:assetKeys];
+      ws.currentPlayItem = newPlayItem;
+      if (!ws.player) {
+        ws.player = [[AVPlayer alloc] initWithPlayerItem:ws.currentPlayItem];
+        AVPlayerLayer *playerLayer = [AVPlayerLayer playerLayerWithPlayer:ws.player];
+        playerLayer.frame = ws.bounds;
+        ws.playerLayer = playerLayer;
+        [ws.layer addSublayer:playerLayer];
+      } else {
+        [ws.player replaceCurrentItemWithPlayerItem:newPlayItem];
+      }
       if (@available(iOS 10.0, *)) {
         [ws.player reasonForWaitingToPlay];
       }
-    }
-    
+    });
+
     for (AVAssetTrack *track in ws.asset.tracks) {
       if ([track.mediaType isEqualToString:AVMediaTypeVideo]) {
         ws.videoSize = track.naturalSize;
@@ -101,6 +102,13 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
   self.playButton.hidden = !self.playButton.hidden;
   
+}
+
+- (void)layoutSubviews {
+  [super layoutSubviews];
+  
+  _playerLayer.frame = self.bounds;
+
 }
 
 @end

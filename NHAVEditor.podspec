@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
                    DESC
 
   spec.homepage     = "https://github.com/nenhall/NHAVEditor"
-  # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
+  spec.screenshots  = "https://github.com/nenhall/NHAVEditor/blob/master/preview.gif"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -38,28 +38,13 @@ Pod::Spec.new do |spec|
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  spec.source_files  = "NHAVEditor", "NHAVEditor/**/*.{h,m}"
+  spec.source_files  = "NHAVEditor/*.{h,m}", "NHAVEditor/Unit/*.{h,m}"
   # spec.exclude_files = "Classes/Exclude"
-
   # spec.public_header_files = "Classes/**/*.h"
 
 
-  # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  # spec.resource  = "icon.png"
-  # spec.resources = "Resources/*.png"
-  # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
-
-
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  # spec.framework  = "SomeFramework"
-   spec.frameworks = "AVFoundation"
-  # spec.library   = "iconv"
-  # spec.libraries = "iconv", "xml2"
+   spec.frameworks = ["AVFoundation", "ImageIO", "CoreServices", "UIKit"]
 
-
-  # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  # spec.requires_arc = true
-  # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
 
 end
