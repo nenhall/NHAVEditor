@@ -119,7 +119,7 @@
 		2B9A7CAE284EFF8A1ACFE705338A2B6F /* NHThread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NHThread.h; sourceTree = "<group>"; };
 		2C7E3E4552104B9CDE05D39941C184EB /* NHPicture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHPicture.h; path = NHAVEditor/NHPicture.h; sourceTree = "<group>"; };
 		36520A22A8DA21157F8C2CA24EB2C6AD /* NHMediaCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHMediaCommand.h; path = NHAVEditor/NHMediaCommand.h; sourceTree = "<group>"; };
-		3DD6F135A3EBABB758DE22733E9D5C9C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		3DD6F135A3EBABB758DE22733E9D5C9C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		421E5E4056C335E07FBB69E03A3313C1 /* Pods-NHAVEditorExamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NHAVEditorExamples.debug.xcconfig"; sourceTree = "<group>"; };
 		4503DDF1081228A83B49F44B9AEE457F /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		4B7D6A3FDDD4E509F05017D65386241F /* NHHUDExtend-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NHHUDExtend-umbrella.h"; sourceTree = "<group>"; };
@@ -128,22 +128,22 @@
 		5492CD27487E6F5AEC22868C08631B94 /* NHHUDExtend-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NHHUDExtend-prefix.pch"; sourceTree = "<group>"; };
 		59D02BA9EDA3B56092760444FFAC67CE /* NSDate+NH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDate+NH.h"; sourceTree = "<group>"; };
 		5B1923F401559A2974962788D0789CAD /* MBProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MBProgressHUD-Info.plist"; sourceTree = "<group>"; };
-		60AC904D4F06298CCF712ABE940FD78E /* NHHUDExtend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NHHUDExtend.framework; path = NHHUDExtend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60AC904D4F06298CCF712ABE940FD78E /* NHHUDExtend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NHHUDExtend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66E8E9D9CAA096AC2DB0EC5BAC792173 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
 		71C19B30E3EDDEE3D479DF95D86904D7 /* NHAddAudioCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHAddAudioCommand.h; path = NHAVEditor/NHAddAudioCommand.h; sourceTree = "<group>"; };
 		72E381CEC53440E1DB542CBFE38FF340 /* NHMediaWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHMediaWriter.h; path = NHAVEditor/NHMediaWriter.h; sourceTree = "<group>"; };
-		74B41548950088BB739D91E0448D4EFD /* NHAVEditor.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = NHAVEditor.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		74B41548950088BB739D91E0448D4EFD /* NHAVEditor.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = NHAVEditor.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		80CE2EA23766F2B28E8726EEE9A6DDF7 /* NHAVEditorHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHAVEditorHeader.h; path = NHAVEditor/NHAVEditorHeader.h; sourceTree = "<group>"; };
 		858251631BDB7A718F6BD06F8A59F943 /* NHAVEditor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHAVEditor.m; path = NHAVEditor/NHAVEditor.m; sourceTree = "<group>"; };
 		89D4EC2D056F4F0B6AB88021BCB2A87E /* Pods-NHAVEditorExamples-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NHAVEditorExamples-umbrella.h"; sourceTree = "<group>"; };
-		8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FADC6D5FE9FDD6A3695DD0D93B914B0 /* Pods-NHAVEditorExamples-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NHAVEditorExamples-frameworks.sh"; sourceTree = "<group>"; };
 		905696B5C60043147F6174C41AC5E6B3 /* NHAddAudioCommand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHAddAudioCommand.m; path = NHAVEditor/NHAddAudioCommand.m; sourceTree = "<group>"; };
 		91AC0706D27FBB69B8B690A894DC0107 /* NHAVEditorDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NHAVEditorDefine.h; sourceTree = "<group>"; };
-		9299E8E0FA7BE92C365911A8452F1B76 /* Pods_NHAVEditorExamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NHAVEditorExamples.framework; path = "Pods-NHAVEditorExamples.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9299E8E0FA7BE92C365911A8452F1B76 /* Pods_NHAVEditorExamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NHAVEditorExamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9350395113DFB94B9806058FCE9F65DA /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		94707C8482FD4807DD1D3D684753D743 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E7BDBFEA16DCC440B8061946FDB90DA /* NSData+NH.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+NH.m"; sourceTree = "<group>"; };
 		9F51857C0B693E04D0595363EA333802 /* NHThread.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NHThread.m; sourceTree = "<group>"; };
 		9F97E1B4AB887514688509011FCB6F76 /* NHHUDExtend.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NHHUDExtend.modulemap; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 		AD4AD555402A70E2A43578DF5A81844B /* NHAddWatermarkCommand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHAddWatermarkCommand.m; path = NHAVEditor/NHAddWatermarkCommand.m; sourceTree = "<group>"; };
 		AD9D8C330DB096CC35C57620F955F7CF /* NHTimer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NHTimer.h; sourceTree = "<group>"; };
 		B087A399AF91ECC1C42E709C10A86526 /* NHAVEditor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NHAVEditor-dummy.m"; sourceTree = "<group>"; };
-		B77A72048AF47B71D2F74F4C0BB2A6D1 /* NHAVEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NHAVEditor.framework; path = NHAVEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B77A72048AF47B71D2F74F4C0BB2A6D1 /* NHAVEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NHAVEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCC7021F186B24F2C00A634D6477E968 /* NSDate+NH.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDate+NH.m"; sourceTree = "<group>"; };
 		BF9440A203D5463D9F7755164BB535C1 /* NHAddWatermarkCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHAddWatermarkCommand.h; path = NHAVEditor/NHAddWatermarkCommand.h; sourceTree = "<group>"; };
 		C3E3BC2BCCCABBB592D1D6DCE2705003 /* NHMediaConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NHMediaConfig.h; sourceTree = "<group>"; };
@@ -169,7 +169,7 @@
 		D44C8E9D5E0FBC5CD483694CFBDFB4C4 /* NSData+NH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+NH.h"; sourceTree = "<group>"; };
 		D59B7D9A5E3E311C6D43BFCC4FB2C138 /* NHMediaCommandProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHMediaCommandProtocol.h; path = NHAVEditor/NHMediaCommandProtocol.h; sourceTree = "<group>"; };
 		DE8792F734BE6F078747F5C15632B7B7 /* MBProgressHUD+NHAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MBProgressHUD+NHAdd.h"; path = "NHHUDExtend/MBProgressHUD+NHAdd.h"; sourceTree = "<group>"; };
-		E0E837D74F709420E786BED613F179C7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		E0E837D74F709420E786BED613F179C7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		E283E77FA28CE8CD076A88C6BCC1E492 /* NHHUDExtend.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NHHUDExtend.xcconfig; sourceTree = "<group>"; };
 		E94D36B452DB0CA4D24F2B72A5E365C6 /* NHHUDExtend-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NHHUDExtend-dummy.m"; sourceTree = "<group>"; };
 		EB3B3D35586F4C6371611D92836746B9 /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
@@ -294,23 +294,23 @@
 		7F02D41DB9740E2EADD7DEC887D7A2AE /* NHAVEditor */ = {
 			isa = PBXGroup;
 			children = (
-				71C19B30E3EDDEE3D479DF95D86904D7 /* NHAddAudioCommand.h */,
-				905696B5C60043147F6174C41AC5E6B3 /* NHAddAudioCommand.m */,
-				BF9440A203D5463D9F7755164BB535C1 /* NHAddWatermarkCommand.h */,
-				AD4AD555402A70E2A43578DF5A81844B /* NHAddWatermarkCommand.m */,
+				80CE2EA23766F2B28E8726EEE9A6DDF7 /* NHAVEditorHeader.h */,
 				C8F73ED49AF0113344E0D68EA58236C5 /* NHAVEditor.h */,
 				858251631BDB7A718F6BD06F8A59F943 /* NHAVEditor.m */,
-				80CE2EA23766F2B28E8726EEE9A6DDF7 /* NHAVEditorHeader.h */,
-				C6F7CCEE6F2313EB21D3273E6B8B2702 /* NHAVEditorProtocol.h */,
-				FF98BE6B504ECB58356C5F28EF8EA944 /* NHGifWriter.h */,
-				1C175F8A1E07238B6FA5992BA90FB5E8 /* NHGifWriter.m */,
 				36520A22A8DA21157F8C2CA24EB2C6AD /* NHMediaCommand.h */,
 				2363BA1733DAF2855F9CEE8498C69C60 /* NHMediaCommand.m */,
-				D59B7D9A5E3E311C6D43BFCC4FB2C138 /* NHMediaCommandProtocol.h */,
+				71C19B30E3EDDEE3D479DF95D86904D7 /* NHAddAudioCommand.h */,
+				905696B5C60043147F6174C41AC5E6B3 /* NHAddAudioCommand.m */,
 				1DA65F3A11D1A70638F53841802BF94E /* NHMediaExportCommand.h */,
 				07211818A525AD3C884B0BF307FE54C4 /* NHMediaExportCommand.m */,
+				BF9440A203D5463D9F7755164BB535C1 /* NHAddWatermarkCommand.h */,
+				AD4AD555402A70E2A43578DF5A81844B /* NHAddWatermarkCommand.m */,
+				D59B7D9A5E3E311C6D43BFCC4FB2C138 /* NHMediaCommandProtocol.h */,
+				C6F7CCEE6F2313EB21D3273E6B8B2702 /* NHAVEditorProtocol.h */,
 				72E381CEC53440E1DB542CBFE38FF340 /* NHMediaWriter.h */,
 				22460AE1144D7CD45862FC4DA98ABE2D /* NHMediaWriter.m */,
+				FF98BE6B504ECB58356C5F28EF8EA944 /* NHGifWriter.h */,
+				1C175F8A1E07238B6FA5992BA90FB5E8 /* NHGifWriter.m */,
 				2C7E3E4552104B9CDE05D39941C184EB /* NHPicture.h */,
 				A152BB05AA8382C29EB3C94DC2DBD31A /* NHPicture.m */,
 				997F4506568A30AA05CC36696F147D68 /* Pod */,
@@ -353,7 +353,6 @@
 				9350395113DFB94B9806058FCE9F65DA /* MBProgressHUD.m */,
 				53D3BCCC3B8F44013B11A92820B74820 /* Support Files */,
 			);
-			name = MBProgressHUD;
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -440,7 +439,6 @@
 				EBD71571A8EB8F5A22DA6E88503EEBAC /* MBProgressHUD_NHExtend.h */,
 				437B0C1B6BD882F36B89937BDAE179AE /* Support Files */,
 			);
-			name = NHHUDExtend;
 			path = NHHUDExtend;
 			sourceTree = "<group>";
 		};
