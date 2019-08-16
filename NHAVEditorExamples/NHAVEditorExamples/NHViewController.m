@@ -11,7 +11,7 @@
 #import <CoreImage/CoreImage.h>
 #import <MBProgressHUD+NHAdd.h>
 #import "NHAVEditor.h"
-#import "NHAVEditorHeader.h"
+#import "NHAVEditorDefine.h"
 #import "NHGifWriter.h"
 #import "NHMediaWriter.h"
 #import "NHCaptureViewController.h"
@@ -91,7 +91,7 @@
 }
 
 - (IBAction)resetAVEditor:(UIButton *)sender {
-  [_mediaEditor resetCompositionBeforeRestarting];
+  [_mediaEditor resetAllCompositionBeforeRestarting];
 }
 
 
@@ -110,7 +110,7 @@
           NHLog(@"%@",fileUrl);
           if (fileUrl) {
             [ws.displayView setPlayUrl:fileUrl];
-            [ws.mediaEditor resetCompositionBeforeRestarting];
+            [ws.mediaEditor resetAllCompositionBeforeRestarting];
             [ws.mediaEditor setInputVideoURL:fileUrl];
           }
         }];
@@ -137,17 +137,22 @@
 
 #pragma mark - NHAVEditorProtocol
 #pragma mark -
-- (void)editorCompositioning:(NHAVEditor *)editor progress:(CGFloat)progress {
+- (void)editorCompositioning:(NHAVEditor *)editor progress:(CGFloat)progress type:(NHAVEditorType)type {
   NHLog(@"合成进度:%.02f",progress);
   [MBProgressHUD HUDForView:self.view].progress = progress;
 }
 
-- (void)editorCompositioned:(NHAVEditor *)editor error:(NSError *)error {
+- (void)editorCompositioned:(NHAVEditor *)editor type:(NHAVEditorType)type error:(NSError * _Nullable)error {
   NHLog(@"合成完成，Error:%@",error.localizedDescription);
   [[MBProgressHUD HUDForView:self.view] hideAnimated:YES afterDelay:1.0];
 }
 
-- (void)editorExportCompleted:(NHAVEditor *)editor outputURL:(NSURL *)outputURL error:(NSError *)error {
+- (void)editorExporting:(NHAVEditor *)editor progress:(CGFloat)progress type:(NHAVEditorType)type {
+  NHLog(@"导出进度:%.02f",progress);
+  [MBProgressHUD HUDForView:self.view].progress = progress;
+}
+
+- (void)editorExported:(NHAVEditor *)editor outputURL:(NSURL *)outputURL type:(NHAVEditorType)type error:(NSError *)error {
   NHLog(@"导出完成:%@", outputURL);
   [_displayView setPlayUrl:outputURL];
   

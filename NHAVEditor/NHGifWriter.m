@@ -11,7 +11,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <CoreServices/CoreServices.h>
 #import "NSDate+NH.h"
-#import "NHAVEditorHeader.h"
+#import "NHAVEditorDefine.h"
 
 
 typedef NS_ENUM(NSInteger, NHGIFQuality) {

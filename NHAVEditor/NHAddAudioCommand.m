@@ -107,6 +107,8 @@
   
 }
 
-
+- (NHAVEditorType)type {
+  return NHAVEditorTypeAudio;
+}
 
 @end

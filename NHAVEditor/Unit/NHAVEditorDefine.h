@@ -1,13 +1,13 @@
 //
-//  NHAVEditorHeader.h
+//  NHAVEditorDefine.h
 //  NHAVEditorExamples
 //
-//  Created by XiuDan on 2019/8/9.
+//  Created by XiuDan on 2019/8/16.
 //  Copyright © 2019 XiuDan. All rights reserved.
 //
 
-#ifndef NHAVEditorHeader_h
-#define NHAVEditorHeader_h
+#ifndef NHAVEditorDefine_h
+#define NHAVEditorDefine_h
 
 ///*****************************自定义的 NSLog******************************/
 #ifdef DEBUG
@@ -39,4 +39,5 @@ if (block) {\
 block(__VA_ARGS__);\
 }
 
-#endif /* NHAVEditorHeader_h */
+
+#endif /* NHAVEditorDefine_h */

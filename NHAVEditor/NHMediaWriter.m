@@ -7,7 +7,7 @@
 //
 
 #import "NHMediaWriter.h"
-#import "NHAVEditorHeader.h"
+#import "NHAVEditorDefine.h"
 #import "NSDate+NH.h"
 
 @interface NHMediaWriter ()

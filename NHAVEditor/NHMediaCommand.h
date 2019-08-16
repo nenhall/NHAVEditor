@@ -9,15 +9,18 @@
 #import <AVFoundation/AVFoundation.h>
 #import "NHMediaCommandProtocol.h"
 #import "NHMediaConfig.h"
+#import "NHAVEditorProtocol.h"
 
 
 NS_ASSUME_NONNULL_BEGIN
+
 
 @interface NHMediaCommand : NSObject
 @property (nonatomic, strong) AVMutableComposition *mComposition;
 @property (nonatomic, strong) AVMutableVideoComposition *mVideoComposition;
 @property (nonatomic, strong) AVMutableAudioMix *mAudioMix;
 @property (nonatomic, weak) id<NHMediaCommandProtocol> delegate;
+@property (nonatomic, assign, readonly) NHAVEditorType type;
 
 /**
  初始化

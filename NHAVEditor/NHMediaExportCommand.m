@@ -7,7 +7,7 @@
 //
 
 #import "NHMediaExportCommand.h"
-#import "NHAVEditorHeader.h"
+#import "NHAVEditorDefine.h"
 
 
 @implementation NHMediaExportCommand {
@@ -95,5 +95,8 @@
   }];
 }
 
+- (NHAVEditorType)type {
+  return NHAVEditorTypeExport;
+}
 
 @end

@@ -19,7 +19,7 @@
 #import "NHMediaCommandProtocol.h"
 #import "NHMediaExportCommand.h"
 #import "NHMediaWriter.h"
-#import "NHAVEditorHeader.h"
+#import "NHAVEditorDefine.h"
 #import "NHMediaConfig.h"
 #import "NHProxy.h"
 #import "NHThread.h"

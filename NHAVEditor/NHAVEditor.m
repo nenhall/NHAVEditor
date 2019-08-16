@@ -11,7 +11,7 @@
 #import "NHAddWatermarkCommand.h"
 #import "NHMediaExportCommand.h"
 #import "NSDate+NH.h"
-#import "NHAVEditorHeader.h"
+#import "NHAVEditorDefine.h"
 #import "NHThread.h"
 #import "NHTimer.h"
 
@@ -145,7 +145,7 @@ static NSString *getProgressTimerFlg = @"getProgressTimerFlg";
 }
 
 - (void)addAudio:(NHAudioConfig *)config {
-  if ([self checkInputAsset]) {
+  if ([self checkInputAsset:_audioCommand]) {
     _isCancelComposition = NO;
     _audioCommand = [NHAddAudioCommand commandWithComposition:_composition
                                              videoComposition:_videoComposition
@@ -158,7 +158,7 @@ static NSString *getProgressTimerFlg = @"getProgressTimerFlg";
 }
 
 - (void)addWatermark:(NHWatermarkConfig *)config {
-  if ([self checkInputAsset]) {
+  if ([self checkInputAsset:_watermarkCommand]) {
     _isCancelComposition = NO;
     _watermarkCommand = [NHAddWatermarkCommand commandWithComposition:_composition
                                                      videoComposition:_videoComposition
@@ -195,14 +195,14 @@ static NSString *getProgressTimerFlg = @"getProgressTimerFlg";
     [NHTimer cancelTask:getProgressTimerFlg];
   }
   nh_editor_safe_do_mainQ(^{
-    if (self.delegate && [self.delegate respondsToSelector:@selector(editorCompositioning:progress:)]) {
-      [self.delegate editorCompositioning:self progress:progress];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(editorExporting:progress:type:)]) {
+      [self.delegate editorExporting:self progress:progress type:NHAVEditorTypeExport];
     }
   });
 }
 
 - (void)exportMedia:(NHExporyConfig *)config {
-  if ([self checkInputAsset]) {
+  if ([self checkInputAsset:_exportCommand]) {
     if (_isCancelComposition) {
       _isCompositioning = NO;
       _isCancelComposition = NO;
@@ -225,12 +225,12 @@ static NSString *getProgressTimerFlg = @"getProgressTimerFlg";
 
  @return true 存在， false 不存在
  */
-- (BOOL)checkInputAsset {
+- (BOOL)checkInputAsset:(NHMediaCommand *)editor {
   if (!_vInputAsset) {
     nh_editor_safe_do_mainQ(^{
-      if (self.delegate && [self.delegate respondsToSelector:@selector(editorCompositioned:error:)]) {
+      if (self.delegate && [self.delegate respondsToSelector:@selector(editorCompositioned:type:error:)]) {
         NSError *error = NH_ERROR(400, ERR_INFO(@"输入源为空，请确认你的视频输入地址", nil, nil));
-        [self.delegate editorCompositioned:self error:error];
+        [self.delegate editorCompositioned:self type:editor.type error:error];
       }
     });
     return NO;
@@ -238,7 +238,7 @@ static NSString *getProgressTimerFlg = @"getProgressTimerFlg";
   return YES;
 }
 
-- (void)resetCompositionBeforeRestarting {
+- (void)resetAllCompositionBeforeRestarting {
   if (!_isCompositioning) {
     self.composition = nil;
     self.videoComposition = nil;
@@ -262,8 +262,8 @@ static NSString *getProgressTimerFlg = @"getProgressTimerFlg";
   self.videoComposition = editor.mVideoComposition;
   self.currentProgress = progress;
   nh_editor_safe_do_mainQ(^{
-    if (self.delegate && [self.delegate respondsToSelector:@selector(editorCompositioning:progress:)]) {
-      [self.delegate editorCompositioning:self progress:progress];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(editorCompositioning:progress:type:)]) {
+      [self.delegate editorCompositioning:self progress:progress type:editor.type];
     }
   });
 }
@@ -277,8 +277,8 @@ static NSString *getProgressTimerFlg = @"getProgressTimerFlg";
     _mediaCommandCompletedBlock(error);
   }
   nh_editor_safe_do_mainQ(^{
-    if (self.delegate && [self.delegate respondsToSelector:@selector(editorCompositioned:error:)]) {
-      [self.delegate editorCompositioned:self error:error];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(editorCompositioned:type:error:)]) {
+      [self.delegate editorCompositioned:self type:editor.type error:error];
     }
   });
 }
@@ -293,8 +293,8 @@ static NSString *getProgressTimerFlg = @"getProgressTimerFlg";
     _mediaExportCompletedBlock(outputURL, error);
   }
   nh_editor_safe_do_mainQ(^{
-    if (self.delegate && [self.delegate respondsToSelector:@selector(editorExportCompleted:outputURL:error:)]) {
-      [self.delegate editorExportCompleted:self outputURL:outputURL error:error];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(editorExported:outputURL:type:error:)]) {
+      [self.delegate editorExported:self outputURL:outputURL type:NHAVEditorTypeExport error:error];
     }
   });
 }
@@ -315,6 +315,11 @@ static NSString *getProgressTimerFlg = @"getProgressTimerFlg";
     _outputURL = url;
   }
   [[NSFileManager defaultManager] removeItemAtURL:outputURL error:nil];
+}
+
+- (void)dealloc {
+  [_compositionThread stop];
+  [NHTimer cancelTask:getProgressTimerFlg];
 }
 
 @end

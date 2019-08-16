@@ -106,4 +106,8 @@
   
 }
 
+- (NHAVEditorType)type {
+  return NHAVEditorTypeWatermark;
+}
+
 @end

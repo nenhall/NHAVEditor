@@ -6,21 +6,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AVFoundation/AVFoundation.h>
 #import <UIKit/UIKit.h>
 #import "NHAVEditorProtocol.h"
-#import <AVFoundation/AVFoundation.h>
 #import "NHMediaConfig.h"
 
 
+
 NS_ASSUME_NONNULL_BEGIN
-@class NHAddAudioCommand;
 
 typedef void(^_Nullable NHEditCompletedBlock)(NSError *_Nullable error);
 typedef void(^_Nullable NHEditExportedBlock)(NSURL *_Nullable outputURL, NSError *_Nullable error);
 
 @interface NHAVEditor : NSObject
 @property (nonatomic, weak) id<NHAVEditorProtocol> delegate;
-
 /**
  是否正在合成
  */
@@ -88,7 +87,7 @@ typedef void(^_Nullable NHEditExportedBlock)(NSURL *_Nullable outputURL, NSError
 /**
  每重新合成新视频前，都需要调用下此方法，用于清空历史的水印、音频信息，正在合成时调用无效
  */
-- (void)resetCompositionBeforeRestarting;
+- (void)resetAllCompositionBeforeRestarting;
 
 /**
  取消合成

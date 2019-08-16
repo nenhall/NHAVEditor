@@ -8,7 +8,7 @@
 
 #import "NHCaptureSession.h"
 #import "NHVideoConfiguration.h"
-#import "NHAVEditorHeader.h"
+#import "NHAVEditorDefine.h"
 
 @interface NHCaptureSession ()<
 AVCaptureVideoDataOutputSampleBufferDelegate,

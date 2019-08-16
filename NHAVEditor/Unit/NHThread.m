@@ -19,56 +19,28 @@
 {
   self = [super init];
   if (self) {
-    
     self.rlThread = [[NSThread alloc] initWithTarget:self selector:@selector(startRunLoop) object:nil];
     self.rlThread.name = @"com.nh.av.editor.thread";
-//    self.rlThread = [[NSThread alloc] initWithBlock:^{
-//      NSLog(@"begin----");
-//
-//      // create context
-//      CFRunLoopSourceContext content = {0};
-//
-//      CFRunLoopSourceRef source = CFRunLoopSourceCreate(kCFAllocatorDefault, 0, &content);
-//
-//      // 给 runloop 添加 sorces
-//      CFRunLoopAddSource(CFRunLoopGetCurrent(), source, kCFRunLoopDefaultMode);
-//
-//      CFRelease(source);
-//
-//      CFRunLoopRunInMode(kCFRunLoopDefaultMode, 1.0e10, false);
-//
-//      NSLog(@"end----");
-//
-//    }];
-    
-    [self.rlThread start];
-    
   }
   return self;
 }
 
-
 - (void)startRunLoop {
-  NSLog(@"begin----");
-  
   // create context
   CFRunLoopSourceContext content = {0};
-  
   CFRunLoopSourceRef source = CFRunLoopSourceCreate(kCFAllocatorDefault, 0, &content);
-  
   // 给 runloop 添加 sorces
   CFRunLoopAddSource(CFRunLoopGetCurrent(), source, kCFRunLoopDefaultMode);
-  
   CFRelease(source);
-  
   CFRunLoopRunInMode(kCFRunLoopDefaultMode, 1.0e10, false);
-  
-  NSLog(@"end----");
 }
 
 - (void)executeTask:(NHThreadTask)task {
   if (!self.rlThread || !task) {
     return;
+  }
+  if (!self.rlThread.isExecuting && !self.rlThread.isCancelled && !self.rlThread.finished) {
+    [self.rlThread start];
   }
   
   [self performSelector:@selector(nh_executeTask:) onThread:self.rlThread withObject:task waitUntilDone:NO];
@@ -93,7 +65,6 @@
 }
 
 - (void)dealloc {
-  NSLog(@"%s", __func__);
   [self stop];
 }
 

@@ -33,5 +33,8 @@
 - (void)performWithAsset:(AVAsset *)asset {
   
 }
+- (NHAVEditorType)type {
+  return NHAVEditorTypeUnknown;
+}
 
 @end
