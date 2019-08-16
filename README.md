@@ -60,6 +60,7 @@ iOS: >= 9.0
 
    ```objective-c
    // 先创建一个水印或者动效 layer 层
+     _watermarkLayer = [CALayer layer];
     CGFloat x = _displayView.videoSize.width - [self logoImage].size.width;
    //  CGFloat y = _displayView.videoSize.height - [self logoImage].size.height;
      _watermarkLayer.frame = CGRectMake(x, 0, [self logoImage].size.width, [self logoImage].size.height);
