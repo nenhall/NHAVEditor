@@ -26,6 +26,8 @@
     "AVFoundation",
     "ImageIO",
     "CoreServices",
-    "UIKit"
+    "UIKit",
+    "AssetsLibrary",
+    "Photos"
   ]
 }

@@ -17,33 +17,15 @@ Pod::Spec.new do |spec|
                    DESC
 
   spec.homepage     = "https://github.com/nenhall/NHAVEditor"
-  # spec.screenshots  = "https://github.com/nenhall/NHAVEditor/blob/master/preview.gif"
-
-  # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.license      = { :type => "MIT", :file => "LICENSE" }
-
-
-  # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  spec.author             = { "nenhall" => "nenhall@126.com" }
-
-
-  # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  spec.author       = { "nenhall" => "nenhall@126.com" }
   spec.platform     = :ios, "9.0"
   spec.ios.deployment_target = "9.0"
-
-
-  # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.source       = { :git => "https://github.com/nenhall/NHAVEditor.git", :tag => "#{spec.version}" }
-
-
-  # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  spec.source_files  = "NHAVEditor/*.{h,m}", "NHAVEditor/Unit/*.{h,m}"
+  spec.source_files = "NHAVEditor/*.{h,m}", "NHAVEditor/Unit/*.{h,m}"
   # spec.exclude_files = "Classes/Exclude"
   # spec.public_header_files = "Classes/**/*.h"
-
-
-  # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-   spec.frameworks = ["AVFoundation", "ImageIO", "CoreServices", "UIKit"]
+   spec.frameworks  = ["AVFoundation", "ImageIO", "CoreServices", "UIKit", "AssetsLibrary", "Photos"]
 
 
 end

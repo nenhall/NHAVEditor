@@ -7,59 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0035DB6416C1855E108A485A4B38E500 /* NHThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B9A7CAE284EFF8A1ACFE705338A2B6F /* NHThread.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0296CD12092D6032E1F76BE72235E3E5 /* Pods-NHAVEditorExamples-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F53A19461D71703D80329615B1ABC7EB /* Pods-NHAVEditorExamples-dummy.m */; };
-		0D44AF1D02E561A7F668BB45BD0C7513 /* NHProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = D21A7303C95E85E4B3AFF60DDC10720B /* NHProxy.m */; };
-		1100A9EE7A1DA8CB842B0AC97D91CE6F /* NHAVEditor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A4504AD77A0B3C8D18A8F357C8935F8E /* NHAVEditor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		18D803FFB76C8CF2E1FB4D7118C2ED01 /* NHMediaWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 14238D9F8F790D7ECE2175F4A5CF5198 /* NHMediaWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A311E81C05784B5E5E0DC9DE3415A60 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73E7F45334A0DCFAF44C2EA69553E72 /* ImageIO.framework */; };
-		1BA30CAFE0BE7866FC0D9B887EF65F59 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4250073AFD019763EA005B9882B59EE3 /* QuartzCore.framework */; };
-		26612DE8A596248C389588517DFD5D8A /* NHThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 948ACCEDD8424E3BBDB5990E13378CAE /* NHThread.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B0CE64DF0E4124319BF1512414348F0 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8886FD5685C71FDF947E4EECF6A7AF /* CoreServices.framework */; };
-		2D151EE684B2F77FD979B15B72080C9F /* NHProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 406D9ABDA27CE333EE55CA38799FF0FB /* NHProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2EC48FF217CD074D9A371B516575D639 /* NHMediaExportCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1A685BAACBB44DDF8B0657D866648C /* NHMediaExportCommand.m */; };
-		35E3AD19F1F560BFD6C82AC09C8F224B /* NHGifWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC2A7FC5B11F941FDEC9BDAEF3737C2 /* NHGifWriter.m */; };
-		3DF0E6CF15A3DCFD0F8D0E5552485BFF /* NHMediaConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 095CB7B36A27BAFA60DB84CFE353BC0C /* NHMediaConfig.m */; };
-		4191AAB0DE0A59C15302039D84403E8F /* NSDate+NH.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F19F7E881A3CBEE82A865EAC4BB166 /* NSDate+NH.m */; };
+		05531C9F686808276E0611719E5EFF3D /* NHTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F740621B24BF81EA58ACCEE39649BBA7 /* NHTimer.m */; };
+		08A6CF02ECD295AC57DAC6B76D55DFDE /* NHAVEditorProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = C6F7CCEE6F2313EB21D3273E6B8B2702 /* NHAVEditorProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1001FB92CA7FFF9954B52AFB03CB7D3B /* NHMediaWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 22460AE1144D7CD45862FC4DA98ABE2D /* NHMediaWriter.m */; };
+		1206980FE377C6EFAAD14552EEC6E345 /* NHTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = AD9D8C330DB096CC35C57620F955F7CF /* NHTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		120F8FC47BC310899EABCF2400A29387 /* NSData+NH.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7BDBFEA16DCC440B8061946FDB90DA /* NSData+NH.m */; };
+		1BA30CAFE0BE7866FC0D9B887EF65F59 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8FAA70492493DA5F95832EF2922AC7 /* QuartzCore.framework */; };
+		1F94DAB4C79B05C8F6D1694823AE0AA2 /* NHAddAudioCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 905696B5C60043147F6174C41AC5E6B3 /* NHAddAudioCommand.m */; };
+		2376F3C3938CF07241ED56A667D1A3EC /* NHAVEditor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2296B2A82D01F20FB3D0550D1FFB719C /* NHAVEditor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CC0E434D80AFDFC1FBE91CAD4CF9DC0 /* NHAVEditorHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 80CE2EA23766F2B28E8726EEE9A6DDF7 /* NHAVEditorHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E0E2F034374929A6C4AFE08FE528A2F /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C725BEA4587A85C6E567DFDD8F18583 /* CoreServices.framework */; };
+		446C65A91DCD07418169E6BE46C38C3B /* NHAddWatermarkCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = BF9440A203D5463D9F7755164BB535C1 /* NHAddWatermarkCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		44D10F8A578ED7F50CC8153CD298A978 /* MBProgressHUD+NHAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8792F734BE6F078747F5C15632B7B7 /* MBProgressHUD+NHAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4AAEA826C0B1F577A170BB8490FB4525 /* NHAddWatermarkCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = ED6F92B8B04B6CA516AA46FD1D033C05 /* NHAddWatermarkCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C5991CCFCF047689A332AF534FE415B /* NHTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = D217037D65E0080D34D2A748A5A3EF7F /* NHTimer.m */; };
+		4C24EF49C0AFE8FD2C043254C9181230 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3023A7D43B8C0EA4C94123E3A5E2A69 /* Foundation.framework */; };
 		4DE88D7CE1A92FE58306D2E6BD9CC8F6 /* NHHUDExtend-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B7D6A3FDDD4E509F05017D65386241F /* NHHUDExtend-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		57B5493C0A1E670D9CBBC13D1387E587 /* NHAVEditor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E35E7316EDD3D41DE5BB5D72DA8DA2C /* NHAVEditor-dummy.m */; };
-		586B08F3B8B3FFCD1378B2A68392E965 /* NHMediaCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F6AA1F58F89AD22BF2BEE41AA75027 /* NHMediaCommand.m */; };
-		66564F333D257C2586F41E61B9DE98B7 /* NHMediaCommandProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 76AB6E2F6781D952430E20CB19442396 /* NHMediaCommandProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A86BA3A024F6CA9A5FCF7956076F753 /* NHMediaConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EF56A68B9547E32049E6D3EC8C5162B /* NHMediaConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EB3DE2553DD1538C5FEEEAD0FE49A1C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F29A8E7527F6CCA661E346B734C98F /* AVFoundation.framework */; };
+		5847A8BDD2B4AD4F44007A8BFBEF8325 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E8E9D9CAA096AC2DB0EC5BAC792173 /* ImageIO.framework */; };
+		590FEDF477BE5FBEB44BAD45C0DD07AC /* NHMediaExportCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 07211818A525AD3C884B0BF307FE54C4 /* NHMediaExportCommand.m */; };
+		5E12A4616BA9C1CD2B837445703B17DD /* NHMediaWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 72E381CEC53440E1DB542CBFE38FF340 /* NHMediaWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5ED5BFC9EEAF512F8EE83333B8885FB9 /* NHMediaConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = C3E3BC2BCCCABBB592D1D6DCE2705003 /* NHMediaConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		686F094F5DEB09F0E2DB6B4D366F0616 /* NHAVEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = C8F73ED49AF0113344E0D68EA58236C5 /* NHAVEditor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6BA2D8497A5FD018AB95972AEB6C40B5 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 4503DDF1081228A83B49F44B9AEE457F /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D66FE35370D4F0B827F62598F6BCF73 /* NHAVEditorProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 373C2451C592C44C50FE35E529E28E87 /* NHAVEditorProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		711EA8BFB82D80CFC2B4DC12300DD5A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B97B636CBA781C6A93F4D44723334E /* Foundation.framework */; };
-		71477D6597C0ABB99DCF6EA3A2DC2AD1 /* NHGifWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E0D690D0F6FB11FE15F51B7574BEC4B /* NHGifWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B8C25614B945981C5C9E838F22C94B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B97B636CBA781C6A93F4D44723334E /* Foundation.framework */; };
+		6BB5CA156A9F01B0BD93CA21B0C7DE3F /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC2E01F737A8B0D02C933028F21E87A /* Photos.framework */; };
+		6F70AEFE50A64F1E8E4BE0A562A62325 /* NHPicture.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C7E3E4552104B9CDE05D39941C184EB /* NHPicture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B8C25614B945981C5C9E838F22C94B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3023A7D43B8C0EA4C94123E3A5E2A69 /* Foundation.framework */; };
 		7C5F3EEFBC07E8F360737EA98C09F01E /* MBProgressHUD+NHAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 035981DB4923C53859D6AB45189755B9 /* MBProgressHUD+NHAdd.m */; };
 		7ED0379558A331219C0D24B162B90276 /* MBProgressHUD_NHExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = EBD71571A8EB8F5A22DA6E88503EEBAC /* MBProgressHUD_NHExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		847C941406F961F6DFD2B75573F486BD /* NHAVEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = ADD0864001C6EDDBA397538A920F5FE4 /* NHAVEditor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		85772E8A8CB290D8A9AA1EA34A45C639 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3FC53D169A54D999E0AB91BC7F9C10 /* AVFoundation.framework */; };
-		858DBB1FBA6C4313AA1DEBCC93B8A234 /* NHMediaWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C916E2442384EA7572955EFE7BB70F /* NHMediaWriter.m */; };
-		868E9D21B88CA0D6EFAACFCBEBE39A6F /* NHAVEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = B88FB0D6A5EEEB3C1DABE22D60FB1173 /* NHAVEditor.m */; };
-		86918BD8A1C6D7BA6EA3D14FECAE970B /* NHMediaExportCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = E7C51BC404C3818338968193ABA59A04 /* NHMediaExportCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89ABDB6416D7AA408E90335BC8160AD4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B97B636CBA781C6A93F4D44723334E /* Foundation.framework */; };
-		8B2C8A7FE0DDFADCC134885D197D55C9 /* NHMediaCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 6735D722488BA8F690199732B4C29220 /* NHMediaCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8CA2A309D0B33EBD14EAF9AABC5EEF54 /* NHThread.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CAC0700009E87673ED64DF886B2F30 /* NHThread.m */; };
-		93EF4BC720F9B4817985705004089B2B /* NHAddAudioCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = F845723D9CBDE191DF14D8CF98AFEA4E /* NHAddAudioCommand.m */; };
-		A19106FBA0A35A031964BF511ACDB3E8 /* NSData+NH.m in Sources */ = {isa = PBXBuildFile; fileRef = 005BA6697D45745136B01EEC13054763 /* NSData+NH.m */; };
-		A8B2C7D088392803671B712C8DAF406E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8D5C93C6EE055EAE97FA9E0EB328CF /* CoreGraphics.framework */; };
+		828D13709C62D9C7915E7AD87F946279 /* NHGifWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C175F8A1E07238B6FA5992BA90FB5E8 /* NHGifWriter.m */; };
+		838183EB26F79449DEAD2959EE295B7B /* NHMediaExportCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DA65F3A11D1A70638F53841802BF94E /* NHMediaExportCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85B198B31DC34E2387F1D7C77FD9994B /* NHAVEditorDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 91AC0706D27FBB69B8B690A894DC0107 /* NHAVEditorDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89ABDB6416D7AA408E90335BC8160AD4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3023A7D43B8C0EA4C94123E3A5E2A69 /* Foundation.framework */; };
+		8E4A4886C6624F00B00C35621C198E5C /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0560F8A132A9C851633EAC9B61328E9C /* AssetsLibrary.framework */; };
+		924E004451349316A91C98D990B97AB4 /* NHMediaConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F587DF1AFB9908D7E164CF57DF69BC83 /* NHMediaConfig.m */; };
+		9498E8884BAD39B42A14AA8019EF68B5 /* NHMediaCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 2363BA1733DAF2855F9CEE8498C69C60 /* NHMediaCommand.m */; };
+		99F663A505D9FE0B2D08250026DE6E95 /* NSDate+NH.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC7021F186B24F2C00A634D6477E968 /* NSDate+NH.m */; };
+		9A0136E6B6AB41E8070B2FBF289AD10F /* NSDate+NH.h in Headers */ = {isa = PBXBuildFile; fileRef = 59D02BA9EDA3B56092760444FFAC67CE /* NSDate+NH.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42CE44FFB4ABDDE5D2D436F32C422AF /* NHThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F51857C0B693E04D0595363EA333802 /* NHThread.m */; };
+		A67736CA2A723E4BB16A3A4B2150B33D /* NHAddWatermarkCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4AD555402A70E2A43578DF5A81844B /* NHAddWatermarkCommand.m */; };
+		A8B2C7D088392803671B712C8DAF406E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F92A1B6FC939C86D1CFDDDA921699BD9 /* CoreGraphics.framework */; };
+		AD067CBEA9569541BBDED660C2ECF8FD /* NHMediaCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 36520A22A8DA21157F8C2CA24EB2C6AD /* NHMediaCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEA0BAB5F1D0B8C38AB94B0DA98BD7F3 /* NHGifWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = FF98BE6B504ECB58356C5F28EF8EA944 /* NHGifWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B21AD135EBFCD3261E079653FADC7960 /* NHAVEditor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B087A399AF91ECC1C42E709C10A86526 /* NHAVEditor-dummy.m */; };
 		B48B9C1CC34CABA4E86FE5F92D4DEEB9 /* NHHUDExtend-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E94D36B452DB0CA4D24F2B72A5E365C6 /* NHHUDExtend-dummy.m */; };
-		C2436B16AC4CB7CCBD5B7ACC529746D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F09D20C810D530A2FF8E38B2374451 /* UIKit.framework */; };
-		C3ED0D462B251BC38CCBE3C7A82B3EAC /* NHAddWatermarkCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D4809F41A88993638A498944D1BFF1 /* NHAddWatermarkCommand.m */; };
-		C4B97680342F1357E7BD84472F7E6E54 /* NSData+NH.h in Headers */ = {isa = PBXBuildFile; fileRef = C4CB3586E18C42866C2BCD49C046F029 /* NSData+NH.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C8F19F358F0765900BF51D6B5F55C5D9 /* NSDate+NH.h in Headers */ = {isa = PBXBuildFile; fileRef = 49D59B0BC15533F7B1D23284C82D182F /* NSDate+NH.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8058A834FA80A00217F9FF26CBF2F0C /* NHMediaCommandProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D59B7D9A5E3E311C6D43BFCC4FB2C138 /* NHMediaCommandProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA6824CCB2C410AC770EB7045BAA7126 /* NHAddAudioCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 71C19B30E3EDDEE3D479DF95D86904D7 /* NHAddAudioCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE26BF40CAD3B89CC632C4B28E90B2B2 /* NHProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 1418D19BC786E01F5694EA617AA6B6BA /* NHProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD59D0A4B3DF9A762FDF27FF99704358 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A149416C696780EC35A5285C4950BF5F /* UIKit.framework */; };
+		D080B1F45051F9983E424DF6F162F040 /* NHProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF69A6FDC600AE22A7A2BD217CB2EB21 /* NHProxy.m */; };
 		D1A133A7B2C435725CA979B18FB0B60C /* Pods-NHAVEditorExamples-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89D4EC2D056F4F0B6AB88021BCB2A87E /* Pods-NHAVEditorExamples-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D6C63CD6246163D81F730258C1C7A90D /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D7350C3FA44E02049155FD82D720A5 /* MBProgressHUD-dummy.m */; };
-		D886BF80DB9EA6A63EDE790D399C8BB9 /* NHAVEditorDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = B4C33EA19D7E8C0BF68C69D8275123A0 /* NHAVEditorDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD19193D2306A4C400510E22 /* NHAVEditorHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = DD19193C2306A4C400510E22 /* NHAVEditorHeader.h */; };
+		E3A41B7AA0ABDCD96E6A2835E81211F8 /* NSData+NH.h in Headers */ = {isa = PBXBuildFile; fileRef = D44C8E9D5E0FBC5CD483694CFBDFB4C4 /* NSData+NH.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E40996725327AAC68DC6994F97D8DCA1 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9350395113DFB94B9806058FCE9F65DA /* MBProgressHUD.m */; };
-		ED8627483E9B8551A531134462FAB7A3 /* NHAddAudioCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CB681B492C95C982E632905C64AFFE6 /* NHAddAudioCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EF3DB998203FB74C94B2FC4B9146B354 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970B588497A57427E24832941F62D7D4 /* MBProgressHUD.framework */; };
-		FA32FD535717E3A7EADF0E78A6A4FF30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B97B636CBA781C6A93F4D44723334E /* Foundation.framework */; };
-		FC5A7E0E82C3DF28BEEF70B2F27EB7A7 /* NHTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C4C5294E57D4C75F7D7C478AB12FE8E /* NHTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF3DB998203FB74C94B2FC4B9146B354 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A355A5BF8044F3D1D0F0B06C64AC5F /* MBProgressHUD.framework */; };
+		F527F770A6CC6DB2C7B275C7D1417CD2 /* NHAVEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 858251631BDB7A718F6BD06F8A59F943 /* NHAVEditor.m */; };
+		FA32FD535717E3A7EADF0E78A6A4FF30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3023A7D43B8C0EA4C94123E3A5E2A69 /* Foundation.framework */; };
+		FC565849EF299759F1D54A546D0CB856 /* NHPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = A152BB05AA8382C29EB3C94DC2DBD31A /* NHPicture.m */; };
 		FD46A422A60DC7E540AEC3CE2C020DB0 /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB3B3D35586F4C6371611D92836746B9 /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -95,84 +99,88 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		005BA6697D45745136B01EEC13054763 /* NSData+NH.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+NH.m"; sourceTree = "<group>"; };
 		035981DB4923C53859D6AB45189755B9 /* MBProgressHUD+NHAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MBProgressHUD+NHAdd.m"; path = "NHHUDExtend/MBProgressHUD+NHAdd.m"; sourceTree = "<group>"; };
-		081594235F7F396DBCD9C8D820AC0621 /* NHAVEditor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NHAVEditor-prefix.pch"; sourceTree = "<group>"; };
-		095CB7B36A27BAFA60DB84CFE353BC0C /* NHMediaConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NHMediaConfig.m; sourceTree = "<group>"; };
+		0560F8A132A9C851633EAC9B61328E9C /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
+		05F14105206E7EFB06A757399AA174F1 /* NHAVEditor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NHAVEditor.xcconfig; sourceTree = "<group>"; };
+		07211818A525AD3C884B0BF307FE54C4 /* NHMediaExportCommand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHMediaExportCommand.m; path = NHAVEditor/NHMediaExportCommand.m; sourceTree = "<group>"; };
 		0997890FF75DFE7989424AF20015F679 /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
+		0B8FAA70492493DA5F95832EF2922AC7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		0C725BEA4587A85C6E567DFDD8F18583 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		0D57DEC9CA76D540B360CC15CECF1B7D /* NHHUDExtend-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NHHUDExtend-Info.plist"; sourceTree = "<group>"; };
-		0FC2A7FC5B11F941FDEC9BDAEF3737C2 /* NHGifWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHGifWriter.m; path = NHAVEditor/NHGifWriter.m; sourceTree = "<group>"; };
-		14238D9F8F790D7ECE2175F4A5CF5198 /* NHMediaWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHMediaWriter.h; path = NHAVEditor/NHMediaWriter.h; sourceTree = "<group>"; };
-		15C916E2442384EA7572955EFE7BB70F /* NHMediaWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHMediaWriter.m; path = NHAVEditor/NHMediaWriter.m; sourceTree = "<group>"; };
+		13A355A5BF8044F3D1D0F0B06C64AC5F /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1418D19BC786E01F5694EA617AA6B6BA /* NHProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NHProxy.h; sourceTree = "<group>"; };
+		1C175F8A1E07238B6FA5992BA90FB5E8 /* NHGifWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHGifWriter.m; path = NHAVEditor/NHGifWriter.m; sourceTree = "<group>"; };
 		1C72F8EA347BA8CA71C8172CA38B6BA1 /* Pods-NHAVEditorExamples-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NHAVEditorExamples-Info.plist"; sourceTree = "<group>"; };
-		1CB681B492C95C982E632905C64AFFE6 /* NHAddAudioCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHAddAudioCommand.h; path = NHAVEditor/NHAddAudioCommand.h; sourceTree = "<group>"; };
-		21D4809F41A88993638A498944D1BFF1 /* NHAddWatermarkCommand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHAddWatermarkCommand.m; path = NHAVEditor/NHAddWatermarkCommand.m; sourceTree = "<group>"; };
-		28F6AA1F58F89AD22BF2BEE41AA75027 /* NHMediaCommand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHMediaCommand.m; path = NHAVEditor/NHMediaCommand.m; sourceTree = "<group>"; };
-		2E35E7316EDD3D41DE5BB5D72DA8DA2C /* NHAVEditor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NHAVEditor-dummy.m"; sourceTree = "<group>"; };
-		2F0140D4BBBBC75A8E869D8D103862B9 /* NHAVEditor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NHAVEditor.modulemap; sourceTree = "<group>"; };
-		373C2451C592C44C50FE35E529E28E87 /* NHAVEditorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHAVEditorProtocol.h; path = NHAVEditor/NHAVEditorProtocol.h; sourceTree = "<group>"; };
-		3F8AC605EF678E49B010A899A29826D6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		406D9ABDA27CE333EE55CA38799FF0FB /* NHProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NHProxy.h; sourceTree = "<group>"; };
+		1DA65F3A11D1A70638F53841802BF94E /* NHMediaExportCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHMediaExportCommand.h; path = NHAVEditor/NHMediaExportCommand.h; sourceTree = "<group>"; };
+		1ED9D0C16075AFDCC0C72CFB3CDC5627 /* NHAVEditor-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NHAVEditor-Info.plist"; sourceTree = "<group>"; };
+		22460AE1144D7CD45862FC4DA98ABE2D /* NHMediaWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHMediaWriter.m; path = NHAVEditor/NHMediaWriter.m; sourceTree = "<group>"; };
+		2296B2A82D01F20FB3D0550D1FFB719C /* NHAVEditor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NHAVEditor-umbrella.h"; sourceTree = "<group>"; };
+		2363BA1733DAF2855F9CEE8498C69C60 /* NHMediaCommand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHMediaCommand.m; path = NHAVEditor/NHMediaCommand.m; sourceTree = "<group>"; };
+		2B9A7CAE284EFF8A1ACFE705338A2B6F /* NHThread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NHThread.h; sourceTree = "<group>"; };
+		2C7E3E4552104B9CDE05D39941C184EB /* NHPicture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHPicture.h; path = NHAVEditor/NHPicture.h; sourceTree = "<group>"; };
+		36520A22A8DA21157F8C2CA24EB2C6AD /* NHMediaCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHMediaCommand.h; path = NHAVEditor/NHMediaCommand.h; sourceTree = "<group>"; };
+		3DD6F135A3EBABB758DE22733E9D5C9C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		421E5E4056C335E07FBB69E03A3313C1 /* Pods-NHAVEditorExamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NHAVEditorExamples.debug.xcconfig"; sourceTree = "<group>"; };
-		4250073AFD019763EA005B9882B59EE3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		4503DDF1081228A83B49F44B9AEE457F /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		47F09D20C810D530A2FF8E38B2374451 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		49D59B0BC15533F7B1D23284C82D182F /* NSDate+NH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDate+NH.h"; sourceTree = "<group>"; };
 		4B7D6A3FDDD4E509F05017D65386241F /* NHHUDExtend-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NHHUDExtend-umbrella.h"; sourceTree = "<group>"; };
-		4B8D5C93C6EE055EAE97FA9E0EB328CF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		4D81E3EF95FCFCDD9DE7736B3397E598 /* Pods-NHAVEditorExamples-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NHAVEditorExamples-acknowledgements.plist"; sourceTree = "<group>"; };
-		4E0D690D0F6FB11FE15F51B7574BEC4B /* NHGifWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHGifWriter.h; path = NHAVEditor/NHGifWriter.h; sourceTree = "<group>"; };
+		4EC2E01F737A8B0D02C933028F21E87A /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
 		5492CD27487E6F5AEC22868C08631B94 /* NHHUDExtend-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NHHUDExtend-prefix.pch"; sourceTree = "<group>"; };
+		59D02BA9EDA3B56092760444FFAC67CE /* NSDate+NH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDate+NH.h"; sourceTree = "<group>"; };
 		5B1923F401559A2974962788D0789CAD /* MBProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MBProgressHUD-Info.plist"; sourceTree = "<group>"; };
-		5EF56A68B9547E32049E6D3EC8C5162B /* NHMediaConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NHMediaConfig.h; sourceTree = "<group>"; };
 		60AC904D4F06298CCF712ABE940FD78E /* NHHUDExtend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NHHUDExtend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6735D722488BA8F690199732B4C29220 /* NHMediaCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHMediaCommand.h; path = NHAVEditor/NHMediaCommand.h; sourceTree = "<group>"; };
-		76AB6E2F6781D952430E20CB19442396 /* NHMediaCommandProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHMediaCommandProtocol.h; path = NHAVEditor/NHMediaCommandProtocol.h; sourceTree = "<group>"; };
-		7C4C5294E57D4C75F7D7C478AB12FE8E /* NHTimer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NHTimer.h; sourceTree = "<group>"; };
+		66E8E9D9CAA096AC2DB0EC5BAC792173 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		71C19B30E3EDDEE3D479DF95D86904D7 /* NHAddAudioCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHAddAudioCommand.h; path = NHAVEditor/NHAddAudioCommand.h; sourceTree = "<group>"; };
+		72E381CEC53440E1DB542CBFE38FF340 /* NHMediaWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHMediaWriter.h; path = NHAVEditor/NHMediaWriter.h; sourceTree = "<group>"; };
+		74B41548950088BB739D91E0448D4EFD /* NHAVEditor.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = NHAVEditor.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		80CE2EA23766F2B28E8726EEE9A6DDF7 /* NHAVEditorHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHAVEditorHeader.h; path = NHAVEditor/NHAVEditorHeader.h; sourceTree = "<group>"; };
+		858251631BDB7A718F6BD06F8A59F943 /* NHAVEditor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHAVEditor.m; path = NHAVEditor/NHAVEditor.m; sourceTree = "<group>"; };
 		89D4EC2D056F4F0B6AB88021BCB2A87E /* Pods-NHAVEditorExamples-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NHAVEditorExamples-umbrella.h"; sourceTree = "<group>"; };
 		8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FADC6D5FE9FDD6A3695DD0D93B914B0 /* Pods-NHAVEditorExamples-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NHAVEditorExamples-frameworks.sh"; sourceTree = "<group>"; };
+		905696B5C60043147F6174C41AC5E6B3 /* NHAddAudioCommand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHAddAudioCommand.m; path = NHAVEditor/NHAddAudioCommand.m; sourceTree = "<group>"; };
+		91AC0706D27FBB69B8B690A894DC0107 /* NHAVEditorDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NHAVEditorDefine.h; sourceTree = "<group>"; };
 		9299E8E0FA7BE92C365911A8452F1B76 /* Pods_NHAVEditorExamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NHAVEditorExamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9350395113DFB94B9806058FCE9F65DA /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		94707C8482FD4807DD1D3D684753D743 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		948ACCEDD8424E3BBDB5990E13378CAE /* NHThread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NHThread.h; sourceTree = "<group>"; };
-		970B588497A57427E24832941F62D7D4 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E7BDBFEA16DCC440B8061946FDB90DA /* NSData+NH.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+NH.m"; sourceTree = "<group>"; };
+		9F51857C0B693E04D0595363EA333802 /* NHThread.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NHThread.m; sourceTree = "<group>"; };
 		9F97E1B4AB887514688509011FCB6F76 /* NHHUDExtend.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NHHUDExtend.modulemap; sourceTree = "<group>"; };
-		A4504AD77A0B3C8D18A8F357C8935F8E /* NHAVEditor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NHAVEditor-umbrella.h"; sourceTree = "<group>"; };
+		A149416C696780EC35A5285C4950BF5F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		A152BB05AA8382C29EB3C94DC2DBD31A /* NHPicture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHPicture.m; path = NHAVEditor/NHPicture.m; sourceTree = "<group>"; };
+		A2C804F4956C5EF418BC95A711E975E3 /* NHAVEditor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NHAVEditor.modulemap; sourceTree = "<group>"; };
+		A3F29A8E7527F6CCA661E346B734C98F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		A5F7A4040E05655A9E8F4BB29CEEE200 /* Pods-NHAVEditorExamples.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NHAVEditorExamples.modulemap"; sourceTree = "<group>"; };
-		A7A2F286D921B14A399A3E3218B38EC2 /* NHAVEditor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NHAVEditor.xcconfig; sourceTree = "<group>"; };
 		AAEECA03C0624D9C695CD6A43C5057D1 /* Pods-NHAVEditorExamples-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NHAVEditorExamples-acknowledgements.markdown"; sourceTree = "<group>"; };
 		AC167B71DCFA9D668CF2C4E300CFDFA9 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
-		ADD0864001C6EDDBA397538A920F5FE4 /* NHAVEditor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHAVEditor.h; path = NHAVEditor/NHAVEditor.h; sourceTree = "<group>"; };
-		AE95B5FDA166C611D7FEF33DC3354F30 /* NHAVEditor-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NHAVEditor-Info.plist"; sourceTree = "<group>"; };
-		B4C33EA19D7E8C0BF68C69D8275123A0 /* NHAVEditorDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NHAVEditorDefine.h; sourceTree = "<group>"; };
-		B5F19F7E881A3CBEE82A865EAC4BB166 /* NSDate+NH.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDate+NH.m"; sourceTree = "<group>"; };
+		AD4AD555402A70E2A43578DF5A81844B /* NHAddWatermarkCommand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHAddWatermarkCommand.m; path = NHAVEditor/NHAddWatermarkCommand.m; sourceTree = "<group>"; };
+		AD9D8C330DB096CC35C57620F955F7CF /* NHTimer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NHTimer.h; sourceTree = "<group>"; };
+		B087A399AF91ECC1C42E709C10A86526 /* NHAVEditor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NHAVEditor-dummy.m"; sourceTree = "<group>"; };
 		B77A72048AF47B71D2F74F4C0BB2A6D1 /* NHAVEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NHAVEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B88FB0D6A5EEEB3C1DABE22D60FB1173 /* NHAVEditor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHAVEditor.m; path = NHAVEditor/NHAVEditor.m; sourceTree = "<group>"; };
-		C4CB3586E18C42866C2BCD49C046F029 /* NSData+NH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+NH.h"; sourceTree = "<group>"; };
+		BCC7021F186B24F2C00A634D6477E968 /* NSDate+NH.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDate+NH.m"; sourceTree = "<group>"; };
+		BF9440A203D5463D9F7755164BB535C1 /* NHAddWatermarkCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHAddWatermarkCommand.h; path = NHAVEditor/NHAddWatermarkCommand.h; sourceTree = "<group>"; };
+		C3E3BC2BCCCABBB592D1D6DCE2705003 /* NHMediaConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NHMediaConfig.h; sourceTree = "<group>"; };
 		C4D7350C3FA44E02049155FD82D720A5 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
-		C6CAC0700009E87673ED64DF886B2F30 /* NHThread.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NHThread.m; sourceTree = "<group>"; };
+		C6F7CCEE6F2313EB21D3273E6B8B2702 /* NHAVEditorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHAVEditorProtocol.h; path = NHAVEditor/NHAVEditorProtocol.h; sourceTree = "<group>"; };
 		C79173F532D725E7C0EFFF5476CB38D6 /* Pods-NHAVEditorExamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NHAVEditorExamples.release.xcconfig"; sourceTree = "<group>"; };
-		CD8886FD5685C71FDF947E4EECF6A7AF /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
-		CE3FC53D169A54D999E0AB91BC7F9C10 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		D217037D65E0080D34D2A748A5A3EF7F /* NHTimer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NHTimer.m; sourceTree = "<group>"; };
-		D21A7303C95E85E4B3AFF60DDC10720B /* NHProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NHProxy.m; sourceTree = "<group>"; };
-		DD19193C2306A4C400510E22 /* NHAVEditorHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NHAVEditorHeader.h; path = NHAVEditor/NHAVEditorHeader.h; sourceTree = "<group>"; };
+		C8F73ED49AF0113344E0D68EA58236C5 /* NHAVEditor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHAVEditor.h; path = NHAVEditor/NHAVEditor.h; sourceTree = "<group>"; };
+		D3023A7D43B8C0EA4C94123E3A5E2A69 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D44C8E9D5E0FBC5CD483694CFBDFB4C4 /* NSData+NH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+NH.h"; sourceTree = "<group>"; };
+		D59B7D9A5E3E311C6D43BFCC4FB2C138 /* NHMediaCommandProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHMediaCommandProtocol.h; path = NHAVEditor/NHMediaCommandProtocol.h; sourceTree = "<group>"; };
 		DE8792F734BE6F078747F5C15632B7B7 /* MBProgressHUD+NHAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MBProgressHUD+NHAdd.h"; path = "NHHUDExtend/MBProgressHUD+NHAdd.h"; sourceTree = "<group>"; };
+		E0E837D74F709420E786BED613F179C7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		E283E77FA28CE8CD076A88C6BCC1E492 /* NHHUDExtend.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NHHUDExtend.xcconfig; sourceTree = "<group>"; };
-		E7C51BC404C3818338968193ABA59A04 /* NHMediaExportCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHMediaExportCommand.h; path = NHAVEditor/NHMediaExportCommand.h; sourceTree = "<group>"; };
 		E94D36B452DB0CA4D24F2B72A5E365C6 /* NHHUDExtend-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NHHUDExtend-dummy.m"; sourceTree = "<group>"; };
 		EB3B3D35586F4C6371611D92836746B9 /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
-		EB4F466B73AD0D325DA269C0888B00D7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EBD71571A8EB8F5A22DA6E88503EEBAC /* MBProgressHUD_NHExtend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD_NHExtend.h; path = NHHUDExtend/MBProgressHUD_NHExtend.h; sourceTree = "<group>"; };
-		ED6F92B8B04B6CA516AA46FD1D033C05 /* NHAddWatermarkCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHAddWatermarkCommand.h; path = NHAVEditor/NHAddWatermarkCommand.h; sourceTree = "<group>"; };
-		F4B97B636CBA781C6A93F4D44723334E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EF69A6FDC600AE22A7A2BD217CB2EB21 /* NHProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NHProxy.m; sourceTree = "<group>"; };
+		F293B3C513F04CA69437DDD50F62FA90 /* NHAVEditor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NHAVEditor-prefix.pch"; sourceTree = "<group>"; };
 		F53A19461D71703D80329615B1ABC7EB /* Pods-NHAVEditorExamples-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NHAVEditorExamples-dummy.m"; sourceTree = "<group>"; };
-		F5A3AFE9ECB135A0B1EAD05CAD8813E6 /* NHAVEditor.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = NHAVEditor.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		F73E7F45334A0DCFAF44C2EA69553E72 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
-		F845723D9CBDE191DF14D8CF98AFEA4E /* NHAddAudioCommand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHAddAudioCommand.m; path = NHAVEditor/NHAddAudioCommand.m; sourceTree = "<group>"; };
-		FB1A685BAACBB44DDF8B0657D866648C /* NHMediaExportCommand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHMediaExportCommand.m; path = NHAVEditor/NHMediaExportCommand.m; sourceTree = "<group>"; };
+		F587DF1AFB9908D7E164CF57DF69BC83 /* NHMediaConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NHMediaConfig.m; sourceTree = "<group>"; };
+		F740621B24BF81EA58ACCEE39649BBA7 /* NHTimer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NHTimer.m; sourceTree = "<group>"; };
+		F92A1B6FC939C86D1CFDDDA921699BD9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		FF98BE6B504ECB58356C5F28EF8EA944 /* NHGifWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHGifWriter.h; path = NHAVEditor/NHGifWriter.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,15 +201,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC487F91FD06E76A1922E30C8395CA72 /* Frameworks */ = {
+		9CED41D874D721FE4CC16E87591A98DA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85772E8A8CB290D8A9AA1EA34A45C639 /* AVFoundation.framework in Frameworks */,
-				2B0CE64DF0E4124319BF1512414348F0 /* CoreServices.framework in Frameworks */,
-				711EA8BFB82D80CFC2B4DC12300DD5A2 /* Foundation.framework in Frameworks */,
-				1A311E81C05784B5E5E0DC9DE3415A60 /* ImageIO.framework in Frameworks */,
-				C2436B16AC4CB7CCBD5B7ACC529746D6 /* UIKit.framework in Frameworks */,
+				8E4A4886C6624F00B00C35621C198E5C /* AssetsLibrary.framework in Frameworks */,
+				4EB3DE2553DD1538C5FEEEAD0FE49A1C /* AVFoundation.framework in Frameworks */,
+				3E0E2F034374929A6C4AFE08FE528A2F /* CoreServices.framework in Frameworks */,
+				4C24EF49C0AFE8FD2C043254C9181230 /* Foundation.framework in Frameworks */,
+				5847A8BDD2B4AD4F44007A8BFBEF8325 /* ImageIO.framework in Frameworks */,
+				6BB5CA156A9F01B0BD93CA21B0C7DE3F /* Photos.framework in Frameworks */,
+				CD59D0A4B3DF9A762FDF27FF99704358 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,43 +228,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		20DF92B1B5B2E611436658B63F7F1BDB /* NHAVEditor */ = {
-			isa = PBXGroup;
-			children = (
-				DD19193C2306A4C400510E22 /* NHAVEditorHeader.h */,
-				ADD0864001C6EDDBA397538A920F5FE4 /* NHAVEditor.h */,
-				B88FB0D6A5EEEB3C1DABE22D60FB1173 /* NHAVEditor.m */,
-				6735D722488BA8F690199732B4C29220 /* NHMediaCommand.h */,
-				28F6AA1F58F89AD22BF2BEE41AA75027 /* NHMediaCommand.m */,
-				1CB681B492C95C982E632905C64AFFE6 /* NHAddAudioCommand.h */,
-				F845723D9CBDE191DF14D8CF98AFEA4E /* NHAddAudioCommand.m */,
-				E7C51BC404C3818338968193ABA59A04 /* NHMediaExportCommand.h */,
-				FB1A685BAACBB44DDF8B0657D866648C /* NHMediaExportCommand.m */,
-				ED6F92B8B04B6CA516AA46FD1D033C05 /* NHAddWatermarkCommand.h */,
-				21D4809F41A88993638A498944D1BFF1 /* NHAddWatermarkCommand.m */,
-				76AB6E2F6781D952430E20CB19442396 /* NHMediaCommandProtocol.h */,
-				373C2451C592C44C50FE35E529E28E87 /* NHAVEditorProtocol.h */,
-				4E0D690D0F6FB11FE15F51B7574BEC4B /* NHGifWriter.h */,
-				0FC2A7FC5B11F941FDEC9BDAEF3737C2 /* NHGifWriter.m */,
-				14238D9F8F790D7ECE2175F4A5CF5198 /* NHMediaWriter.h */,
-				15C916E2442384EA7572955EFE7BB70F /* NHMediaWriter.m */,
-				B6CDF0278E3A3AAC86CB77AA6FD8714E /* Pod */,
-				E59C7A5627D17C720ABFEA2BE7DC2B11 /* Support Files */,
-				F46E767BB93111451C6D37A9929DC350 /* Unit */,
-			);
-			name = NHAVEditor;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		3D72319882AB2A9B9D97082C2B416287 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				970B588497A57427E24832941F62D7D4 /* MBProgressHUD.framework */,
-				ACC787FD84C9283784F7D30AB8F99E41 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		437B0C1B6BD882F36B89937BDAE179AE /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +240,41 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/NHHUDExtend";
+			sourceTree = "<group>";
+		};
+		4B2931A56D003C6F8D2E616A35C1B590 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2C804F4956C5EF418BC95A711E975E3 /* NHAVEditor.modulemap */,
+				05F14105206E7EFB06A757399AA174F1 /* NHAVEditor.xcconfig */,
+				B087A399AF91ECC1C42E709C10A86526 /* NHAVEditor-dummy.m */,
+				1ED9D0C16075AFDCC0C72CFB3CDC5627 /* NHAVEditor-Info.plist */,
+				F293B3C513F04CA69437DDD50F62FA90 /* NHAVEditor-prefix.pch */,
+				2296B2A82D01F20FB3D0550D1FFB719C /* NHAVEditor-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "NHAVEditorExamples/Pods/Target Support Files/NHAVEditor";
+			sourceTree = "<group>";
+		};
+		4DC51EBD0586373F006CF7BD9C0F644C /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+				91AC0706D27FBB69B8B690A894DC0107 /* NHAVEditorDefine.h */,
+				C3E3BC2BCCCABBB592D1D6DCE2705003 /* NHMediaConfig.h */,
+				F587DF1AFB9908D7E164CF57DF69BC83 /* NHMediaConfig.m */,
+				1418D19BC786E01F5694EA617AA6B6BA /* NHProxy.h */,
+				EF69A6FDC600AE22A7A2BD217CB2EB21 /* NHProxy.m */,
+				2B9A7CAE284EFF8A1ACFE705338A2B6F /* NHThread.h */,
+				9F51857C0B693E04D0595363EA333802 /* NHThread.m */,
+				AD9D8C330DB096CC35C57620F955F7CF /* NHTimer.h */,
+				F740621B24BF81EA58ACCEE39649BBA7 /* NHTimer.m */,
+				D44C8E9D5E0FBC5CD483694CFBDFB4C4 /* NSData+NH.h */,
+				9E7BDBFEA16DCC440B8061946FDB90DA /* NSData+NH.m */,
+				59D02BA9EDA3B56092760444FFAC67CE /* NSDate+NH.h */,
+				BCC7021F186B24F2C00A634D6477E968 /* NSDate+NH.m */,
+			);
+			name = Unit;
+			path = NHAVEditor/Unit;
 			sourceTree = "<group>";
 		};
 		53D3BCCC3B8F44013B11A92820B74820 /* Support Files */ = {
@@ -283,6 +291,61 @@
 			path = "../Target Support Files/MBProgressHUD";
 			sourceTree = "<group>";
 		};
+		7F02D41DB9740E2EADD7DEC887D7A2AE /* NHAVEditor */ = {
+			isa = PBXGroup;
+			children = (
+				80CE2EA23766F2B28E8726EEE9A6DDF7 /* NHAVEditorHeader.h */,
+				C8F73ED49AF0113344E0D68EA58236C5 /* NHAVEditor.h */,
+				858251631BDB7A718F6BD06F8A59F943 /* NHAVEditor.m */,
+				36520A22A8DA21157F8C2CA24EB2C6AD /* NHMediaCommand.h */,
+				2363BA1733DAF2855F9CEE8498C69C60 /* NHMediaCommand.m */,
+				71C19B30E3EDDEE3D479DF95D86904D7 /* NHAddAudioCommand.h */,
+				905696B5C60043147F6174C41AC5E6B3 /* NHAddAudioCommand.m */,
+				1DA65F3A11D1A70638F53841802BF94E /* NHMediaExportCommand.h */,
+				07211818A525AD3C884B0BF307FE54C4 /* NHMediaExportCommand.m */,
+				BF9440A203D5463D9F7755164BB535C1 /* NHAddWatermarkCommand.h */,
+				AD4AD555402A70E2A43578DF5A81844B /* NHAddWatermarkCommand.m */,
+				D59B7D9A5E3E311C6D43BFCC4FB2C138 /* NHMediaCommandProtocol.h */,
+				C6F7CCEE6F2313EB21D3273E6B8B2702 /* NHAVEditorProtocol.h */,
+				72E381CEC53440E1DB542CBFE38FF340 /* NHMediaWriter.h */,
+				22460AE1144D7CD45862FC4DA98ABE2D /* NHMediaWriter.m */,
+				FF98BE6B504ECB58356C5F28EF8EA944 /* NHGifWriter.h */,
+				1C175F8A1E07238B6FA5992BA90FB5E8 /* NHGifWriter.m */,
+				2C7E3E4552104B9CDE05D39941C184EB /* NHPicture.h */,
+				A152BB05AA8382C29EB3C94DC2DBD31A /* NHPicture.m */,
+				997F4506568A30AA05CC36696F147D68 /* Pod */,
+				4B2931A56D003C6F8D2E616A35C1B590 /* Support Files */,
+				4DC51EBD0586373F006CF7BD9C0F644C /* Unit */,
+			);
+			name = NHAVEditor;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		84008DADCE245904A7ED6513C7B51B31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13A355A5BF8044F3D1D0F0B06C64AC5F /* MBProgressHUD.framework */,
+				886A66E3BA91C38B7800830ECC99BFE5 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		886A66E3BA91C38B7800830ECC99BFE5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0560F8A132A9C851633EAC9B61328E9C /* AssetsLibrary.framework */,
+				A3F29A8E7527F6CCA661E346B734C98F /* AVFoundation.framework */,
+				F92A1B6FC939C86D1CFDDDA921699BD9 /* CoreGraphics.framework */,
+				0C725BEA4587A85C6E567DFDD8F18583 /* CoreServices.framework */,
+				D3023A7D43B8C0EA4C94123E3A5E2A69 /* Foundation.framework */,
+				66E8E9D9CAA096AC2DB0EC5BAC792173 /* ImageIO.framework */,
+				4EC2E01F737A8B0D02C933028F21E87A /* Photos.framework */,
+				0B8FAA70492493DA5F95832EF2922AC7 /* QuartzCore.framework */,
+				A149416C696780EC35A5285C4950BF5F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		94A7C462ED3828D5E55D4884C55038F2 /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,26 +356,14 @@
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
-		ACC787FD84C9283784F7D30AB8F99E41 /* iOS */ = {
+		997F4506568A30AA05CC36696F147D68 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				CE3FC53D169A54D999E0AB91BC7F9C10 /* AVFoundation.framework */,
-				4B8D5C93C6EE055EAE97FA9E0EB328CF /* CoreGraphics.framework */,
-				CD8886FD5685C71FDF947E4EECF6A7AF /* CoreServices.framework */,
-				F4B97B636CBA781C6A93F4D44723334E /* Foundation.framework */,
-				F73E7F45334A0DCFAF44C2EA69553E72 /* ImageIO.framework */,
-				4250073AFD019763EA005B9882B59EE3 /* QuartzCore.framework */,
-				47F09D20C810D530A2FF8E38B2374451 /* UIKit.framework */,
+				E0E837D74F709420E786BED613F179C7 /* LICENSE */,
+				74B41548950088BB739D91E0448D4EFD /* NHAVEditor.podspec */,
+				3DD6F135A3EBABB758DE22733E9D5C9C /* README.md */,
 			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		AD47ACF9952218DCC20F7D2BA7E5BB19 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				20DF92B1B5B2E611436658B63F7F1BDB /* NHAVEditor */,
-			);
-			name = "Development Pods";
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		ADD13A156939ACEA6937E81851072CF6 /* Pods */ = {
@@ -341,22 +392,20 @@
 			path = "Target Support Files/Pods-NHAVEditorExamples";
 			sourceTree = "<group>";
 		};
-		B6CDF0278E3A3AAC86CB77AA6FD8714E /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				3F8AC605EF678E49B010A899A29826D6 /* LICENSE */,
-				F5A3AFE9ECB135A0B1EAD05CAD8813E6 /* NHAVEditor.podspec */,
-				EB4F466B73AD0D325DA269C0888B00D7 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		BF96412364FA2A311755DD70597DEED4 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				B01AE70A73ECD6E4D1D7C24468E01C8D /* Pods-NHAVEditorExamples */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C137C197DFE1BFD02200256AFEC29903 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F02D41DB9740E2EADD7DEC887D7A2AE /* NHAVEditor */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		CD1D15D713AB8694DD4B875F1485D0B4 /* Products */ = {
@@ -374,26 +423,12 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				AD47ACF9952218DCC20F7D2BA7E5BB19 /* Development Pods */,
-				3D72319882AB2A9B9D97082C2B416287 /* Frameworks */,
+				C137C197DFE1BFD02200256AFEC29903 /* Development Pods */,
+				84008DADCE245904A7ED6513C7B51B31 /* Frameworks */,
 				ADD13A156939ACEA6937E81851072CF6 /* Pods */,
 				CD1D15D713AB8694DD4B875F1485D0B4 /* Products */,
 				BF96412364FA2A311755DD70597DEED4 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		E59C7A5627D17C720ABFEA2BE7DC2B11 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2F0140D4BBBBC75A8E869D8D103862B9 /* NHAVEditor.modulemap */,
-				A7A2F286D921B14A399A3E3218B38EC2 /* NHAVEditor.xcconfig */,
-				2E35E7316EDD3D41DE5BB5D72DA8DA2C /* NHAVEditor-dummy.m */,
-				AE95B5FDA166C611D7FEF33DC3354F30 /* NHAVEditor-Info.plist */,
-				081594235F7F396DBCD9C8D820AC0621 /* NHAVEditor-prefix.pch */,
-				A4504AD77A0B3C8D18A8F357C8935F8E /* NHAVEditor-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "NHAVEditorExamples/Pods/Target Support Files/NHAVEditor";
 			sourceTree = "<group>";
 		};
 		E5A6EA0C41B30BBD8183196B8B8A283E /* NHHUDExtend */ = {
@@ -405,27 +440,6 @@
 				437B0C1B6BD882F36B89937BDAE179AE /* Support Files */,
 			);
 			path = NHHUDExtend;
-			sourceTree = "<group>";
-		};
-		F46E767BB93111451C6D37A9929DC350 /* Unit */ = {
-			isa = PBXGroup;
-			children = (
-				B4C33EA19D7E8C0BF68C69D8275123A0 /* NHAVEditorDefine.h */,
-				5EF56A68B9547E32049E6D3EC8C5162B /* NHMediaConfig.h */,
-				095CB7B36A27BAFA60DB84CFE353BC0C /* NHMediaConfig.m */,
-				406D9ABDA27CE333EE55CA38799FF0FB /* NHProxy.h */,
-				D21A7303C95E85E4B3AFF60DDC10720B /* NHProxy.m */,
-				948ACCEDD8424E3BBDB5990E13378CAE /* NHThread.h */,
-				C6CAC0700009E87673ED64DF886B2F30 /* NHThread.m */,
-				7C4C5294E57D4C75F7D7C478AB12FE8E /* NHTimer.h */,
-				D217037D65E0080D34D2A748A5A3EF7F /* NHTimer.m */,
-				C4CB3586E18C42866C2BCD49C046F029 /* NSData+NH.h */,
-				005BA6697D45745136B01EEC13054763 /* NSData+NH.m */,
-				49D59B0BC15533F7B1D23284C82D182F /* NSDate+NH.h */,
-				B5F19F7E881A3CBEE82A865EAC4BB166 /* NSDate+NH.m */,
-			);
-			name = Unit;
-			path = NHAVEditor/Unit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -458,28 +472,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		614827D8CDE5C514FCB9E57639BF20EB /* Headers */ = {
+		C59FDB6A3377F114CA4D27D42971A809 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED8627483E9B8551A531134462FAB7A3 /* NHAddAudioCommand.h in Headers */,
-				4AAEA826C0B1F577A170BB8490FB4525 /* NHAddWatermarkCommand.h in Headers */,
-				1100A9EE7A1DA8CB842B0AC97D91CE6F /* NHAVEditor-umbrella.h in Headers */,
-				847C941406F961F6DFD2B75573F486BD /* NHAVEditor.h in Headers */,
-				D886BF80DB9EA6A63EDE790D399C8BB9 /* NHAVEditorDefine.h in Headers */,
-				DD19193D2306A4C400510E22 /* NHAVEditorHeader.h in Headers */,
-				6D66FE35370D4F0B827F62598F6BCF73 /* NHAVEditorProtocol.h in Headers */,
-				71477D6597C0ABB99DCF6EA3A2DC2AD1 /* NHGifWriter.h in Headers */,
-				8B2C8A7FE0DDFADCC134885D197D55C9 /* NHMediaCommand.h in Headers */,
-				66564F333D257C2586F41E61B9DE98B7 /* NHMediaCommandProtocol.h in Headers */,
-				6A86BA3A024F6CA9A5FCF7956076F753 /* NHMediaConfig.h in Headers */,
-				86918BD8A1C6D7BA6EA3D14FECAE970B /* NHMediaExportCommand.h in Headers */,
-				18D803FFB76C8CF2E1FB4D7118C2ED01 /* NHMediaWriter.h in Headers */,
-				2D151EE684B2F77FD979B15B72080C9F /* NHProxy.h in Headers */,
-				26612DE8A596248C389588517DFD5D8A /* NHThread.h in Headers */,
-				FC5A7E0E82C3DF28BEEF70B2F27EB7A7 /* NHTimer.h in Headers */,
-				C4B97680342F1357E7BD84472F7E6E54 /* NSData+NH.h in Headers */,
-				C8F19F358F0765900BF51D6B5F55C5D9 /* NSDate+NH.h in Headers */,
+				BA6824CCB2C410AC770EB7045BAA7126 /* NHAddAudioCommand.h in Headers */,
+				446C65A91DCD07418169E6BE46C38C3B /* NHAddWatermarkCommand.h in Headers */,
+				2376F3C3938CF07241ED56A667D1A3EC /* NHAVEditor-umbrella.h in Headers */,
+				686F094F5DEB09F0E2DB6B4D366F0616 /* NHAVEditor.h in Headers */,
+				85B198B31DC34E2387F1D7C77FD9994B /* NHAVEditorDefine.h in Headers */,
+				2CC0E434D80AFDFC1FBE91CAD4CF9DC0 /* NHAVEditorHeader.h in Headers */,
+				08A6CF02ECD295AC57DAC6B76D55DFDE /* NHAVEditorProtocol.h in Headers */,
+				AEA0BAB5F1D0B8C38AB94B0DA98BD7F3 /* NHGifWriter.h in Headers */,
+				AD067CBEA9569541BBDED660C2ECF8FD /* NHMediaCommand.h in Headers */,
+				B8058A834FA80A00217F9FF26CBF2F0C /* NHMediaCommandProtocol.h in Headers */,
+				5ED5BFC9EEAF512F8EE83333B8885FB9 /* NHMediaConfig.h in Headers */,
+				838183EB26F79449DEAD2959EE295B7B /* NHMediaExportCommand.h in Headers */,
+				5E12A4616BA9C1CD2B837445703B17DD /* NHMediaWriter.h in Headers */,
+				6F70AEFE50A64F1E8E4BE0A562A62325 /* NHPicture.h in Headers */,
+				BE26BF40CAD3B89CC632C4B28E90B2B2 /* NHProxy.h in Headers */,
+				0035DB6416C1855E108A485A4B38E500 /* NHThread.h in Headers */,
+				1206980FE377C6EFAAD14552EEC6E345 /* NHTimer.h in Headers */,
+				E3A41B7AA0ABDCD96E6A2835E81211F8 /* NSData+NH.h in Headers */,
+				9A0136E6B6AB41E8070B2FBF289AD10F /* NSDate+NH.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,12 +561,12 @@
 		};
 		DDF9D1DF3AB63C3775F61335CDEBF794 /* NHAVEditor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7228C1FD2C4EEE6CFD8F1095E56BD922 /* Build configuration list for PBXNativeTarget "NHAVEditor" */;
+			buildConfigurationList = B7E41C81483086D685FCD7B14FBFAE7F /* Build configuration list for PBXNativeTarget "NHAVEditor" */;
 			buildPhases = (
-				614827D8CDE5C514FCB9E57639BF20EB /* Headers */,
-				CE6E7575D5D2A663A45F745D2AEDBBD8 /* Sources */,
-				DC487F91FD06E76A1922E30C8395CA72 /* Frameworks */,
-				263BAA629F34C38C23DC2C84D01F6D07 /* Resources */,
+				C59FDB6A3377F114CA4D27D42971A809 /* Headers */,
+				FCE4581AF927E7FD13E0FC42515C539F /* Sources */,
+				9CED41D874D721FE4CC16E87591A98DA /* Frameworks */,
+				7454D8F5B6CE02A608D18C42D3356D5D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -599,7 +614,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		263BAA629F34C38C23DC2C84D01F6D07 /* Resources */ = {
+		7454D8F5B6CE02A608D18C42D3356D5D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -640,33 +655,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE6E7575D5D2A663A45F745D2AEDBBD8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				93EF4BC720F9B4817985705004089B2B /* NHAddAudioCommand.m in Sources */,
-				C3ED0D462B251BC38CCBE3C7A82B3EAC /* NHAddWatermarkCommand.m in Sources */,
-				57B5493C0A1E670D9CBBC13D1387E587 /* NHAVEditor-dummy.m in Sources */,
-				868E9D21B88CA0D6EFAACFCBEBE39A6F /* NHAVEditor.m in Sources */,
-				35E3AD19F1F560BFD6C82AC09C8F224B /* NHGifWriter.m in Sources */,
-				586B08F3B8B3FFCD1378B2A68392E965 /* NHMediaCommand.m in Sources */,
-				3DF0E6CF15A3DCFD0F8D0E5552485BFF /* NHMediaConfig.m in Sources */,
-				2EC48FF217CD074D9A371B516575D639 /* NHMediaExportCommand.m in Sources */,
-				858DBB1FBA6C4313AA1DEBCC93B8A234 /* NHMediaWriter.m in Sources */,
-				0D44AF1D02E561A7F668BB45BD0C7513 /* NHProxy.m in Sources */,
-				8CA2A309D0B33EBD14EAF9AABC5EEF54 /* NHThread.m in Sources */,
-				4C5991CCFCF047689A332AF534FE415B /* NHTimer.m in Sources */,
-				A19106FBA0A35A031964BF511ACDB3E8 /* NSData+NH.m in Sources */,
-				4191AAB0DE0A59C15302039D84403E8F /* NSDate+NH.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E2C7846CDAAA3D5F069FD48B9FE6A821 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7C5F3EEFBC07E8F360737EA98C09F01E /* MBProgressHUD+NHAdd.m in Sources */,
 				B48B9C1CC34CABA4E86FE5F92D4DEEB9 /* NHHUDExtend-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCE4581AF927E7FD13E0FC42515C539F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F94DAB4C79B05C8F6D1694823AE0AA2 /* NHAddAudioCommand.m in Sources */,
+				A67736CA2A723E4BB16A3A4B2150B33D /* NHAddWatermarkCommand.m in Sources */,
+				B21AD135EBFCD3261E079653FADC7960 /* NHAVEditor-dummy.m in Sources */,
+				F527F770A6CC6DB2C7B275C7D1417CD2 /* NHAVEditor.m in Sources */,
+				828D13709C62D9C7915E7AD87F946279 /* NHGifWriter.m in Sources */,
+				9498E8884BAD39B42A14AA8019EF68B5 /* NHMediaCommand.m in Sources */,
+				924E004451349316A91C98D990B97AB4 /* NHMediaConfig.m in Sources */,
+				590FEDF477BE5FBEB44BAD45C0DD07AC /* NHMediaExportCommand.m in Sources */,
+				1001FB92CA7FFF9954B52AFB03CB7D3B /* NHMediaWriter.m in Sources */,
+				FC565849EF299759F1D54A546D0CB856 /* NHPicture.m in Sources */,
+				D080B1F45051F9983E424DF6F162F040 /* NHProxy.m in Sources */,
+				A42CE44FFB4ABDDE5D2D436F32C422AF /* NHThread.m in Sources */,
+				05531C9F686808276E0611719E5EFF3D /* NHTimer.m in Sources */,
+				120F8FC47BC310899EABCF2400A29387 /* NSData+NH.m in Sources */,
+				99F663A505D9FE0B2D08250026DE6E95 /* NSDate+NH.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -737,9 +753,9 @@
 			};
 			name = Debug;
 		};
-		33CF87A902C7F02DBD4B412AE5226F1F /* Release */ = {
+		3227E59C76278D6C4C2128F6F12D8BA2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7A2F286D921B14A399A3E3218B38EC2 /* NHAVEditor.xcconfig */;
+			baseConfigurationReference = 05F14105206E7EFB06A757399AA174F1 /* NHAVEditor.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -772,41 +788,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		665120F21C05F86BA342CD8653DACBFA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7A2F286D921B14A399A3E3218B38EC2 /* NHAVEditor.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/NHAVEditor/NHAVEditor-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NHAVEditor/NHAVEditor-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/NHAVEditor/NHAVEditor.modulemap";
-				PRODUCT_MODULE_NAME = NHAVEditor;
-				PRODUCT_NAME = NHAVEditor;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -929,6 +910,41 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		956D0CE3646569D7341A4404FEAB1B92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05F14105206E7EFB06A757399AA174F1 /* NHAVEditor.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NHAVEditor/NHAVEditor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NHAVEditor/NHAVEditor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NHAVEditor/NHAVEditor.modulemap";
+				PRODUCT_MODULE_NAME = NHAVEditor;
+				PRODUCT_NAME = NHAVEditor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -1133,11 +1149,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7228C1FD2C4EEE6CFD8F1095E56BD922 /* Build configuration list for PBXNativeTarget "NHAVEditor" */ = {
+		B7E41C81483086D685FCD7B14FBFAE7F /* Build configuration list for PBXNativeTarget "NHAVEditor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				665120F21C05F86BA342CD8653DACBFA /* Debug */,
-				33CF87A902C7F02DBD4B412AE5226F1F /* Release */,
+				956D0CE3646569D7341A4404FEAB1B92 /* Debug */,
+				3227E59C76278D6C4C2128F6F12D8BA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
