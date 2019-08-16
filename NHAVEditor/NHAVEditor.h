@@ -12,7 +12,6 @@
 #import "NHMediaConfig.h"
 
 
-
 NS_ASSUME_NONNULL_BEGIN
 
 typedef void(^_Nullable NHEditCompletedBlock)(NSError *_Nullable error);
