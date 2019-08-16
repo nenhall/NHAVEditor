@@ -54,6 +54,8 @@
 		D1A133A7B2C435725CA979B18FB0B60C /* Pods-NHAVEditorExamples-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89D4EC2D056F4F0B6AB88021BCB2A87E /* Pods-NHAVEditorExamples-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D6C63CD6246163D81F730258C1C7A90D /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D7350C3FA44E02049155FD82D720A5 /* MBProgressHUD-dummy.m */; };
 		D886BF80DB9EA6A63EDE790D399C8BB9 /* NHAVEditorDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = B4C33EA19D7E8C0BF68C69D8275123A0 /* NHAVEditorDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD19193923069D7000510E22 /* NHPicture.h in Headers */ = {isa = PBXBuildFile; fileRef = DD19193723069D7000510E22 /* NHPicture.h */; };
+		DD19193A23069D7000510E22 /* NHPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = DD19193823069D7000510E22 /* NHPicture.m */; };
 		E40996725327AAC68DC6994F97D8DCA1 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9350395113DFB94B9806058FCE9F65DA /* MBProgressHUD.m */; };
 		ED8627483E9B8551A531134462FAB7A3 /* NHAddAudioCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CB681B492C95C982E632905C64AFFE6 /* NHAddAudioCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF3DB998203FB74C94B2FC4B9146B354 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970B588497A57427E24832941F62D7D4 /* MBProgressHUD.framework */; };
@@ -110,7 +112,7 @@
 		2E35E7316EDD3D41DE5BB5D72DA8DA2C /* NHAVEditor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NHAVEditor-dummy.m"; sourceTree = "<group>"; };
 		2F0140D4BBBBC75A8E869D8D103862B9 /* NHAVEditor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NHAVEditor.modulemap; sourceTree = "<group>"; };
 		373C2451C592C44C50FE35E529E28E87 /* NHAVEditorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHAVEditorProtocol.h; path = NHAVEditor/NHAVEditorProtocol.h; sourceTree = "<group>"; };
-		3F8AC605EF678E49B010A899A29826D6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		3F8AC605EF678E49B010A899A29826D6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		406D9ABDA27CE333EE55CA38799FF0FB /* NHProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NHProxy.h; sourceTree = "<group>"; };
 		421E5E4056C335E07FBB69E03A3313C1 /* Pods-NHAVEditorExamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NHAVEditorExamples.debug.xcconfig"; sourceTree = "<group>"; };
 		4250073AFD019763EA005B9882B59EE3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -124,19 +126,19 @@
 		5492CD27487E6F5AEC22868C08631B94 /* NHHUDExtend-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NHHUDExtend-prefix.pch"; sourceTree = "<group>"; };
 		5B1923F401559A2974962788D0789CAD /* MBProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MBProgressHUD-Info.plist"; sourceTree = "<group>"; };
 		5EF56A68B9547E32049E6D3EC8C5162B /* NHMediaConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NHMediaConfig.h; sourceTree = "<group>"; };
-		60AC904D4F06298CCF712ABE940FD78E /* NHHUDExtend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NHHUDExtend.framework; path = NHHUDExtend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60AC904D4F06298CCF712ABE940FD78E /* NHHUDExtend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NHHUDExtend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6735D722488BA8F690199732B4C29220 /* NHMediaCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHMediaCommand.h; path = NHAVEditor/NHMediaCommand.h; sourceTree = "<group>"; };
 		76AB6E2F6781D952430E20CB19442396 /* NHMediaCommandProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHMediaCommandProtocol.h; path = NHAVEditor/NHMediaCommandProtocol.h; sourceTree = "<group>"; };
 		7C4C5294E57D4C75F7D7C478AB12FE8E /* NHTimer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NHTimer.h; sourceTree = "<group>"; };
 		89D4EC2D056F4F0B6AB88021BCB2A87E /* Pods-NHAVEditorExamples-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NHAVEditorExamples-umbrella.h"; sourceTree = "<group>"; };
-		8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FADC6D5FE9FDD6A3695DD0D93B914B0 /* Pods-NHAVEditorExamples-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NHAVEditorExamples-frameworks.sh"; sourceTree = "<group>"; };
-		9299E8E0FA7BE92C365911A8452F1B76 /* Pods_NHAVEditorExamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NHAVEditorExamples.framework; path = "Pods-NHAVEditorExamples.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9299E8E0FA7BE92C365911A8452F1B76 /* Pods_NHAVEditorExamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NHAVEditorExamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9350395113DFB94B9806058FCE9F65DA /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		94707C8482FD4807DD1D3D684753D743 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
 		948ACCEDD8424E3BBDB5990E13378CAE /* NHThread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NHThread.h; sourceTree = "<group>"; };
 		970B588497A57427E24832941F62D7D4 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F97E1B4AB887514688509011FCB6F76 /* NHHUDExtend.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NHHUDExtend.modulemap; sourceTree = "<group>"; };
 		A4504AD77A0B3C8D18A8F357C8935F8E /* NHAVEditor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NHAVEditor-umbrella.h"; sourceTree = "<group>"; };
 		A5F7A4040E05655A9E8F4BB29CEEE200 /* Pods-NHAVEditorExamples.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NHAVEditorExamples.modulemap"; sourceTree = "<group>"; };
@@ -147,7 +149,7 @@
 		AE95B5FDA166C611D7FEF33DC3354F30 /* NHAVEditor-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NHAVEditor-Info.plist"; sourceTree = "<group>"; };
 		B4C33EA19D7E8C0BF68C69D8275123A0 /* NHAVEditorDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NHAVEditorDefine.h; sourceTree = "<group>"; };
 		B5F19F7E881A3CBEE82A865EAC4BB166 /* NSDate+NH.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDate+NH.m"; sourceTree = "<group>"; };
-		B77A72048AF47B71D2F74F4C0BB2A6D1 /* NHAVEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NHAVEditor.framework; path = NHAVEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B77A72048AF47B71D2F74F4C0BB2A6D1 /* NHAVEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NHAVEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88FB0D6A5EEEB3C1DABE22D60FB1173 /* NHAVEditor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHAVEditor.m; path = NHAVEditor/NHAVEditor.m; sourceTree = "<group>"; };
 		C4CB3586E18C42866C2BCD49C046F029 /* NSData+NH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+NH.h"; sourceTree = "<group>"; };
 		C4D7350C3FA44E02049155FD82D720A5 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
@@ -157,17 +159,20 @@
 		CE3FC53D169A54D999E0AB91BC7F9C10 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		D217037D65E0080D34D2A748A5A3EF7F /* NHTimer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NHTimer.m; sourceTree = "<group>"; };
 		D21A7303C95E85E4B3AFF60DDC10720B /* NHProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NHProxy.m; sourceTree = "<group>"; };
+		DD19193723069D7000510E22 /* NHPicture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NHPicture.h; path = NHAVEditor/NHPicture.h; sourceTree = "<group>"; };
+		DD19193823069D7000510E22 /* NHPicture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NHPicture.m; path = NHAVEditor/NHPicture.m; sourceTree = "<group>"; };
+		DD19193B23069F3600510E22 /* NHAVEditorHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NHAVEditorHeader.h; path = NHAVEditor/NHAVEditorHeader.h; sourceTree = "<group>"; };
 		DE8792F734BE6F078747F5C15632B7B7 /* MBProgressHUD+NHAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MBProgressHUD+NHAdd.h"; path = "NHHUDExtend/MBProgressHUD+NHAdd.h"; sourceTree = "<group>"; };
 		E283E77FA28CE8CD076A88C6BCC1E492 /* NHHUDExtend.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NHHUDExtend.xcconfig; sourceTree = "<group>"; };
 		E7C51BC404C3818338968193ABA59A04 /* NHMediaExportCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHMediaExportCommand.h; path = NHAVEditor/NHMediaExportCommand.h; sourceTree = "<group>"; };
 		E94D36B452DB0CA4D24F2B72A5E365C6 /* NHHUDExtend-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NHHUDExtend-dummy.m"; sourceTree = "<group>"; };
 		EB3B3D35586F4C6371611D92836746B9 /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
-		EB4F466B73AD0D325DA269C0888B00D7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		EB4F466B73AD0D325DA269C0888B00D7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EBD71571A8EB8F5A22DA6E88503EEBAC /* MBProgressHUD_NHExtend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD_NHExtend.h; path = NHHUDExtend/MBProgressHUD_NHExtend.h; sourceTree = "<group>"; };
 		ED6F92B8B04B6CA516AA46FD1D033C05 /* NHAddWatermarkCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHAddWatermarkCommand.h; path = NHAVEditor/NHAddWatermarkCommand.h; sourceTree = "<group>"; };
 		F4B97B636CBA781C6A93F4D44723334E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		F53A19461D71703D80329615B1ABC7EB /* Pods-NHAVEditorExamples-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NHAVEditorExamples-dummy.m"; sourceTree = "<group>"; };
-		F5A3AFE9ECB135A0B1EAD05CAD8813E6 /* NHAVEditor.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = NHAVEditor.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F5A3AFE9ECB135A0B1EAD05CAD8813E6 /* NHAVEditor.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = NHAVEditor.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F73E7F45334A0DCFAF44C2EA69553E72 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
 		F845723D9CBDE191DF14D8CF98AFEA4E /* NHAddAudioCommand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHAddAudioCommand.m; path = NHAVEditor/NHAddAudioCommand.m; sourceTree = "<group>"; };
 		FB1A685BAACBB44DDF8B0657D866648C /* NHMediaExportCommand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHMediaExportCommand.m; path = NHAVEditor/NHMediaExportCommand.m; sourceTree = "<group>"; };
@@ -219,6 +224,7 @@
 		20DF92B1B5B2E611436658B63F7F1BDB /* NHAVEditor */ = {
 			isa = PBXGroup;
 			children = (
+				DD19193B23069F3600510E22 /* NHAVEditorHeader.h */,
 				1CB681B492C95C982E632905C64AFFE6 /* NHAddAudioCommand.h */,
 				F845723D9CBDE191DF14D8CF98AFEA4E /* NHAddAudioCommand.m */,
 				ED6F92B8B04B6CA516AA46FD1D033C05 /* NHAddWatermarkCommand.h */,
@@ -235,6 +241,8 @@
 				FB1A685BAACBB44DDF8B0657D866648C /* NHMediaExportCommand.m */,
 				14238D9F8F790D7ECE2175F4A5CF5198 /* NHMediaWriter.h */,
 				15C916E2442384EA7572955EFE7BB70F /* NHMediaWriter.m */,
+				DD19193723069D7000510E22 /* NHPicture.h */,
+				DD19193823069D7000510E22 /* NHPicture.m */,
 				B6CDF0278E3A3AAC86CB77AA6FD8714E /* Pod */,
 				E59C7A5627D17C720ABFEA2BE7DC2B11 /* Support Files */,
 				F46E767BB93111451C6D37A9929DC350 /* Unit */,
@@ -287,7 +295,6 @@
 				9350395113DFB94B9806058FCE9F65DA /* MBProgressHUD.m */,
 				53D3BCCC3B8F44013B11A92820B74820 /* Support Files */,
 			);
-			name = MBProgressHUD;
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -402,7 +409,6 @@
 				EBD71571A8EB8F5A22DA6E88503EEBAC /* MBProgressHUD_NHExtend.h */,
 				437B0C1B6BD882F36B89937BDAE179AE /* Support Files */,
 			);
-			name = NHHUDExtend;
 			path = NHHUDExtend;
 			sourceTree = "<group>";
 		};
@@ -470,6 +476,7 @@
 				71477D6597C0ABB99DCF6EA3A2DC2AD1 /* NHGifWriter.h in Headers */,
 				8B2C8A7FE0DDFADCC134885D197D55C9 /* NHMediaCommand.h in Headers */,
 				66564F333D257C2586F41E61B9DE98B7 /* NHMediaCommandProtocol.h in Headers */,
+				DD19193923069D7000510E22 /* NHPicture.h in Headers */,
 				6A86BA3A024F6CA9A5FCF7956076F753 /* NHMediaConfig.h in Headers */,
 				86918BD8A1C6D7BA6EA3D14FECAE970B /* NHMediaExportCommand.h in Headers */,
 				18D803FFB76C8CF2E1FB4D7118C2ED01 /* NHMediaWriter.h in Headers */,
@@ -654,6 +661,7 @@
 				0D44AF1D02E561A7F668BB45BD0C7513 /* NHProxy.m in Sources */,
 				8CA2A309D0B33EBD14EAF9AABC5EEF54 /* NHThread.m in Sources */,
 				4C5991CCFCF047689A332AF534FE415B /* NHTimer.m in Sources */,
+				DD19193A23069D7000510E22 /* NHPicture.m in Sources */,
 				A19106FBA0A35A031964BF511ACDB3E8 /* NSData+NH.m in Sources */,
 				4191AAB0DE0A59C15302039D84403E8F /* NSDate+NH.m in Sources */,
 			);
