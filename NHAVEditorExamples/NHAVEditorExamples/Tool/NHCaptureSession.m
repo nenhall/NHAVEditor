@@ -56,7 +56,7 @@ AVCaptureMetadataOutputObjectsDelegate
 #pragma mark -- set capture settings
   _isVideoPortrait = YES;
   _videoOrientation = AVCaptureVideoOrientationPortrait;
-  AVCaptureSessionPreset preset = AVCaptureSessionPresetLow;
+  AVCaptureSessionPreset preset = AVCaptureSessionPreset1280x720;
   _captureVideoSize = [self getVideoSize:AVCaptureSessionPreset1280x720 isVideoPortrait:_isVideoPortrait];
   
   

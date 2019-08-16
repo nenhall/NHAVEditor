@@ -44,41 +44,9 @@
 
 - (void)viewWillDisappear:(BOOL)animated {
   [super viewWillDisappear:animated];
-  
-  // 这部份代码未做整理，参考其使用方法就可以
-  NHCaptureViewController *capture = (NHCaptureViewController *)[self presentedViewController];
-  if ([capture isKindOfClass:[NHCaptureViewController class]]) {
-    __weak __typeof(self)ws = self;
-    [capture setDidStopCapture:^(BOOL stop) {
-      if (stop) {
-        // 完成写入
-        [ws.mediaWriter finishWriteWithCompletionHandler:^(NSURL * _Nonnull fileUrl) {
-          NHLog(@"%@",fileUrl);
-          if (fileUrl) {
-            [ws.displayView setPlayUrl:fileUrl];
-            [ws.mediaEditor resetCompositionBeforeRestarting];
-            [ws.mediaEditor setInputVideoURL:fileUrl];
-          }
-        }];
-      } else {
-        // 准备写入，保存的文件格式，请与当`fileType`对应
-        [ws.mediaWriter prepareBuildMediaWithOutpurUrl:[ws OutUrl:@"mov"]];
-//        [ws.mediaWriter beginBuildMediaWithOutpurUrl:[ws OutUrl:@"acc"]];
-      }
-    }];
-    
-    [capture setDidOutputBuffer:^(CMSampleBufferRef  _Nonnull bufferRef) {
-        CMFormatDescriptionRef des = CMSampleBufferGetFormatDescription(bufferRef);
-        CMMediaType mediaType = CMFormatDescriptionGetMediaType(des);
-      // 写入音/视频数据，暂不支持同时写入
-      if (mediaType == kCMMediaType_Audio) {
-//        [ws.mediaWriter appendAudioSampleBuffer:bufferRef];
-      } else {
-        [ws.mediaWriter appendVideoSampleBuffer:bufferRef];
-      }
-    }];
-  }
+  [self recordMove];
 }
+
 
 #pragma mark - edit command
 #pragma mark -
@@ -122,6 +90,46 @@
 
 - (IBAction)resetAVEditor:(UIButton *)sender {
   [_mediaEditor resetCompositionBeforeRestarting];
+}
+
+
+/**
+ 从摄像头获取数据，并写成mp4 、acc文件，再进行处理
+ */
+- (void)recordMove {
+  // 这部份代码未做整理，参考其使用方法就可以
+  NHCaptureViewController *capture = (NHCaptureViewController *)[self presentedViewController];
+  if ([capture isKindOfClass:[NHCaptureViewController class]]) {
+    __weak __typeof(self)ws = self;
+    [capture setDidStopCapture:^(BOOL stop) {
+      if (stop) {
+        // 完成写入
+        [ws.mediaWriter finishWriteWithCompletionHandler:^(NSURL * _Nonnull fileUrl) {
+          NHLog(@"%@",fileUrl);
+          if (fileUrl) {
+            [ws.displayView setPlayUrl:fileUrl];
+            [ws.mediaEditor resetCompositionBeforeRestarting];
+            [ws.mediaEditor setInputVideoURL:fileUrl];
+          }
+        }];
+      } else {
+        // 准备写入，保存的文件格式，请与当`fileType`对应
+        [ws.mediaWriter prepareBuildMediaWithOutpurUrl:[ws OutUrl:@"mov"]];
+        // [ws.mediaWriter beginBuildMediaWithOutpurUrl:[ws OutUrl:@"acc"]];
+      }
+    }];
+    
+    [capture setDidOutputBuffer:^(CMSampleBufferRef  _Nonnull bufferRef) {
+      CMFormatDescriptionRef des = CMSampleBufferGetFormatDescription(bufferRef);
+      CMMediaType mediaType = CMFormatDescriptionGetMediaType(des);
+      // 写入音/视频数据，暂不支持同时写入
+      if (mediaType == kCMMediaType_Audio) {
+        //        [ws.mediaWriter appendAudioSampleBuffer:bufferRef];
+      } else {
+        [ws.mediaWriter appendVideoSampleBuffer:bufferRef];
+      }
+    }];
+  }
 }
 
 
