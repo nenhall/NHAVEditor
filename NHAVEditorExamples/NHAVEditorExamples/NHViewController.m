@@ -81,7 +81,9 @@
   [self.mediaEditor exportMediaWithOutputURL:nil customConfig:^(NHExporyConfig * _Nonnull config) {
     config.presetName = AVAssetExportPreset1280x720;
     config.outputFileType = AVFileTypeQuickTimeMovie;
-  } completedBlock:nil];
+  } completedBlock:^(NSURL * _Nullable outputURL, NSError * _Nullable error) {
+    
+  }];
 }
 
 - (IBAction)watermarkSwitch:(UISwitch *)sender {
