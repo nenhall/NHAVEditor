@@ -13,12 +13,11 @@ Pod::Spec.new do |spec|
   spec.version      = "0.0.1"
   spec.summary      = "基于 AVFoundation 框架封装的 iOS视频编辑工具"
   spec.description  = <<-DESC
-  基于 AVFoundation 框架封装的 iOS视频编辑工具
+  基于 AVFoundation 框架封装的 iOS视频编辑工具，支持给视频添加水印、特效、音乐、导出视频、视频转gif
                    DESC
 
   spec.homepage     = "https://github.com/nenhall/NHAVEditor"
-  spec.screenshots  = "https://github.com/nenhall/NHAVEditor/blob/master/preview.gif"
-
+  # spec.screenshots  = "https://github.com/nenhall/NHAVEditor/blob/master/preview.gif"
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.license      = { :type => "MIT", :file => "LICENSE" }
