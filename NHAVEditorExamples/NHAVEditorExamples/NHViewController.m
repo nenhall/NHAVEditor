@@ -10,11 +10,10 @@
 #import "NHDisplayView.h"
 #import <CoreImage/CoreImage.h>
 #import <MBProgressHUD+NHAdd.h>
-#import "NHAVEditor.h"
 #import "NHAVEditorDefine.h"
-#import "NHGifWriter.h"
-#import "NHMediaWriter.h"
 #import "NHCaptureViewController.h"
+//#import <NHAVEditor.h>
+#import "NHAVEditor.h"
 
 
 #define kMp3Path [[NSBundle mainBundle] pathForResource:@"黑龙-38度6" ofType:@"mp3"]
@@ -160,8 +159,16 @@
     [MBProgressHUD hideHUDForView:self.view];
   });
   
+  
+  [NHPicture saveVideoGifToPhotoWithURL:outputURL completionHandler:^(BOOL success, NSError * _Nullable error) {
+    NHLog(@"视频保存相册, error:%@", error.localizedDescription);
+  }];
+  
   [self.gifWriter buildGifFromVideo:outputURL timeInterval:@(600) completion:^(NSURL * _Nullable url, NSError * _Nullable error) {
     NHLog(@"GIF生成完成:%@", url);
+    [NHPicture saveVideoGifToPhotoWithURL:url completionHandler:^(BOOL success, NSError * _Nullable error) {
+      NHLog(@"保存相册, error:%@", error.localizedDescription);
+    }];
   }];
 }
 

@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
-
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 /** 相册保存位置 */
@@ -36,7 +36,7 @@ typedef void (^_Nullable NHPictureCompletedBlock)(NHPictureSaveArea area, NSURL 
 - (void)saveImage:(UIImage *)image name:(NSString *__nullable)name directory:(NSString *__nullable)directory toPath:(NSString *__nullable)path saveArea:(NHPictureSaveArea)saveArea completionHandler:(NHPictureCompletedBlock)completionHandler;
 
 + (void)saveImage:(UIImage *)image name:(NSString *__nullable)name directory:(NSString *__nullable)directory toPath:(NSString *__nullable)path saveArea:(NHPictureSaveArea)saveArea completionHandler:(NHPictureCompletedBlock)completionHandler;
-+ (void)saveFileToPhotoWithURL:(NSURL *)url completionHandler:(nullable void(^)(BOOL success, NSError *__nullable error))completionHandler;
++ (void)saveVideoGifToPhotoWithURL:(NSURL *)url completionHandler:(nullable void(^)(BOOL success, NSError *__nullable error))completionHandler;
 
 + (UIImage *)addWaterMarkWithImage:(UIImage *)image waterImage:(UIImage *)waterImage imgScale:(CGFloat)scale;
 + (UIImage *)makeImageWithView:(UIView *)view withSize:(CGSize)size scale:(CGFloat)scale;

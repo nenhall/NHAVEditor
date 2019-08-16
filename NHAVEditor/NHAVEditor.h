@@ -10,6 +10,10 @@
 #import <UIKit/UIKit.h>
 #import "NHAVEditorProtocol.h"
 #import "NHMediaConfig.h"
+#import "NHPicture.h"
+#import "NHGifWriter.h"
+#import "NHMediaWriter.h"
+#import "NHAVEditor.h"
 
 
 NS_ASSUME_NONNULL_BEGIN

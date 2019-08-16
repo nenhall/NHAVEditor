@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD1919602306B10400510E22 /* NSData+NH.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1919432306B10400510E22 /* NSData+NH.m */; };
+		DD1919612306B10400510E22 /* NHMediaConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1919452306B10400510E22 /* NHMediaConfig.m */; };
+		DD1919622306B10400510E22 /* NHProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1919462306B10400510E22 /* NHProxy.m */; };
+		DD1919632306B10400510E22 /* NHTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1919472306B10400510E22 /* NHTimer.m */; };
+		DD1919642306B10400510E22 /* NSDate+NH.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1919482306B10400510E22 /* NSDate+NH.m */; };
+		DD1919652306B10400510E22 /* NHThread.m in Sources */ = {isa = PBXBuildFile; fileRef = DD19194A2306B10400510E22 /* NHThread.m */; };
+		DD1919662306B10400510E22 /* NHGifWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1919522306B10400510E22 /* NHGifWriter.m */; };
+		DD1919672306B10400510E22 /* NHAddWatermarkCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1919572306B10400510E22 /* NHAddWatermarkCommand.m */; };
+		DD1919682306B10400510E22 /* NHMediaCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1919582306B10400510E22 /* NHMediaCommand.m */; };
+		DD1919692306B10400510E22 /* NHPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = DD19195B2306B10400510E22 /* NHPicture.m */; };
+		DD19196A2306B10400510E22 /* NHMediaWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DD19195C2306B10400510E22 /* NHMediaWriter.m */; };
+		DD19196B2306B10400510E22 /* NHAddAudioCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = DD19195D2306B10400510E22 /* NHAddAudioCommand.m */; };
+		DD19196C2306B10400510E22 /* NHAVEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = DD19195E2306B10400510E22 /* NHAVEditor.m */; };
+		DD19196D2306B10400510E22 /* NHMediaExportCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = DD19195F2306B10400510E22 /* NHMediaExportCommand.m */; };
 		DD33FE9F230552F500100A72 /* NHCaptureSession.m in Sources */ = {isa = PBXBuildFile; fileRef = DD33FE9E230552F500100A72 /* NHCaptureSession.m */; };
 		DD33FEA22305530B00100A72 /* NHVideoConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = DD33FEA02305530A00100A72 /* NHVideoConfiguration.m */; };
 		DD33FEA82305544900100A72 /* NHCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD33FEA72305544900100A72 /* NHCaptureViewController.m */; };
@@ -31,6 +45,37 @@
 		2776AB7BC82B5C5FA84053A0 /* Pods_NHAVEditorExamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NHAVEditorExamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98363D3779A452B47E34410D /* Pods-NHAVEditorExamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHAVEditorExamples.debug.xcconfig"; path = "Target Support Files/Pods-NHAVEditorExamples/Pods-NHAVEditorExamples.debug.xcconfig"; sourceTree = "<group>"; };
 		9B6C0CF4BE57C407F9B6C7BD /* Pods-NHAVEditorExamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHAVEditorExamples.release.xcconfig"; path = "Target Support Files/Pods-NHAVEditorExamples/Pods-NHAVEditorExamples.release.xcconfig"; sourceTree = "<group>"; };
+		DD1919402306B10400510E22 /* NHAddWatermarkCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHAddWatermarkCommand.h; sourceTree = "<group>"; };
+		DD1919422306B10400510E22 /* NSDate+NH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+NH.h"; sourceTree = "<group>"; };
+		DD1919432306B10400510E22 /* NSData+NH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+NH.m"; sourceTree = "<group>"; };
+		DD1919442306B10400510E22 /* NHThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHThread.h; sourceTree = "<group>"; };
+		DD1919452306B10400510E22 /* NHMediaConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHMediaConfig.m; sourceTree = "<group>"; };
+		DD1919462306B10400510E22 /* NHProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHProxy.m; sourceTree = "<group>"; };
+		DD1919472306B10400510E22 /* NHTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHTimer.m; sourceTree = "<group>"; };
+		DD1919482306B10400510E22 /* NSDate+NH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+NH.m"; sourceTree = "<group>"; };
+		DD1919492306B10400510E22 /* NSData+NH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+NH.h"; sourceTree = "<group>"; };
+		DD19194A2306B10400510E22 /* NHThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHThread.m; sourceTree = "<group>"; };
+		DD19194B2306B10400510E22 /* NHMediaConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHMediaConfig.h; sourceTree = "<group>"; };
+		DD19194C2306B10400510E22 /* NHAVEditorDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHAVEditorDefine.h; sourceTree = "<group>"; };
+		DD19194D2306B10400510E22 /* NHTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHTimer.h; sourceTree = "<group>"; };
+		DD19194E2306B10400510E22 /* NHProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHProxy.h; sourceTree = "<group>"; };
+		DD19194F2306B10400510E22 /* NHMediaCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHMediaCommand.h; sourceTree = "<group>"; };
+		DD1919502306B10400510E22 /* NHMediaWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHMediaWriter.h; sourceTree = "<group>"; };
+		DD1919512306B10400510E22 /* NHPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHPicture.h; sourceTree = "<group>"; };
+		DD1919522306B10400510E22 /* NHGifWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHGifWriter.m; sourceTree = "<group>"; };
+		DD1919532306B10400510E22 /* NHMediaExportCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHMediaExportCommand.h; sourceTree = "<group>"; };
+		DD1919542306B10400510E22 /* NHAVEditorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHAVEditorProtocol.h; sourceTree = "<group>"; };
+		DD1919552306B10400510E22 /* NHAVEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHAVEditor.h; sourceTree = "<group>"; };
+		DD1919562306B10400510E22 /* NHAddAudioCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHAddAudioCommand.h; sourceTree = "<group>"; };
+		DD1919572306B10400510E22 /* NHAddWatermarkCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHAddWatermarkCommand.m; sourceTree = "<group>"; };
+		DD1919582306B10400510E22 /* NHMediaCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHMediaCommand.m; sourceTree = "<group>"; };
+		DD1919592306B10400510E22 /* NHMediaCommandProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHMediaCommandProtocol.h; sourceTree = "<group>"; };
+		DD19195A2306B10400510E22 /* NHGifWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHGifWriter.h; sourceTree = "<group>"; };
+		DD19195B2306B10400510E22 /* NHPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHPicture.m; sourceTree = "<group>"; };
+		DD19195C2306B10400510E22 /* NHMediaWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHMediaWriter.m; sourceTree = "<group>"; };
+		DD19195D2306B10400510E22 /* NHAddAudioCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHAddAudioCommand.m; sourceTree = "<group>"; };
+		DD19195E2306B10400510E22 /* NHAVEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHAVEditor.m; sourceTree = "<group>"; };
+		DD19195F2306B10400510E22 /* NHMediaExportCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHMediaExportCommand.m; sourceTree = "<group>"; };
 		DD33FE9D230552F500100A72 /* NHCaptureSession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHCaptureSession.h; sourceTree = "<group>"; };
 		DD33FE9E230552F500100A72 /* NHCaptureSession.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHCaptureSession.m; sourceTree = "<group>"; };
 		DD33FEA02305530A00100A72 /* NHVideoConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHVideoConfiguration.m; sourceTree = "<group>"; };
@@ -94,6 +139,53 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DD19193F2306B10400510E22 /* NHAVEditor */ = {
+			isa = PBXGroup;
+			children = (
+				DD1919412306B10400510E22 /* Unit */,
+				DD19194F2306B10400510E22 /* NHMediaCommand.h */,
+				DD1919502306B10400510E22 /* NHMediaWriter.h */,
+				DD1919512306B10400510E22 /* NHPicture.h */,
+				DD1919522306B10400510E22 /* NHGifWriter.m */,
+				DD1919532306B10400510E22 /* NHMediaExportCommand.h */,
+				DD1919542306B10400510E22 /* NHAVEditorProtocol.h */,
+				DD1919552306B10400510E22 /* NHAVEditor.h */,
+				DD1919562306B10400510E22 /* NHAddAudioCommand.h */,
+				DD1919572306B10400510E22 /* NHAddWatermarkCommand.m */,
+				DD1919582306B10400510E22 /* NHMediaCommand.m */,
+				DD1919592306B10400510E22 /* NHMediaCommandProtocol.h */,
+				DD19195A2306B10400510E22 /* NHGifWriter.h */,
+				DD19195B2306B10400510E22 /* NHPicture.m */,
+				DD19195C2306B10400510E22 /* NHMediaWriter.m */,
+				DD19195D2306B10400510E22 /* NHAddAudioCommand.m */,
+				DD19195E2306B10400510E22 /* NHAVEditor.m */,
+				DD1919402306B10400510E22 /* NHAddWatermarkCommand.h */,
+				DD19195F2306B10400510E22 /* NHMediaExportCommand.m */,
+			);
+			name = NHAVEditor;
+			path = ../../NHAVEditor;
+			sourceTree = "<group>";
+		};
+		DD1919412306B10400510E22 /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+				DD1919422306B10400510E22 /* NSDate+NH.h */,
+				DD1919432306B10400510E22 /* NSData+NH.m */,
+				DD1919442306B10400510E22 /* NHThread.h */,
+				DD1919452306B10400510E22 /* NHMediaConfig.m */,
+				DD1919462306B10400510E22 /* NHProxy.m */,
+				DD1919472306B10400510E22 /* NHTimer.m */,
+				DD1919482306B10400510E22 /* NSDate+NH.m */,
+				DD1919492306B10400510E22 /* NSData+NH.h */,
+				DD19194A2306B10400510E22 /* NHThread.m */,
+				DD19194B2306B10400510E22 /* NHMediaConfig.h */,
+				DD19194C2306B10400510E22 /* NHAVEditorDefine.h */,
+				DD19194D2306B10400510E22 /* NHTimer.h */,
+				DD19194E2306B10400510E22 /* NHProxy.h */,
+			);
+			path = Unit;
+			sourceTree = "<group>";
+		};
 		DD33FEA52305541300100A72 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +237,7 @@
 		DDD9AA9722F5271500A77702 /* NHAVEditorExamples */ = {
 			isa = PBXGroup;
 			children = (
+				DD19193F2306B10400510E22 /* NHAVEditor */,
 				DDB61AB322F568A400EDC3C6 /* Resources */,
 				DDB61ABD22F5790A00EDC3C6 /* Libraries */,
 				DD33FEA52305541300100A72 /* Tool */,
@@ -285,13 +378,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD1919682306B10400510E22 /* NHMediaCommand.m in Sources */,
 				DDD9AAA822F5271600A77702 /* main.m in Sources */,
 				DD751F2922F57ED500340C8D /* NHDisplayView.m in Sources */,
+				DD19196C2306B10400510E22 /* NHAVEditor.m in Sources */,
+				DD19196B2306B10400510E22 /* NHAddAudioCommand.m in Sources */,
+				DD1919602306B10400510E22 /* NSData+NH.m in Sources */,
+				DD1919632306B10400510E22 /* NHTimer.m in Sources */,
+				DD19196D2306B10400510E22 /* NHMediaExportCommand.m in Sources */,
 				DD33FE9F230552F500100A72 /* NHCaptureSession.m in Sources */,
+				DD1919622306B10400510E22 /* NHProxy.m in Sources */,
 				DD33FEA82305544900100A72 /* NHCaptureViewController.m in Sources */,
+				DD1919672306B10400510E22 /* NHAddWatermarkCommand.m in Sources */,
 				DDB61ABA22F5748C00EDC3C6 /* NHViewController.m in Sources */,
 				DD33FEA22305530B00100A72 /* NHVideoConfiguration.m in Sources */,
+				DD19196A2306B10400510E22 /* NHMediaWriter.m in Sources */,
 				DDD9AA9A22F5271500A77702 /* AppDelegate.m in Sources */,
+				DD1919642306B10400510E22 /* NSDate+NH.m in Sources */,
+				DD1919612306B10400510E22 /* NHMediaConfig.m in Sources */,
+				DD1919692306B10400510E22 /* NHPicture.m in Sources */,
+				DD1919652306B10400510E22 /* NHThread.m in Sources */,
+				DD1919662306B10400510E22 /* NHGifWriter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

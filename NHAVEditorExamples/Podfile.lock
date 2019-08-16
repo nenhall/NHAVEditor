@@ -1,11 +1,9 @@
 PODS:
   - MBProgressHUD (1.1.0)
-  - NHAVEditor (0.0.1)
   - NHHUDExtend (1.0.2):
     - MBProgressHUD
 
 DEPENDENCIES:
-  - NHAVEditor (from `../NHAVEditor.podspec`)
   - NHHUDExtend
 
 SPEC REPOS:
@@ -13,15 +11,10 @@ SPEC REPOS:
     - MBProgressHUD
     - NHHUDExtend
 
-EXTERNAL SOURCES:
-  NHAVEditor:
-    :path: "../NHAVEditor.podspec"
-
 SPEC CHECKSUMS:
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
-  NHAVEditor: 67fc61b33c3bb046f24aeeb46381c2bfe921a801
   NHHUDExtend: 1fd914b12b93ac61c1cfdb04485c25db59f27627
 
-PODFILE CHECKSUM: c094b5a13501c42987acab53fd504fdc1b22fcce
+PODFILE CHECKSUM: 77f4fc6bf91d4d663a66e22ba68a3334a4bb5579
 
 COCOAPODS: 1.7.1

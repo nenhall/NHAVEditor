@@ -238,5 +238,8 @@ AVCaptureMetadataOutputObjectsDelegate
   
 }
 
+- (void)captureOutput:(nonnull AVCaptureFileOutput *)output didFinishRecordingToOutputFileAtURL:(nonnull NSURL *)outputFileURL fromConnections:(nonnull NSArray<AVCaptureConnection *> *)connections error:(nullable NSError *)error {
+  
+}
 
 @end

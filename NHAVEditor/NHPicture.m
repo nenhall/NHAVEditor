@@ -10,6 +10,9 @@
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <CoreServices/CoreServices.h>
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
 
 @implementation NHPicture {
   dispatch_queue_t _takePhotoQ;
@@ -33,22 +36,33 @@
   [[[NHPicture alloc] init] saveImage:image name:name directory:directory toPath:path saveArea:saveArea completionHandler:completionHandler];
 }
 
-+ (void)saveFileToPhotoWithURL:(NSURL *)url completionHandler:(nullable void(^)(BOOL success, NSError *__nullable error))completionHandler {
++ (void)saveVideoGifToPhotoWithURL:(NSURL *)url completionHandler:(nullable void(^)(BOOL success, NSError *__nullable error))completionHandler {
   
-  NSData *imageData = [NSData dataWithContentsOfURL:url];
-  
-  ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
-  NSDictionary *metadata = @{@"UTI" : (__bridge NSString *)kUTTypeGIF};
-  
-  [library writeImageDataToSavedPhotosAlbum:imageData metadata:metadata completionBlock:^(NSURL *assetURL, NSError *error) {
-    BOOL suc = YES;
-    if (error || !assetURL) {
-      suc = NO;
-    }
-    if (completionHandler) {
-      completionHandler(suc, error);
-    }
-  }];
+  if ([url.pathExtension isEqualToString:@"gif"]) {
+    NSData *imageData = [NSData dataWithContentsOfURL:url];
+    
+    ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
+    NSDictionary *metadata = @{@"UTI" : (__bridge NSString *)kUTTypeGIF};
+    
+    [library writeImageDataToSavedPhotosAlbum:imageData metadata:metadata completionBlock:^(NSURL *assetURL, NSError *error) {
+      BOOL suc = YES;
+      if (error || !assetURL) {
+        suc = NO;
+      }
+      if (completionHandler) {
+        completionHandler(suc, error);
+      }
+    }];
+  } else {
+    [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
+      [PHAssetChangeRequest creationRequestForAssetFromVideoAtFileURL:url];
+      
+    } completionHandler:^(BOOL success, NSError * _Nullable error) {
+      if (completionHandler) {
+        completionHandler(success , error);
+      }
+    }];
+  }
 }
 
 + (void)saveImage:(UIImage *)image name:(NSString *)name directory:(NSString *)directory toPath:(NSString *)path saveArea:(NHPictureSaveArea)saveArea completionHandler:(NHPictureCompletedBlock)completionHandler {
@@ -310,3 +324,5 @@
 }
 
 @end
+
+#pragma clang diagnostic pop
