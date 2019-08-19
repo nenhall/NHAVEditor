@@ -308,7 +308,7 @@ static NSString *getProgressTimerFlg = @"getProgressTimerFlg";
 }
 
 - (void)dealloc {
-  [_compositionThread stop];
+//  [_compositionThread stop];
   [NHTimer cancelTask:getProgressTimerFlg];
 }
 
