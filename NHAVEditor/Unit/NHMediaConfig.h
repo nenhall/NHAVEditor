@@ -102,7 +102,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NHExporyConfig : NSObject
 /**
- 导出视频分辨率，eg. : AVAssetExportPreset1280x720 默认为视频的原尺寸
+ 导出视频分辨率，默认: AVAssetExportPreset1280x720 默认
  */
 @property (nonatomic, copy) NSString *presetName;
 

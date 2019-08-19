@@ -38,7 +38,7 @@
   // create AVAssetExportSession
   NSString *presetName = self.config.presetName;
   if (!presetName) {
-    presetName = AVAssetExportPresetPassthrough;
+    presetName = AVAssetExportPreset1280x720;
   }
   _exportSession = [[AVAssetExportSession alloc] initWithAsset:[self.mComposition copy] presetName:presetName];
   _exportSession.audioMix = self.mAudioMix;
@@ -81,14 +81,14 @@
       case AVAssetExportSessionStatusFailed:
         NHLog(@"导出失败：(AVAssetExportSessionStatusFailed)%@",ws.exportSession.error.localizedDescription);
         if (ws.delegate && [ws.delegate respondsToSelector:@selector(mediaExportCompleted:outputURL:error:)]) {
-          [ws.delegate mediaExportCompleted:ws outputURL:ws.outputURL error:ws.exportSession.error];
+          [ws.delegate mediaExportCompleted:ws outputURL:nil error:ws.exportSession.error];
         }
         break;
         
       case AVAssetExportSessionStatusCancelled:
         NHLog(@"导出取消：%@",ws.exportSession.error.localizedDescription);
         if (ws.delegate && [ws.delegate respondsToSelector:@selector(mediaExportCompleted:outputURL:error:)]) {
-          [ws.delegate mediaExportCompleted:ws outputURL:ws.outputURL error:ws.exportSession.error];
+          [ws.delegate mediaExportCompleted:ws outputURL:nil error:ws.exportSession.error];
         }
         break;
     }

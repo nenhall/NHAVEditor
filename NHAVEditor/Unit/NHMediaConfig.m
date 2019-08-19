@@ -58,7 +58,7 @@
 {
   self = [super init];
   if (self) {
-    _presetName = AVAssetExportPresetPassthrough;
+    _presetName = AVAssetExportPreset1280x720;
     _outputFileType = AVFileTypeQuickTimeMovie;
   }
   return self;

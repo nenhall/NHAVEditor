@@ -143,11 +143,11 @@
         CVPixelBufferUnlockBaseAddress(videoBuffer, 0);
         success = YES;
       }
+    } else if (self.writer.status == AVAssetWriterStatusFailed) {
+      NHLog(@"拼接视频失败:%f",CMTimeGetSeconds(currentSampleTime));
     }
   }
-  if (self.writer.status != AVAssetWriterStatusCompleted) {
-    NHLog(@"拼接视频失败:%f",CMTimeGetSeconds(currentSampleTime));
-  }
+ 
   return success;
 }
 
@@ -184,10 +184,11 @@
       if ([self.assetWritePiexlBufferInput appendPixelBuffer:cvImageRef withPresentationTime:currentSampleTime]) {
         success = YES;
       }
+    } else if (self.writer.status == AVAssetWriterStatusFailed) {
+      NHLog(@"拼接视频失败:%f",CMTimeGetSeconds(currentSampleTime));
     }
   }
   CFRelease(videoBuffer);
-  NHLog(@"拼接视频失败:%f",CMTimeGetSeconds(currentSampleTime));
   return success;
 }
 
@@ -217,10 +218,11 @@
       if ([self.assetWriterAudioInput appendSampleBuffer:audioBuffer]) {
         success = YES;
       }
+    } else if (self.writer.status == AVAssetWriterStatusFailed) {
+      NHLog(@"拼接音频失败:%f",CMTimeGetSeconds(currentSampleTime));
     }
   }
   CFRelease(audioBuffer);
-  NHLog(@"拼接音频失败:%f",CMTimeGetSeconds(currentSampleTime));
   return success;
 }
 
@@ -252,6 +254,8 @@
         if ([self.assetWriterAudioInput appendSampleBuffer:bufferRef]) {
           success = YES;
         }
+      } else if (self.writer.status == AVAssetWriterStatusFailed) {
+        NHLog(@"拼接音频失败:%f",CMTimeGetSeconds(currentSampleTime));
       }
     }
   } else {
@@ -261,6 +265,8 @@
         if ([self.assetWritePiexlBufferInput appendPixelBuffer:cvImageRef withPresentationTime:currentSampleTime]) {
           success = YES;
         }
+      } else if (self.writer.status == AVAssetWriterStatusFailed) {
+        NHLog(@"拼接视频失败:%f",CMTimeGetSeconds(currentSampleTime));
       }
     }
   }

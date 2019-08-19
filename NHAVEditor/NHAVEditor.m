@@ -185,12 +185,13 @@ static NSString *getProgressTimerFlg = @"getProgressTimerFlg";
     
     _videoComposition.animationTool = [AVVideoCompositionCoreAnimationTool videoCompositionCoreAnimationToolWithPostProcessingAsVideoLayer:videoLayer inLayer:animationLayer];
   }
-  
+  _currentProgress = 0.0;
   [NHTimer timerWithTimeInterval:1.0 start:0 target:self action:@selector(updateExportProgress) repeats:YES async:YES onlyFlag:getProgressTimerFlg];
 }
 
 - (void)updateExportProgress {
   CGFloat progress = _exportCommand.exportSession.progress;
+  _currentProgress = progress;
   if (progress == 1.0) {
     [NHTimer cancelTask:getProgressTimerFlg];
   }
@@ -244,6 +245,7 @@ static NSString *getProgressTimerFlg = @"getProgressTimerFlg";
     self.videoComposition = nil;
     self.audioMix = nil;
     self.currentProgress = 0.0;
+    self.waterMLayer = nil;
   }
 }
 
@@ -257,9 +259,6 @@ static NSString *getProgressTimerFlg = @"getProgressTimerFlg";
 #pragma mark - NHMediaCommandProtocol
 #pragma mark -
 - (void)mediaCompositioning:(NHMediaCommand *)editor progress:(CGFloat)progress {
-  self.audioMix = editor.mAudioMix;
-  self.composition = editor.mComposition;
-  self.videoComposition = editor.mVideoComposition;
   self.currentProgress = progress;
   nh_editor_safe_do_mainQ(^{
     if (self.delegate && [self.delegate respondsToSelector:@selector(editorCompositioning:progress:type:)]) {
@@ -284,10 +283,7 @@ static NSString *getProgressTimerFlg = @"getProgressTimerFlg";
 }
 
 - (void)mediaExportCompleted:(NHMediaCommand *)editor outputURL:(NSURL *)outputURL error:(NSError *)error {
-  self.audioMix = editor.mAudioMix;
-  self.composition = editor.mComposition;
-  self.videoComposition = editor.mVideoComposition;
-  self.waterMLayer = nil;
+  [self resetAllCompositionBeforeRestarting];
   
   if (_mediaExportCompletedBlock) {
     _mediaExportCompletedBlock(outputURL, error);
