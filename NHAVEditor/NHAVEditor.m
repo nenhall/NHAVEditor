@@ -34,12 +34,11 @@
 @property (nonatomic, strong) NHMediaExportCommand *exportCommand;
 @property (nonatomic, copy  ) NHEditCompletedBlock mediaCommandCompletedBlock;
 @property (nonatomic, copy  ) NHEditExportedBlock mediaExportCompletedBlock;
-
 /** 视频导出质量 default：AVAssetExportPreset1280x720 */
 @property (nonatomic, assign) NSString *exportPresetName;
 /** 视频导出的文件类型 default：AVFileTypeQuickTimeMovie */
 @property (nonatomic, copy  ) AVFileType outputFileType;
-@property (nonatomic, strong) NHThread *compositionThread;
+//@property (nonatomic, strong) NHThread *compositionThread;
 
 
 @end
@@ -73,8 +72,7 @@ static NSString *getProgressTimerFlg = @"getProgressTimerFlg";
 #pragma mark -
 - (void)initAvEditorConfig {
   _compositionQueue = dispatch_queue_create("com.nh.av.editor.queue", DISPATCH_QUEUE_SERIAL);
-  _compositionThread = [[NHThread alloc] init];
-  
+//  _compositionThread = [[NHThread alloc] init];
 }
 
 - (void)setInputVideoURL:(NSURL *)inputVideoURL {
@@ -101,10 +99,9 @@ static NSString *getProgressTimerFlg = @"getProgressTimerFlg";
     self.mediaCommandCompletedBlock = completedBlock;
   }
   _waterMLayer = layer;
-  __weak __typeof(self)ws = self;
-  [self.compositionThread executeTask:^{
-    [ws addWatermark:config];
-  }];
+  dispatch_async(_compositionQueue, ^{
+    [self addWatermark:config];
+  });
 }
 
 - (void)addAudioWithAudioURL:(NSURL *)audioURL customConfig:(void (^_Nullable)(NHAudioConfig * _Nonnull))customConfig completedBlock:(NHEditCompletedBlock)completedBlock {
@@ -118,10 +115,9 @@ static NSString *getProgressTimerFlg = @"getProgressTimerFlg";
     self.mediaCommandCompletedBlock = completedBlock;
   }
   _audioUrl = audioURL;
-  __weak __typeof(self)ws = self;
-  [self.compositionThread executeTask:^{
-    [ws addAudio:config];
-  }];
+  dispatch_async(_compositionQueue, ^{
+    [self addAudio:config];
+  });
 }
 
 - (void)exportMediaWithOutputURL:(NSURL *_Nullable)outputURL
@@ -137,11 +133,9 @@ static NSString *getProgressTimerFlg = @"getProgressTimerFlg";
     self.mediaExportCompletedBlock = completedBlock;
   }
   
-  __weak __typeof(self)ws = self;
-  [self.compositionThread executeTask:^{
-    [ws exportMedia:config];
-  }];
-//  [self exportMedia:config];
+  dispatch_async(_compositionQueue, ^{
+    [self exportMedia:config];
+  });
 }
 
 - (void)addAudio:(NHAudioConfig *)config {
