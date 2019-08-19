@@ -11,18 +11,14 @@ iOS: >= 9.0
 
 Pod 安装请使用 >= 0.0.3 版本，0.0.3之前的版本保存视频方面有些bug
 
-`  pod 'NHAVEditor', ‘0.0.3'`
+`    pod 'NHAVEditor', '~> 0.0.4'`
 
 1. 导入头文件：
 
    ```objective-c
    #import "NHAVEditor.h"
-   #import "NHAVEditorHeader.h"
-   #import "NHGifWriter.h"
-   #import "NHMediaWriter.h"
-   #import "NHCaptureViewController.h"
    ```
-
+   
 2. 初始化
 
    ```objective-c

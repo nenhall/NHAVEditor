@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.name         = "NHAVEditor"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.1"
   spec.summary      = "基于 AVFoundation 框架封装的 iOS视频编辑工具"
   spec.description  = <<-DESC
   基于 AVFoundation 框架封装的 iOS视频编辑工具，支持给视频添加水印、特效、音乐、导出视频、视频转gif
