@@ -183,7 +183,7 @@
   _watermarkLayer = [CALayer layer];
   _watermarkLayer.position = CGPointMake(_displayView.videoSize.width * 0.5, _displayView.videoSize.height * 0.5);
   _watermarkLayer.bounds = CGRectMake(0, 0, _displayView.videoSize.width, _displayView.videoSize.height);
-  _watermarkLayer.backgroundColor = [UIColor redColor].CGColor;
+//   _watermarkLayer.backgroundColor = [UIColor redColor].CGColor;
   CALayer *imageLayer = [CALayer layer];
   imageLayer.frame = CGRectMake(0, 0, [self logoImage].size.width, [self logoImage].size.height);
   imageLayer.contents = (__bridge id)[self logoImage].CGImage;
