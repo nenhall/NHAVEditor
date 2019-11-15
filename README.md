@@ -121,4 +121,4 @@ iOS: >= 8.0
 
 
 音视频开发技术交流群：纯做此项技术，如做推广、营销人员匆扰
-![音视频开发技术交流](https://upload-images.jianshu.io/upload_images/2443108-4521b196f9f6b3a4.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![音视频开发技术交流](https://upload-images.jianshu.io/upload_images/2443108-8ed463259d0099bc.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/305)

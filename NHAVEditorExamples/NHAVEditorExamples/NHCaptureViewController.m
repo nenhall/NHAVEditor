@@ -20,7 +20,12 @@
     [super viewDidLoad];
 
   
-#if !TARGET_IPHONE_SIMULATOR
+#if TARGET_IPHONE_SIMULATOR
+  UILabel *label = [[UILabel alloc] initWithFrame:self.view.bounds];
+  label.textAlignment = NSTextAlignmentCenter;
+  label.text = @"不支持模拟器！";
+  [self.view addSubview:label];
+#else
   _captureSession = [[NHCaptureSession alloc] init];
   _captureSession.delegate = self;
   [_captureSession setPreview:self.view];
