@@ -47,60 +47,88 @@
     newAudioTrack = audioTracks.firstObject;
   }
   
+  // 是否保留视频原有的音频
+  AVMutableCompositionTrack *ori_mcAudioTrack = nil;
+  BOOL isAddOriginalAudio = assetAudioTrack && (self.config && !self.config.removeOriginalAudio);
+
   if (!self.mComposition) {
     self.mComposition = [AVMutableComposition composition];
     CMTimeRange iTimeRange = CMTimeRangeMake(kCMTimeZero, [asset duration]);
 
-    // 视频
+    // ** 视频 **
     if (assetVideoTrack) {
-      AVMutableCompositionTrack *cVideoTrack = [self.mComposition addMutableTrackWithMediaType:AVMediaTypeVideo preferredTrackID:kCMPersistentTrackID_Invalid];
-      [cVideoTrack insertTimeRange:iTimeRange ofTrack:assetVideoTrack atTime:kCMTimeZero error:&error];
+      AVMutableCompositionTrack *mcVideoTrack = [self.mComposition addMutableTrackWithMediaType:AVMediaTypeVideo preferredTrackID:kCMPersistentTrackID_Invalid];
+      [mcVideoTrack insertTimeRange:iTimeRange ofTrack:assetVideoTrack atTime:kCMTimeZero error:&error];
     }
     
-    // 音频
-    BOOL isAddOrgAudio = assetAudioTrack && (self.config && !self.config.removeOriginalAudio);
-    if (isAddOrgAudio) {
-      AVMutableCompositionTrack *cAudioTrack = [self.mComposition addMutableTrackWithMediaType:AVMediaTypeAudio preferredTrackID:kCMPersistentTrackID_Invalid];
-      [cAudioTrack insertTimeRange:iTimeRange ofTrack:assetAudioTrack atTime:kCMTimeZero error:&error];
+    // ** 建立音轨 **
+    if (assetAudioTrack) {
+      ori_mcAudioTrack = [self.mComposition addMutableTrackWithMediaType:AVMediaTypeAudio preferredTrackID:kCMPersistentTrackID_Invalid];
+      
+      if (isAddOriginalAudio) {
+        [ori_mcAudioTrack insertTimeRange:iTimeRange ofTrack:assetAudioTrack atTime:kCMTimeZero error:&error];
+      }
     }
   }
   
-  // 新的音频轨道
-  AVMutableCompositionTrack *nmAudioTrack = [self.mComposition addMutableTrackWithMediaType:AVMediaTypeAudio preferredTrackID:kCMPersistentTrackID_Invalid];
-  
-  CMTimeRange mi_timeRange = self.config.insertTimeRange;
-  if (CMTIMERANGE_IS_INVALID(mi_timeRange)) {
-    mi_timeRange = CMTimeRangeMake(kCMTimeZero, [self.mComposition duration]);
+  // 原有的音轨
+  AVMutableAudioMixInputParameters *oriMixParameters = nil;
+  if (ori_mcAudioTrack) {
+    oriMixParameters = [AVMutableAudioMixInputParameters audioMixInputParametersWithTrack:ori_mcAudioTrack];
+    if (self.config) {
+      [oriMixParameters setVolumeRampFromStartVolume:self.config.originalVolume
+                                         toEndVolume:self.config.originalVolume
+                                           timeRange:CMTimeRangeMake(kCMTimeZero, asset.duration)];
+      [oriMixParameters setTrackID:ori_mcAudioTrack.trackID];
+    }
   }
   
-  CMTime startTime = self.config.startTime;
-  if (CMTIME_IS_INVALID(startTime)) {
-    startTime = kCMTimeZero;
+  
+  // 新的音频轨道
+  AVMutableCompositionTrack *new_mcAudioTrack = nil;
+  AVMutableAudioMixInputParameters *newMixParameters = nil;
+  if (newAudioTrack) {
+    new_mcAudioTrack = [self.mComposition addMutableTrackWithMediaType:AVMediaTypeAudio preferredTrackID:kCMPersistentTrackID_Invalid];
+    CMTimeRange mi_timeRange = self.config.insertTimeRange;
+    if (CMTIMERANGE_IS_INVALID(mi_timeRange)) {
+      mi_timeRange = CMTimeRangeMake(kCMTimeZero, [self.mComposition duration]);
+    }
+    
+    CMTime startTime = self.config.startTime;
+    if (CMTIME_IS_INVALID(startTime)) {
+      startTime = kCMTimeZero;
+    }
+    
+    // 新音轨的插入范围、起点
+    [new_mcAudioTrack insertTimeRange:mi_timeRange ofTrack:newAudioTrack atTime:startTime  error:&error];
+
+    // 新的音频轨道
+    // 把新的音轨一并合入
+    newMixParameters = [AVMutableAudioMixInputParameters audioMixInputParametersWithTrack:newAudioTrack];
+    CMTimeRange volumeTimeRange = self.config.volumeTimeRange;
+    if (CMTIMERANGE_IS_INVALID(volumeTimeRange)) {
+      volumeTimeRange = CMTimeRangeMake(kCMTimeZero, [self.mComposition duration]);
+    }
+    if (self.config) {
+      [newMixParameters setVolumeRampFromStartVolume:self.config.startVolume
+                                         toEndVolume:self.config.endVolume
+                                           timeRange:volumeTimeRange];
+    } else {
+      [newMixParameters setVolumeRampFromStartVolume:1.0
+                                         toEndVolume:1.0
+                                           timeRange:volumeTimeRange];
+    }
+    [newMixParameters setTrackID:new_mcAudioTrack.trackID];
+  }
+  
+  // 所有音轨
+  self.mAudioMix = [AVMutableAudioMix audioMix];
+  if (isAddOriginalAudio) {
+    self.mAudioMix.inputParameters = [NSArray arrayWithObjects:oriMixParameters, newMixParameters, nil];
+  } else {
+    self.mAudioMix.inputParameters = [NSArray arrayWithObjects:newMixParameters, nil];
   }
 
-  // 插入范围、起点
-  [nmAudioTrack insertTimeRange:mi_timeRange ofTrack:newAudioTrack atTime:startTime  error:&error];
-  
-  // 把新的音轨一并合入
-  AVMutableAudioMixInputParameters *mixParameters = [AVMutableAudioMixInputParameters audioMixInputParametersWithTrack:nmAudioTrack];
-  CMTimeRange volumeTimeRange = self.config.volumeTimeRange;
-  if (CMTIMERANGE_IS_INVALID(volumeTimeRange)) {
-    volumeTimeRange = CMTimeRangeMake(kCMTimeZero, [self.mComposition duration]);
-  }
-  if (self.config) {
-    [mixParameters setVolumeRampFromStartVolume:self.config.startVolume
-                                    toEndVolume:self.config.endVolume
-                                      timeRange:volumeTimeRange];
-  } else {
-    [mixParameters setVolumeRampFromStartVolume:1.0
-                                    toEndVolume:1.0
-                                      timeRange:volumeTimeRange];
-  }
-  
-  
-  self.mAudioMix = [AVMutableAudioMix audioMix];
-  self.mAudioMix.inputParameters = @[ mixParameters ];
-  
   if (self.delegate && [self.delegate respondsToSelector:@selector(mediaCompositioned:error:)]) {
     [self.delegate mediaCompositioned:self error:error];
   }

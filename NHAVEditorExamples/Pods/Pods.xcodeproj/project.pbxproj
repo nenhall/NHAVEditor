@@ -7,127 +7,225 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BA30CAFE0BE7866FC0D9B887EF65F59 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBFE4313B24B1C09CAF4727DD4C9201E /* QuartzCore.framework */; };
-		4192DB3F6F9045265A6C39019F309BC8 /* Pods-NHAVEditorExamples-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F53A19461D71703D80329615B1ABC7EB /* Pods-NHAVEditorExamples-dummy.m */; };
-		44D10F8A578ED7F50CC8153CD298A978 /* MBProgressHUD+NHAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8792F734BE6F078747F5C15632B7B7 /* MBProgressHUD+NHAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4DE88D7CE1A92FE58306D2E6BD9CC8F6 /* NHHUDExtend-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B7D6A3FDDD4E509F05017D65386241F /* NHHUDExtend-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6BA2D8497A5FD018AB95972AEB6C40B5 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 4503DDF1081228A83B49F44B9AEE457F /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B8C25614B945981C5C9E838F22C94B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5BCF729F0AC4E817CE9017EC11D1B3F /* Foundation.framework */; };
-		7C5F3EEFBC07E8F360737EA98C09F01E /* MBProgressHUD+NHAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 035981DB4923C53859D6AB45189755B9 /* MBProgressHUD+NHAdd.m */; };
-		7ED0379558A331219C0D24B162B90276 /* MBProgressHUD_NHExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = EBD71571A8EB8F5A22DA6E88503EEBAC /* MBProgressHUD_NHExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8B2C7D088392803671B712C8DAF406E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071CD838077A924EAF357E1DE5D9716B /* CoreGraphics.framework */; };
-		B48B9C1CC34CABA4E86FE5F92D4DEEB9 /* NHHUDExtend-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E94D36B452DB0CA4D24F2B72A5E365C6 /* NHHUDExtend-dummy.m */; };
-		BB2461193934E6C4FE09BD15BE160C91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5BCF729F0AC4E817CE9017EC11D1B3F /* Foundation.framework */; };
-		CA21B716D97F10A9EA9E52192B05088E /* Pods-NHAVEditorExamples-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89D4EC2D056F4F0B6AB88021BCB2A87E /* Pods-NHAVEditorExamples-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D6C63CD6246163D81F730258C1C7A90D /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D7350C3FA44E02049155FD82D720A5 /* MBProgressHUD-dummy.m */; };
-		E40996725327AAC68DC6994F97D8DCA1 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9350395113DFB94B9806058FCE9F65DA /* MBProgressHUD.m */; };
-		EF3DB998203FB74C94B2FC4B9146B354 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56452E004419B9A637AC8D1455D07312 /* MBProgressHUD.framework */; };
-		FA32FD535717E3A7EADF0E78A6A4FF30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5BCF729F0AC4E817CE9017EC11D1B3F /* Foundation.framework */; };
-		FD46A422A60DC7E540AEC3CE2C020DB0 /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB3B3D35586F4C6371611D92836746B9 /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04E8697E7A8C49E5A0B4EC400FF4D6F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3023A7D43B8C0EA4C94123E3A5E2A69 /* Foundation.framework */; };
+		04F367C5C2CB26CA0CCD8804456CC342 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A355A5BF8044F3D1D0F0B06C64AC5F /* MBProgressHUD.framework */; };
+		075AEAEE4E2300230969E8698E7E6CEC /* NHMediaWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9F072D4054306A5CE756E09BBE72D0 /* NHMediaWriter.m */; };
+		13864D325BB61614BC958351EE1C8148 /* NHMediaCommandProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 872E4BB086EC53A61A426916430B671B /* NHMediaCommandProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2298C8DE46CEF4C17BF06B6C2379A8ED /* NHAddWatermarkCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BAA104117ADD38224ED82A8585EF590 /* NHAddWatermarkCommand.m */; };
+		291B5F2FBAA40C603819A8491B2ADED6 /* NHTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EE9D6CEB2F3E00B8ECA6B8B752A9758 /* NHTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D6EB7F5B3997D811C6D99070D5CECE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3023A7D43B8C0EA4C94123E3A5E2A69 /* Foundation.framework */; };
+		30344D6843D5BA1A8DEAF9E323B10B7D /* MBProgressHUD+NHAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 035981DB4923C53859D6AB45189755B9 /* MBProgressHUD+NHAdd.m */; };
+		30B66FC9F38BFCB1CBB6F3FBAA543118 /* NHHUDExtend-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E94D36B452DB0CA4D24F2B72A5E365C6 /* NHHUDExtend-dummy.m */; };
+		3469754D50A88CC90ED0F348C8855338 /* NHMediaCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C26EFCE792AD5E97268C3BCE4E10022D /* NHMediaCommand.m */; };
+		351C1E0DAA2348998CB064EAAB85EAEA /* Pods-NHAVEditorExamples-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F53A19461D71703D80329615B1ABC7EB /* Pods-NHAVEditorExamples-dummy.m */; };
+		3585E4CF134E1906BE1117CC2EB7FCB1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F29A8E7527F6CCA661E346B734C98F /* AVFoundation.framework */; };
+		35C4E4279A7C02D9C271466AB1ACF867 /* NSData+NH.h in Headers */ = {isa = PBXBuildFile; fileRef = BDA04A91C965A04C68934648C2FE12F0 /* NSData+NH.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39B79A4711B82EDB3630DABD3536E469 /* NHTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E0F32447E2B553873A4E4FD0FEF7E6 /* NHTimer.m */; };
+		3FF59AD26B6B1F5F1CB0C358655ABB7F /* NHAVEditor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AA9A22E0B5D6196FCB5AC7DDCED745 /* NHAVEditor-dummy.m */; };
+		42C35A00D344F879F08AEE34DFCDE3CF /* NHGifWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 16D6BB2D57332006A1ED3084FA08CC72 /* NHGifWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		432C73E8AD70347940329C6BB08311AC /* NHProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 9409BBD92298003ED418071FB5AEE0BF /* NHProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		511E70330BE83B83354383E21D0F2523 /* NHMediaWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = B1EAE0378A52704B2BFE38761995F040 /* NHMediaWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		538F5CCE703FAFC9F4BEC5E289355810 /* NSDate+NH.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C763A2D94B64530AA3368023257FF0E /* NSDate+NH.m */; };
+		583DE1B6049364D794480DD87379FEEC /* NHProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3930A1819A71F33024A4ADCA4FD0ED6D /* NHProxy.m */; };
+		5A66A9B83F18A005564E56A0888DC422 /* NHPicture.h in Headers */ = {isa = PBXBuildFile; fileRef = EE12EF568BFC7EB81209DF26F07CB6F1 /* NHPicture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63DF1BE34FA0F2855D6811DD3F0C5594 /* NHAVEditorDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 42418C565E06C89D0AF3EA9E3356213F /* NHAVEditorDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6463F6B755001BBB4DF040C4D9F0E980 /* NHHUDExtend-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B7D6A3FDDD4E509F05017D65386241F /* NHHUDExtend-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64F46B6A8DBA885AF570A54A082D1BAA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8FAA70492493DA5F95832EF2922AC7 /* QuartzCore.framework */; };
+		6738D7C11AFEFE954B4FE42B557C2DB2 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E8E9D9CAA096AC2DB0EC5BAC792173 /* ImageIO.framework */; };
+		6AE38F98D3F90C29734DD3AA10135758 /* NSDate+NH.h in Headers */ = {isa = PBXBuildFile; fileRef = F885CA6B20747E0AC45C3745EC3622EC /* NSDate+NH.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70EE1C774C978E1876AE6CA1224E897D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9350395113DFB94B9806058FCE9F65DA /* MBProgressHUD.m */; };
+		743BD79BB4EE4C4E38E8E0D8215639E1 /* NHMediaConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 500CA7BAB7F280FE4DA1C1693C75BF82 /* NHMediaConfig.m */; };
+		77FEB4EBB36418117803E254211A3B89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3023A7D43B8C0EA4C94123E3A5E2A69 /* Foundation.framework */; };
+		7D2B4186443FC79D2B143447B8ED61C5 /* NHAVEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5C6E843D67CA7CFF3E8D9268CB9CA5 /* NHAVEditor.m */; };
+		81B9E2F21B1EF9FE4E769103108DEA8A /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB3B3D35586F4C6371611D92836746B9 /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		893F258C812D7B41C8F5D601B3AE6122 /* NHAVEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = B1D514EF6A75559FAFE25CBF52F2CDA7 /* NHAVEditor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A503E740886A4F258CDB93192C6D39D /* NHMediaExportCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAE27059EFDE14CD09F0E52D2018B5E /* NHMediaExportCommand.m */; };
+		9E0AE14F4D0A8503F7D155B4796B6069 /* MBProgressHUD+NHAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8792F734BE6F078747F5C15632B7B7 /* MBProgressHUD+NHAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FC98175800618C813D348A7D790C491 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C725BEA4587A85C6E567DFDD8F18583 /* CoreServices.framework */; };
+		A601994621C892656F60D1A1292A9565 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F92A1B6FC939C86D1CFDDDA921699BD9 /* CoreGraphics.framework */; };
+		AF379F9E3E518293E4A44C9F66FE0215 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A149416C696780EC35A5285C4950BF5F /* UIKit.framework */; };
+		B368A51C9B0D90A11B89EF6194BDF975 /* NHThread.h in Headers */ = {isa = PBXBuildFile; fileRef = ADFFCB3BEB683E9D5441101FAECB3121 /* NHThread.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5B8CCBF80F0A9BA10F1DDAA58520748 /* NHThread.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8260F69EBAD05252E67C0F4DE4F00E /* NHThread.m */; };
+		C2AB16B46C9D3B156278ABB5B52E9F3D /* NHAddWatermarkCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = E94BDAD17297DEB044EEC4940A43E8D9 /* NHAddWatermarkCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6B5E9FA5C8830010E351BB258FB1E87 /* Pods-NHAVEditorExamples-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89D4EC2D056F4F0B6AB88021BCB2A87E /* Pods-NHAVEditorExamples-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C78A9961D1DAD3A423E4EA889BF9F88D /* NHMediaExportCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A300467A47353411676DBEB4F7691ED /* NHMediaExportCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D22939C42DF0164C04C2566DA8009A50 /* MBProgressHUD_NHExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = EBD71571A8EB8F5A22DA6E88503EEBAC /* MBProgressHUD_NHExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D68AE68C5EBA30164F3CEB03C37053D2 /* NSData+NH.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F7660B1300C8772A352261E03070BA /* NSData+NH.m */; };
+		D6BE13C0185E2BECE2BDD076AEB7087F /* NHAVEditor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA8A4E2C038C42EFBB1A081E7EE5DC91 /* NHAVEditor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DABF20F73D27572CD97071A6D4DB9004 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D7350C3FA44E02049155FD82D720A5 /* MBProgressHUD-dummy.m */; };
+		E00C3C034C8C305A66EDB10927DEF470 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC2E01F737A8B0D02C933028F21E87A /* Photos.framework */; };
+		E1E7C4E73060FB032D1F5021DD667C37 /* NHPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = E558675FEAD02DC2F5338B93CF6981EE /* NHPicture.m */; };
+		E4BB31A751F19A67463034520C4D08EB /* NHAddAudioCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 36FFA9F9ED3F87C193BF7A0C4C9ABF4C /* NHAddAudioCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7857815C07EC245E3213C85AF403C90 /* NHAVEditorProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 528A4134FAB948774FF602B9EFBBE725 /* NHAVEditorProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8CC314458EA6CEDF72E010AFDBFCF9F /* NHMediaCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A52D37F4581BC1BEFC96FD218B68BB6 /* NHMediaCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB2A4C29BE958CCB03B3FD9FAB927F1F /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 4503DDF1081228A83B49F44B9AEE457F /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC3969B600F4222068898949569CAB0C /* NHAddAudioCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 91811AD9DC34F65CC6DA1FEA1B6B13B3 /* NHAddAudioCommand.m */; };
+		ED9537C7B88A661DD67C0F78973EF7FE /* NHMediaConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 416AF4F12E623B87B214322717C0AA59 /* NHMediaConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F03DFFF77DAD4078D944CAEBC594F03B /* NHGifWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D3396F56870F8E9CA140E281189DC2 /* NHGifWriter.m */; };
+		F1446FF275854121063494A4C1FC4A50 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0560F8A132A9C851633EAC9B61328E9C /* AssetsLibrary.framework */; };
+		FF0EE7E6F869E55DA268F25622674EB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3023A7D43B8C0EA4C94123E3A5E2A69 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0F2E1766DE01D7BC0CA448B085D790B1 /* PBXContainerItemProxy */ = {
+		2F1AD69897C471C63B700F97328A24A6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 82B0A41D3031FF27D78E17B0A9A46FB0;
-			remoteInfo = MBProgressHUD;
+			remoteGlobalIDString = DDF9D1DF3AB63C3775F61335CDEBF794;
+			remoteInfo = NHAVEditor;
 		};
-		807A393DDEF54B67FB02602761401049 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 82B0A41D3031FF27D78E17B0A9A46FB0;
-			remoteInfo = MBProgressHUD;
-		};
-		B7EDAB18E92E72FF786835C4527E8803 /* PBXContainerItemProxy */ = {
+		43D68FFFC1A19D7207B0FE169FE56CFE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 30D52B0E6BEA0136AF61C2792C450DE7;
 			remoteInfo = NHHUDExtend;
 		};
+		B9B9CCBA93141CE7DE9F9FA9AFF4B278 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82B0A41D3031FF27D78E17B0A9A46FB0;
+			remoteInfo = MBProgressHUD;
+		};
+		BF2D73EF9060E8D8D4E9C6F1202F72BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82B0A41D3031FF27D78E17B0A9A46FB0;
+			remoteInfo = MBProgressHUD;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		035981DB4923C53859D6AB45189755B9 /* MBProgressHUD+NHAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MBProgressHUD+NHAdd.m"; path = "NHHUDExtend/MBProgressHUD+NHAdd.m"; sourceTree = "<group>"; };
-		071CD838077A924EAF357E1DE5D9716B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		0560F8A132A9C851633EAC9B61328E9C /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
 		0997890FF75DFE7989424AF20015F679 /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
+		0B8FAA70492493DA5F95832EF2922AC7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		0C725BEA4587A85C6E567DFDD8F18583 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		0C763A2D94B64530AA3368023257FF0E /* NSDate+NH.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDate+NH.m"; sourceTree = "<group>"; };
 		0D57DEC9CA76D540B360CC15CECF1B7D /* NHHUDExtend-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NHHUDExtend-Info.plist"; sourceTree = "<group>"; };
+		13A355A5BF8044F3D1D0F0B06C64AC5F /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16D6BB2D57332006A1ED3084FA08CC72 /* NHGifWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHGifWriter.h; path = NHAVEditor/NHGifWriter.h; sourceTree = "<group>"; };
+		1A52D37F4581BC1BEFC96FD218B68BB6 /* NHMediaCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHMediaCommand.h; path = NHAVEditor/NHMediaCommand.h; sourceTree = "<group>"; };
 		1C72F8EA347BA8CA71C8172CA38B6BA1 /* Pods-NHAVEditorExamples-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NHAVEditorExamples-Info.plist"; sourceTree = "<group>"; };
+		2A300467A47353411676DBEB4F7691ED /* NHMediaExportCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHMediaExportCommand.h; path = NHAVEditor/NHMediaExportCommand.h; sourceTree = "<group>"; };
+		36FFA9F9ED3F87C193BF7A0C4C9ABF4C /* NHAddAudioCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHAddAudioCommand.h; path = NHAVEditor/NHAddAudioCommand.h; sourceTree = "<group>"; };
+		3930A1819A71F33024A4ADCA4FD0ED6D /* NHProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NHProxy.m; sourceTree = "<group>"; };
+		416AF4F12E623B87B214322717C0AA59 /* NHMediaConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NHMediaConfig.h; sourceTree = "<group>"; };
 		421E5E4056C335E07FBB69E03A3313C1 /* Pods-NHAVEditorExamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NHAVEditorExamples.debug.xcconfig"; sourceTree = "<group>"; };
+		42418C565E06C89D0AF3EA9E3356213F /* NHAVEditorDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NHAVEditorDefine.h; sourceTree = "<group>"; };
 		4503DDF1081228A83B49F44B9AEE457F /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		4B7D6A3FDDD4E509F05017D65386241F /* NHHUDExtend-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NHHUDExtend-umbrella.h"; sourceTree = "<group>"; };
 		4D81E3EF95FCFCDD9DE7736B3397E598 /* Pods-NHAVEditorExamples-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NHAVEditorExamples-acknowledgements.plist"; sourceTree = "<group>"; };
+		4EC2E01F737A8B0D02C933028F21E87A /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
+		500CA7BAB7F280FE4DA1C1693C75BF82 /* NHMediaConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NHMediaConfig.m; sourceTree = "<group>"; };
+		528A4134FAB948774FF602B9EFBBE725 /* NHAVEditorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHAVEditorProtocol.h; path = NHAVEditor/NHAVEditorProtocol.h; sourceTree = "<group>"; };
 		5492CD27487E6F5AEC22868C08631B94 /* NHHUDExtend-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NHHUDExtend-prefix.pch"; sourceTree = "<group>"; };
-		56452E004419B9A637AC8D1455D07312 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58D3396F56870F8E9CA140E281189DC2 /* NHGifWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHGifWriter.m; path = NHAVEditor/NHGifWriter.m; sourceTree = "<group>"; };
+		5AC293D854D5D39C0D098164DCB7E300 /* NHAVEditor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NHAVEditor.xcconfig; sourceTree = "<group>"; };
 		5B1923F401559A2974962788D0789CAD /* MBProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MBProgressHUD-Info.plist"; sourceTree = "<group>"; };
+		5BF5A038C31D3C2B1B1426371B60E75C /* NHAVEditor-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NHAVEditor-Info.plist"; sourceTree = "<group>"; };
+		60AA9A22E0B5D6196FCB5AC7DDCED745 /* NHAVEditor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NHAVEditor-dummy.m"; sourceTree = "<group>"; };
 		60AC904D4F06298CCF712ABE940FD78E /* NHHUDExtend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NHHUDExtend.framework; path = NHHUDExtend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66E8E9D9CAA096AC2DB0EC5BAC792173 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		6D5C6E843D67CA7CFF3E8D9268CB9CA5 /* NHAVEditor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHAVEditor.m; path = NHAVEditor/NHAVEditor.m; sourceTree = "<group>"; };
+		872E4BB086EC53A61A426916430B671B /* NHMediaCommandProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHMediaCommandProtocol.h; path = NHAVEditor/NHMediaCommandProtocol.h; sourceTree = "<group>"; };
 		89D4EC2D056F4F0B6AB88021BCB2A87E /* Pods-NHAVEditorExamples-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NHAVEditorExamples-umbrella.h"; sourceTree = "<group>"; };
 		8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FADC6D5FE9FDD6A3695DD0D93B914B0 /* Pods-NHAVEditorExamples-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NHAVEditorExamples-frameworks.sh"; sourceTree = "<group>"; };
+		91811AD9DC34F65CC6DA1FEA1B6B13B3 /* NHAddAudioCommand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHAddAudioCommand.m; path = NHAVEditor/NHAddAudioCommand.m; sourceTree = "<group>"; };
 		9299E8E0FA7BE92C365911A8452F1B76 /* Pods_NHAVEditorExamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NHAVEditorExamples.framework; path = "Pods-NHAVEditorExamples.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9350395113DFB94B9806058FCE9F65DA /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		9409BBD92298003ED418071FB5AEE0BF /* NHProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NHProxy.h; sourceTree = "<group>"; };
 		94707C8482FD4807DD1D3D684753D743 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		9AAE27059EFDE14CD09F0E52D2018B5E /* NHMediaExportCommand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHMediaExportCommand.m; path = NHAVEditor/NHMediaExportCommand.m; sourceTree = "<group>"; };
+		9BAA104117ADD38224ED82A8585EF590 /* NHAddWatermarkCommand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHAddWatermarkCommand.m; path = NHAVEditor/NHAddWatermarkCommand.m; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EE9D6CEB2F3E00B8ECA6B8B752A9758 /* NHTimer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NHTimer.h; sourceTree = "<group>"; };
 		9F97E1B4AB887514688509011FCB6F76 /* NHHUDExtend.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NHHUDExtend.modulemap; sourceTree = "<group>"; };
+		A149416C696780EC35A5285C4950BF5F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		A3F29A8E7527F6CCA661E346B734C98F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		A5F7A4040E05655A9E8F4BB29CEEE200 /* Pods-NHAVEditorExamples.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NHAVEditorExamples.modulemap"; sourceTree = "<group>"; };
+		A61FDE755BEB3F03E758DCB1DF0EEDED /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		A9E0F32447E2B553873A4E4FD0FEF7E6 /* NHTimer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NHTimer.m; sourceTree = "<group>"; };
 		AAEECA03C0624D9C695CD6A43C5057D1 /* Pods-NHAVEditorExamples-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NHAVEditorExamples-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AB9F072D4054306A5CE756E09BBE72D0 /* NHMediaWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHMediaWriter.m; path = NHAVEditor/NHMediaWriter.m; sourceTree = "<group>"; };
 		AC167B71DCFA9D668CF2C4E300CFDFA9 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
-		BBFE4313B24B1C09CAF4727DD4C9201E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		ADFFCB3BEB683E9D5441101FAECB3121 /* NHThread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NHThread.h; sourceTree = "<group>"; };
+		B1D514EF6A75559FAFE25CBF52F2CDA7 /* NHAVEditor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHAVEditor.h; path = NHAVEditor/NHAVEditor.h; sourceTree = "<group>"; };
+		B1EAE0378A52704B2BFE38761995F040 /* NHMediaWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHMediaWriter.h; path = NHAVEditor/NHMediaWriter.h; sourceTree = "<group>"; };
+		B77A72048AF47B71D2F74F4C0BB2A6D1 /* NHAVEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NHAVEditor.framework; path = NHAVEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC8260F69EBAD05252E67C0F4DE4F00E /* NHThread.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NHThread.m; sourceTree = "<group>"; };
+		BDA04A91C965A04C68934648C2FE12F0 /* NSData+NH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+NH.h"; sourceTree = "<group>"; };
+		BECA9252FFE315E95EB0F61817226E14 /* NHAVEditor.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = NHAVEditor.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C26EFCE792AD5E97268C3BCE4E10022D /* NHMediaCommand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHMediaCommand.m; path = NHAVEditor/NHMediaCommand.m; sourceTree = "<group>"; };
 		C4D7350C3FA44E02049155FD82D720A5 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
 		C79173F532D725E7C0EFFF5476CB38D6 /* Pods-NHAVEditorExamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NHAVEditorExamples.release.xcconfig"; sourceTree = "<group>"; };
+		C9835904334DEA66873979A74DA78A9F /* NHAVEditor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NHAVEditor.modulemap; sourceTree = "<group>"; };
+		D3023A7D43B8C0EA4C94123E3A5E2A69 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DE8792F734BE6F078747F5C15632B7B7 /* MBProgressHUD+NHAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MBProgressHUD+NHAdd.h"; path = "NHHUDExtend/MBProgressHUD+NHAdd.h"; sourceTree = "<group>"; };
+		DEF03C71E99FEEDC175638F32A749DB3 /* NHAVEditor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NHAVEditor-prefix.pch"; sourceTree = "<group>"; };
 		E283E77FA28CE8CD076A88C6BCC1E492 /* NHHUDExtend.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NHHUDExtend.xcconfig; sourceTree = "<group>"; };
+		E558675FEAD02DC2F5338B93CF6981EE /* NHPicture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHPicture.m; path = NHAVEditor/NHPicture.m; sourceTree = "<group>"; };
+		E94BDAD17297DEB044EEC4940A43E8D9 /* NHAddWatermarkCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHAddWatermarkCommand.h; path = NHAVEditor/NHAddWatermarkCommand.h; sourceTree = "<group>"; };
 		E94D36B452DB0CA4D24F2B72A5E365C6 /* NHHUDExtend-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NHHUDExtend-dummy.m"; sourceTree = "<group>"; };
+		E9F7660B1300C8772A352261E03070BA /* NSData+NH.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+NH.m"; sourceTree = "<group>"; };
 		EB3B3D35586F4C6371611D92836746B9 /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
 		EBD71571A8EB8F5A22DA6E88503EEBAC /* MBProgressHUD_NHExtend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD_NHExtend.h; path = NHHUDExtend/MBProgressHUD_NHExtend.h; sourceTree = "<group>"; };
+		EE12EF568BFC7EB81209DF26F07CB6F1 /* NHPicture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHPicture.h; path = NHAVEditor/NHPicture.h; sourceTree = "<group>"; };
 		F53A19461D71703D80329615B1ABC7EB /* Pods-NHAVEditorExamples-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NHAVEditorExamples-dummy.m"; sourceTree = "<group>"; };
-		F5BCF729F0AC4E817CE9017EC11D1B3F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F885CA6B20747E0AC45C3745EC3622EC /* NSDate+NH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDate+NH.h"; sourceTree = "<group>"; };
+		F92A1B6FC939C86D1CFDDDA921699BD9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		FA8A4E2C038C42EFBB1A081E7EE5DC91 /* NHAVEditor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NHAVEditor-umbrella.h"; sourceTree = "<group>"; };
+		FF2F3F4944989F3368201939FBAF8DCA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		511BB0FD329C1DF2EC1446995C0930E7 /* Frameworks */ = {
+		1AA3C16B4B3AB40CA74BDDADEF5C143A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB2461193934E6C4FE09BD15BE160C91 /* Foundation.framework in Frameworks */,
+				A601994621C892656F60D1A1292A9565 /* CoreGraphics.framework in Frameworks */,
+				FF0EE7E6F869E55DA268F25622674EB9 /* Foundation.framework in Frameworks */,
+				64F46B6A8DBA885AF570A54A082D1BAA /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		70E00948B36EB64453B5961B4C860E4F /* Frameworks */ = {
+		29002169589249A1182FDB2D204BEEAD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA32FD535717E3A7EADF0E78A6A4FF30 /* Foundation.framework in Frameworks */,
-				EF3DB998203FB74C94B2FC4B9146B354 /* MBProgressHUD.framework in Frameworks */,
+				04E8697E7A8C49E5A0B4EC400FF4D6F1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F38FCF49BC46EF5ECC7EDB9626C56A0E /* Frameworks */ = {
+		5296D9C40BC10632AE69F99E9B0CC84B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8B2C7D088392803671B712C8DAF406E /* CoreGraphics.framework in Frameworks */,
-				7B8C25614B945981C5C9E838F22C94B2 /* Foundation.framework in Frameworks */,
-				1BA30CAFE0BE7866FC0D9B887EF65F59 /* QuartzCore.framework in Frameworks */,
+				F1446FF275854121063494A4C1FC4A50 /* AssetsLibrary.framework in Frameworks */,
+				3585E4CF134E1906BE1117CC2EB7FCB1 /* AVFoundation.framework in Frameworks */,
+				9FC98175800618C813D348A7D790C491 /* CoreServices.framework in Frameworks */,
+				2D6EB7F5B3997D811C6D99070D5CECE5 /* Foundation.framework in Frameworks */,
+				6738D7C11AFEFE954B4FE42B557C2DB2 /* ImageIO.framework in Frameworks */,
+				E00C3C034C8C305A66EDB10927DEF470 /* Photos.framework in Frameworks */,
+				AF379F9E3E518293E4A44C9F66FE0215 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		581D48A942CE83CC5B878404021A4495 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77FEB4EBB36418117803E254211A3B89 /* Foundation.framework in Frameworks */,
+				04F367C5C2CB26CA0CCD8804456CC342 /* MBProgressHUD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		20B815EF3EAFC31E7BB70D40B1A10086 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */,
-				60AC904D4F06298CCF712ABE940FD78E /* NHHUDExtend.framework */,
-				9299E8E0FA7BE92C365911A8452F1B76 /* Pods_NHAVEditorExamples.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		437B0C1B6BD882F36B89937BDAE179AE /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,16 +238,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/NHHUDExtend";
-			sourceTree = "<group>";
-		};
-		49DF5BAE7709B0460CC3643558F4D6BB /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				071CD838077A924EAF357E1DE5D9716B /* CoreGraphics.framework */,
-				F5BCF729F0AC4E817CE9017EC11D1B3F /* Foundation.framework */,
-				BBFE4313B24B1C09CAF4727DD4C9201E /* QuartzCore.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		53D3BCCC3B8F44013B11A92820B74820 /* Support Files */ = {
@@ -166,6 +254,52 @@
 			path = "../Target Support Files/MBProgressHUD";
 			sourceTree = "<group>";
 		};
+		5FE3ACFE337EE4E594E7D72D01CDCDC3 /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+				42418C565E06C89D0AF3EA9E3356213F /* NHAVEditorDefine.h */,
+				416AF4F12E623B87B214322717C0AA59 /* NHMediaConfig.h */,
+				500CA7BAB7F280FE4DA1C1693C75BF82 /* NHMediaConfig.m */,
+				9409BBD92298003ED418071FB5AEE0BF /* NHProxy.h */,
+				3930A1819A71F33024A4ADCA4FD0ED6D /* NHProxy.m */,
+				ADFFCB3BEB683E9D5441101FAECB3121 /* NHThread.h */,
+				BC8260F69EBAD05252E67C0F4DE4F00E /* NHThread.m */,
+				9EE9D6CEB2F3E00B8ECA6B8B752A9758 /* NHTimer.h */,
+				A9E0F32447E2B553873A4E4FD0FEF7E6 /* NHTimer.m */,
+				BDA04A91C965A04C68934648C2FE12F0 /* NSData+NH.h */,
+				E9F7660B1300C8772A352261E03070BA /* NSData+NH.m */,
+				F885CA6B20747E0AC45C3745EC3622EC /* NSDate+NH.h */,
+				0C763A2D94B64530AA3368023257FF0E /* NSDate+NH.m */,
+			);
+			name = Unit;
+			path = NHAVEditor/Unit;
+			sourceTree = "<group>";
+		};
+		84008DADCE245904A7ED6513C7B51B31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13A355A5BF8044F3D1D0F0B06C64AC5F /* MBProgressHUD.framework */,
+				886A66E3BA91C38B7800830ECC99BFE5 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		886A66E3BA91C38B7800830ECC99BFE5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0560F8A132A9C851633EAC9B61328E9C /* AssetsLibrary.framework */,
+				A3F29A8E7527F6CCA661E346B734C98F /* AVFoundation.framework */,
+				F92A1B6FC939C86D1CFDDDA921699BD9 /* CoreGraphics.framework */,
+				0C725BEA4587A85C6E567DFDD8F18583 /* CoreServices.framework */,
+				D3023A7D43B8C0EA4C94123E3A5E2A69 /* Foundation.framework */,
+				66E8E9D9CAA096AC2DB0EC5BAC792173 /* ImageIO.framework */,
+				4EC2E01F737A8B0D02C933028F21E87A /* Photos.framework */,
+				0B8FAA70492493DA5F95832EF2922AC7 /* QuartzCore.framework */,
+				A149416C696780EC35A5285C4950BF5F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		94A7C462ED3828D5E55D4884C55038F2 /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +309,38 @@
 			);
 			name = MBProgressHUD;
 			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		94AE81C93D6DF78A1420B436A354C953 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9835904334DEA66873979A74DA78A9F /* NHAVEditor.modulemap */,
+				5AC293D854D5D39C0D098164DCB7E300 /* NHAVEditor.xcconfig */,
+				60AA9A22E0B5D6196FCB5AC7DDCED745 /* NHAVEditor-dummy.m */,
+				5BF5A038C31D3C2B1B1426371B60E75C /* NHAVEditor-Info.plist */,
+				DEF03C71E99FEEDC175638F32A749DB3 /* NHAVEditor-prefix.pch */,
+				FA8A4E2C038C42EFBB1A081E7EE5DC91 /* NHAVEditor-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "NHAVEditorExamples/Pods/Target Support Files/NHAVEditor";
+			sourceTree = "<group>";
+		};
+		96CBC63C9DE2F9CF3F09DC761AC129CD /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				FF2F3F4944989F3368201939FBAF8DCA /* LICENSE */,
+				BECA9252FFE315E95EB0F61817226E14 /* NHAVEditor.podspec */,
+				A61FDE755BEB3F03E758DCB1DF0EEDED /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		A2927BDEC81020A7A8445300A8F306BB /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B12CD2030E6635D62AED3D068959E28F /* NHAVEditor */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		ADD13A156939ACEA6937E81851072CF6 /* Pods */ = {
@@ -203,6 +369,35 @@
 			path = "Target Support Files/Pods-NHAVEditorExamples";
 			sourceTree = "<group>";
 		};
+		B12CD2030E6635D62AED3D068959E28F /* NHAVEditor */ = {
+			isa = PBXGroup;
+			children = (
+				36FFA9F9ED3F87C193BF7A0C4C9ABF4C /* NHAddAudioCommand.h */,
+				91811AD9DC34F65CC6DA1FEA1B6B13B3 /* NHAddAudioCommand.m */,
+				E94BDAD17297DEB044EEC4940A43E8D9 /* NHAddWatermarkCommand.h */,
+				9BAA104117ADD38224ED82A8585EF590 /* NHAddWatermarkCommand.m */,
+				B1D514EF6A75559FAFE25CBF52F2CDA7 /* NHAVEditor.h */,
+				6D5C6E843D67CA7CFF3E8D9268CB9CA5 /* NHAVEditor.m */,
+				528A4134FAB948774FF602B9EFBBE725 /* NHAVEditorProtocol.h */,
+				16D6BB2D57332006A1ED3084FA08CC72 /* NHGifWriter.h */,
+				58D3396F56870F8E9CA140E281189DC2 /* NHGifWriter.m */,
+				1A52D37F4581BC1BEFC96FD218B68BB6 /* NHMediaCommand.h */,
+				C26EFCE792AD5E97268C3BCE4E10022D /* NHMediaCommand.m */,
+				872E4BB086EC53A61A426916430B671B /* NHMediaCommandProtocol.h */,
+				2A300467A47353411676DBEB4F7691ED /* NHMediaExportCommand.h */,
+				9AAE27059EFDE14CD09F0E52D2018B5E /* NHMediaExportCommand.m */,
+				B1EAE0378A52704B2BFE38761995F040 /* NHMediaWriter.h */,
+				AB9F072D4054306A5CE756E09BBE72D0 /* NHMediaWriter.m */,
+				EE12EF568BFC7EB81209DF26F07CB6F1 /* NHPicture.h */,
+				E558675FEAD02DC2F5338B93CF6981EE /* NHPicture.m */,
+				96CBC63C9DE2F9CF3F09DC761AC129CD /* Pod */,
+				94AE81C93D6DF78A1420B436A354C953 /* Support Files */,
+				5FE3ACFE337EE4E594E7D72D01CDCDC3 /* Unit */,
+			);
+			name = NHAVEditor;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		BF96412364FA2A311755DD70597DEED4 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,22 +406,25 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		CD496C11F12A36A2E3C576FA77ABD664 /* Frameworks */ = {
+		CD1D15D713AB8694DD4B875F1485D0B4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				56452E004419B9A637AC8D1455D07312 /* MBProgressHUD.framework */,
-				49DF5BAE7709B0460CC3643558F4D6BB /* iOS */,
+				8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */,
+				B77A72048AF47B71D2F74F4C0BB2A6D1 /* NHAVEditor.framework */,
+				60AC904D4F06298CCF712ABE940FD78E /* NHHUDExtend.framework */,
+				9299E8E0FA7BE92C365911A8452F1B76 /* Pods_NHAVEditorExamples.framework */,
 			);
-			name = Frameworks;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				CD496C11F12A36A2E3C576FA77ABD664 /* Frameworks */,
+				A2927BDEC81020A7A8445300A8F306BB /* Development Pods */,
+				84008DADCE245904A7ED6513C7B51B31 /* Frameworks */,
 				ADD13A156939ACEA6937E81851072CF6 /* Pods */,
-				20B815EF3EAFC31E7BB70D40B1A10086 /* Products */,
+				CD1D15D713AB8694DD4B875F1485D0B4 /* Products */,
 				BF96412364FA2A311755DD70597DEED4 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -246,30 +444,55 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		031098E87903A5E9B6948428877A3D1E /* Headers */ = {
+		7622D65ABC50E19D808C5BCE84A29589 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44D10F8A578ED7F50CC8153CD298A978 /* MBProgressHUD+NHAdd.h in Headers */,
-				7ED0379558A331219C0D24B162B90276 /* MBProgressHUD_NHExtend.h in Headers */,
-				4DE88D7CE1A92FE58306D2E6BD9CC8F6 /* NHHUDExtend-umbrella.h in Headers */,
+				E4BB31A751F19A67463034520C4D08EB /* NHAddAudioCommand.h in Headers */,
+				C2AB16B46C9D3B156278ABB5B52E9F3D /* NHAddWatermarkCommand.h in Headers */,
+				D6BE13C0185E2BECE2BDD076AEB7087F /* NHAVEditor-umbrella.h in Headers */,
+				893F258C812D7B41C8F5D601B3AE6122 /* NHAVEditor.h in Headers */,
+				63DF1BE34FA0F2855D6811DD3F0C5594 /* NHAVEditorDefine.h in Headers */,
+				E7857815C07EC245E3213C85AF403C90 /* NHAVEditorProtocol.h in Headers */,
+				42C35A00D344F879F08AEE34DFCDE3CF /* NHGifWriter.h in Headers */,
+				E8CC314458EA6CEDF72E010AFDBFCF9F /* NHMediaCommand.h in Headers */,
+				13864D325BB61614BC958351EE1C8148 /* NHMediaCommandProtocol.h in Headers */,
+				ED9537C7B88A661DD67C0F78973EF7FE /* NHMediaConfig.h in Headers */,
+				C78A9961D1DAD3A423E4EA889BF9F88D /* NHMediaExportCommand.h in Headers */,
+				511E70330BE83B83354383E21D0F2523 /* NHMediaWriter.h in Headers */,
+				5A66A9B83F18A005564E56A0888DC422 /* NHPicture.h in Headers */,
+				432C73E8AD70347940329C6BB08311AC /* NHProxy.h in Headers */,
+				B368A51C9B0D90A11B89EF6194BDF975 /* NHThread.h in Headers */,
+				291B5F2FBAA40C603819A8491B2ADED6 /* NHTimer.h in Headers */,
+				35C4E4279A7C02D9C271466AB1ACF867 /* NSData+NH.h in Headers */,
+				6AE38F98D3F90C29734DD3AA10135758 /* NSDate+NH.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5A4C294738970F47E09E01B7901BA72D /* Headers */ = {
+		8F0EBAB2761523F18BB73EB4DC5CBEC3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD46A422A60DC7E540AEC3CE2C020DB0 /* MBProgressHUD-umbrella.h in Headers */,
-				6BA2D8497A5FD018AB95972AEB6C40B5 /* MBProgressHUD.h in Headers */,
+				81B9E2F21B1EF9FE4E769103108DEA8A /* MBProgressHUD-umbrella.h in Headers */,
+				EB2A4C29BE958CCB03B3FD9FAB927F1F /* MBProgressHUD.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1AD4240FB3961F8BA08B832A27C3425 /* Headers */ = {
+		B23B0BB28AF7A0D753FF7CEDEDE37BC7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA21B716D97F10A9EA9E52192B05088E /* Pods-NHAVEditorExamples-umbrella.h in Headers */,
+				C6B5E9FA5C8830010E351BB258FB1E87 /* Pods-NHAVEditorExamples-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3BB85247E2FCCD40B2C8923022F0036 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E0AE14F4D0A8503F7D155B4796B6069 /* MBProgressHUD+NHAdd.h in Headers */,
+				D22939C42DF0164C04C2566DA8009A50 /* MBProgressHUD_NHExtend.h in Headers */,
+				6463F6B755001BBB4DF040C4D9F0E980 /* NHHUDExtend-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,17 +501,17 @@
 /* Begin PBXNativeTarget section */
 		30D52B0E6BEA0136AF61C2792C450DE7 /* NHHUDExtend */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DD35D05B4CE0A8463F1AD86AB38A9238 /* Build configuration list for PBXNativeTarget "NHHUDExtend" */;
+			buildConfigurationList = 9E99A324D4C31BEB05D0FCF52A11F893 /* Build configuration list for PBXNativeTarget "NHHUDExtend" */;
 			buildPhases = (
-				031098E87903A5E9B6948428877A3D1E /* Headers */,
-				E2C7846CDAAA3D5F069FD48B9FE6A821 /* Sources */,
-				70E00948B36EB64453B5961B4C860E4F /* Frameworks */,
-				7ABEAD63F9EBEA134849BC1FDA09E9CF /* Resources */,
+				D3BB85247E2FCCD40B2C8923022F0036 /* Headers */,
+				98B824BB6688A7698A06C5CF048C95DE /* Sources */,
+				581D48A942CE83CC5B878404021A4495 /* Frameworks */,
+				52B8AF420EB33C8AF80C1C0A0EE503FC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				498F2933AC248AA291BF1076F1024687 /* PBXTargetDependency */,
+				971EF02194BB38EF46B1F4FFEF2C32A4 /* PBXTargetDependency */,
 			);
 			name = NHHUDExtend;
 			productName = NHHUDExtend;
@@ -297,12 +520,12 @@
 		};
 		82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B987638F9099098B9389DF186A2278A4 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */;
+			buildConfigurationList = 70191416B9573C7ABB42333A08FA2DE4 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */;
 			buildPhases = (
-				5A4C294738970F47E09E01B7901BA72D /* Headers */,
-				BE0496A9EA35AC5E523DAEB464369E04 /* Sources */,
-				F38FCF49BC46EF5ECC7EDB9626C56A0E /* Frameworks */,
-				03E62E81F66919E63ECA0D21628A8F9B /* Resources */,
+				8F0EBAB2761523F18BB73EB4DC5CBEC3 /* Headers */,
+				D2F84DC2E2DB3628B17B3841F2837477 /* Sources */,
+				1AA3C16B4B3AB40CA74BDDADEF5C143A /* Frameworks */,
+				435BF4D16B2F9CAB6E7F883F30E32B74 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -315,22 +538,41 @@
 		};
 		99FDF3AA8DE3558CCAC36AF192C53344 /* Pods-NHAVEditorExamples */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 76F928239A7812B4CC7C06BDF06DADD5 /* Build configuration list for PBXNativeTarget "Pods-NHAVEditorExamples" */;
+			buildConfigurationList = B286FF6E153B9856C4644571A91CE4D0 /* Build configuration list for PBXNativeTarget "Pods-NHAVEditorExamples" */;
 			buildPhases = (
-				A1AD4240FB3961F8BA08B832A27C3425 /* Headers */,
-				C5E75F20E61CD88F9C8E7FA7A0915C48 /* Sources */,
-				511BB0FD329C1DF2EC1446995C0930E7 /* Frameworks */,
-				3F218E9ECBDD15EEDB173CA1CB119DE2 /* Resources */,
+				B23B0BB28AF7A0D753FF7CEDEDE37BC7 /* Headers */,
+				C00BBA2928669B7F095673625D0E9202 /* Sources */,
+				29002169589249A1182FDB2D204BEEAD /* Frameworks */,
+				4034F11845339E33B581D08CCD9E8453 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3738DA13D2975ACC78284C2942E048BE /* PBXTargetDependency */,
-				592B4B3483D0044D1651368A63D97844 /* PBXTargetDependency */,
+				F6E573C642068B3862995D3EE59F6545 /* PBXTargetDependency */,
+				818F15111CAD378D95EAA577A4ABF2BD /* PBXTargetDependency */,
+				6C46E19E6E1CC2025065E39B2398F3FC /* PBXTargetDependency */,
 			);
 			name = "Pods-NHAVEditorExamples";
 			productName = "Pods-NHAVEditorExamples";
 			productReference = 9299E8E0FA7BE92C365911A8452F1B76 /* Pods_NHAVEditorExamples.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DDF9D1DF3AB63C3775F61335CDEBF794 /* NHAVEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95B1B05184BA6C4AF0F23A3EB2BA4736 /* Build configuration list for PBXNativeTarget "NHAVEditor" */;
+			buildPhases = (
+				7622D65ABC50E19D808C5BCE84A29589 /* Headers */,
+				44414F46AF9E5FEAFA903C7C5573C3AD /* Sources */,
+				5296D9C40BC10632AE69F99E9B0CC84B /* Frameworks */,
+				E4F00783AAF6DD15952C1C495A41EF6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NHAVEditor;
+			productName = NHAVEditor;
+			productReference = B77A72048AF47B71D2F74F4C0BB2A6D1 /* NHAVEditor.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -339,8 +581,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -348,13 +590,15 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 20B815EF3EAFC31E7BB70D40B1A10086 /* Products */;
+			productRefGroup = CD1D15D713AB8694DD4B875F1485D0B4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */,
+				DDF9D1DF3AB63C3775F61335CDEBF794 /* NHAVEditor */,
 				30D52B0E6BEA0136AF61C2792C450DE7 /* NHHUDExtend */,
 				99FDF3AA8DE3558CCAC36AF192C53344 /* Pods-NHAVEditorExamples */,
 			);
@@ -362,21 +606,28 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		03E62E81F66919E63ECA0D21628A8F9B /* Resources */ = {
+		4034F11845339E33B581D08CCD9E8453 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3F218E9ECBDD15EEDB173CA1CB119DE2 /* Resources */ = {
+		435BF4D16B2F9CAB6E7F883F30E32B74 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7ABEAD63F9EBEA134849BC1FDA09E9CF /* Resources */ = {
+		52B8AF420EB33C8AF80C1C0A0EE503FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4F00783AAF6DD15952C1C495A41EF6B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -386,57 +637,122 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BE0496A9EA35AC5E523DAEB464369E04 /* Sources */ = {
+		44414F46AF9E5FEAFA903C7C5573C3AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6C63CD6246163D81F730258C1C7A90D /* MBProgressHUD-dummy.m in Sources */,
-				E40996725327AAC68DC6994F97D8DCA1 /* MBProgressHUD.m in Sources */,
+				EC3969B600F4222068898949569CAB0C /* NHAddAudioCommand.m in Sources */,
+				2298C8DE46CEF4C17BF06B6C2379A8ED /* NHAddWatermarkCommand.m in Sources */,
+				3FF59AD26B6B1F5F1CB0C358655ABB7F /* NHAVEditor-dummy.m in Sources */,
+				7D2B4186443FC79D2B143447B8ED61C5 /* NHAVEditor.m in Sources */,
+				F03DFFF77DAD4078D944CAEBC594F03B /* NHGifWriter.m in Sources */,
+				3469754D50A88CC90ED0F348C8855338 /* NHMediaCommand.m in Sources */,
+				743BD79BB4EE4C4E38E8E0D8215639E1 /* NHMediaConfig.m in Sources */,
+				8A503E740886A4F258CDB93192C6D39D /* NHMediaExportCommand.m in Sources */,
+				075AEAEE4E2300230969E8698E7E6CEC /* NHMediaWriter.m in Sources */,
+				E1E7C4E73060FB032D1F5021DD667C37 /* NHPicture.m in Sources */,
+				583DE1B6049364D794480DD87379FEEC /* NHProxy.m in Sources */,
+				B5B8CCBF80F0A9BA10F1DDAA58520748 /* NHThread.m in Sources */,
+				39B79A4711B82EDB3630DABD3536E469 /* NHTimer.m in Sources */,
+				D68AE68C5EBA30164F3CEB03C37053D2 /* NSData+NH.m in Sources */,
+				538F5CCE703FAFC9F4BEC5E289355810 /* NSDate+NH.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C5E75F20E61CD88F9C8E7FA7A0915C48 /* Sources */ = {
+		98B824BB6688A7698A06C5CF048C95DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4192DB3F6F9045265A6C39019F309BC8 /* Pods-NHAVEditorExamples-dummy.m in Sources */,
+				30344D6843D5BA1A8DEAF9E323B10B7D /* MBProgressHUD+NHAdd.m in Sources */,
+				30B66FC9F38BFCB1CBB6F3FBAA543118 /* NHHUDExtend-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E2C7846CDAAA3D5F069FD48B9FE6A821 /* Sources */ = {
+		C00BBA2928669B7F095673625D0E9202 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C5F3EEFBC07E8F360737EA98C09F01E /* MBProgressHUD+NHAdd.m in Sources */,
-				B48B9C1CC34CABA4E86FE5F92D4DEEB9 /* NHHUDExtend-dummy.m in Sources */,
+				351C1E0DAA2348998CB064EAAB85EAEA /* Pods-NHAVEditorExamples-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2F84DC2E2DB3628B17B3841F2837477 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DABF20F73D27572CD97071A6D4DB9004 /* MBProgressHUD-dummy.m in Sources */,
+				70EE1C774C978E1876AE6CA1224E897D /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3738DA13D2975ACC78284C2942E048BE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MBProgressHUD;
-			target = 82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */;
-			targetProxy = 807A393DDEF54B67FB02602761401049 /* PBXContainerItemProxy */;
-		};
-		498F2933AC248AA291BF1076F1024687 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MBProgressHUD;
-			target = 82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */;
-			targetProxy = 0F2E1766DE01D7BC0CA448B085D790B1 /* PBXContainerItemProxy */;
-		};
-		592B4B3483D0044D1651368A63D97844 /* PBXTargetDependency */ = {
+		6C46E19E6E1CC2025065E39B2398F3FC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NHHUDExtend;
 			target = 30D52B0E6BEA0136AF61C2792C450DE7 /* NHHUDExtend */;
-			targetProxy = B7EDAB18E92E72FF786835C4527E8803 /* PBXContainerItemProxy */;
+			targetProxy = 43D68FFFC1A19D7207B0FE169FE56CFE /* PBXContainerItemProxy */;
+		};
+		818F15111CAD378D95EAA577A4ABF2BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NHAVEditor;
+			target = DDF9D1DF3AB63C3775F61335CDEBF794 /* NHAVEditor */;
+			targetProxy = 2F1AD69897C471C63B700F97328A24A6 /* PBXContainerItemProxy */;
+		};
+		971EF02194BB38EF46B1F4FFEF2C32A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = 82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */;
+			targetProxy = B9B9CCBA93141CE7DE9F9FA9AFF4B278 /* PBXContainerItemProxy */;
+		};
+		F6E573C642068B3862995D3EE59F6545 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = 82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */;
+			targetProxy = BF2D73EF9060E8D8D4E9C6F1202F72BA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+		4BB888306DBC2432CF8B3F738E8FC299 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 421E5E4056C335E07FBB69E03A3313C1 /* Pods-NHAVEditorExamples.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NHAVEditorExamples/Pods-NHAVEditorExamples-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NHAVEditorExamples/Pods-NHAVEditorExamples.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -484,7 +800,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,7 +812,43 @@
 			};
 			name = Release;
 		};
-		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+		68263582162C09F57FAF664EA0D04106 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E283E77FA28CE8CD076A88C6BCC1E492 /* NHHUDExtend.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NHHUDExtend/NHHUDExtend-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NHHUDExtend/NHHUDExtend-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NHHUDExtend/NHHUDExtend.modulemap";
+				PRODUCT_MODULE_NAME = NHHUDExtend;
+				PRODUCT_NAME = NHHUDExtend;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -547,7 +899,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -560,7 +912,149 @@
 			};
 			name = Debug;
 		};
-		9900C26FC685D7C4A981FC33B5983981 /* Release */ = {
+		8796FF3DA3B39568BCF8524DD0822E5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AC293D854D5D39C0D098164DCB7E300 /* NHAVEditor.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NHAVEditor/NHAVEditor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NHAVEditor/NHAVEditor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NHAVEditor/NHAVEditor.modulemap";
+				PRODUCT_MODULE_NAME = NHAVEditor;
+				PRODUCT_NAME = NHAVEditor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		930D1D619D601F627624075E88C4E22E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AC293D854D5D39C0D098164DCB7E300 /* NHAVEditor.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NHAVEditor/NHAVEditor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NHAVEditor/NHAVEditor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NHAVEditor/NHAVEditor.modulemap";
+				PRODUCT_MODULE_NAME = NHAVEditor;
+				PRODUCT_NAME = NHAVEditor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CB060C78B4315C453B4644E8744ED937 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E283E77FA28CE8CD076A88C6BCC1E492 /* NHHUDExtend.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NHHUDExtend/NHHUDExtend-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NHHUDExtend/NHHUDExtend-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NHHUDExtend/NHHUDExtend.modulemap";
+				PRODUCT_MODULE_NAME = NHHUDExtend;
+				PRODUCT_NAME = NHHUDExtend;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D49F0B99B6455C0241A4C17C3D902CAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC167B71DCFA9D668CF2C4E300CFDFA9 /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = MBProgressHUD;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F1DCEB2079BBA9DE2B711568B0BA73B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C79173F532D725E7C0EFFF5476CB38D6 /* Pods-NHAVEditorExamples.release.xcconfig */;
 			buildSettings = {
@@ -576,7 +1070,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-NHAVEditorExamples/Pods-NHAVEditorExamples-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -598,44 +1092,7 @@
 			};
 			name = Release;
 		};
-		A2D56B0E7A550399D5B35A516B556881 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 421E5E4056C335E07FBB69E03A3313C1 /* Pods-NHAVEditorExamples.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-NHAVEditorExamples/Pods-NHAVEditorExamples-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NHAVEditorExamples/Pods-NHAVEditorExamples.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A7B88156A05B6BFFC860C642A6CB6C6E /* Release */ = {
+		F5368EC4373BBAB10C49AC971D030324 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AC167B71DCFA9D668CF2C4E300CFDFA9 /* MBProgressHUD.xcconfig */;
 			buildSettings = {
@@ -660,113 +1117,6 @@
 				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
 				PRODUCT_MODULE_NAME = MBProgressHUD;
 				PRODUCT_NAME = MBProgressHUD;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C9537784DF35989CB7CD01FA4B54BF66 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E283E77FA28CE8CD076A88C6BCC1E492 /* NHHUDExtend.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/NHHUDExtend/NHHUDExtend-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NHHUDExtend/NHHUDExtend-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/NHHUDExtend/NHHUDExtend.modulemap";
-				PRODUCT_MODULE_NAME = NHHUDExtend;
-				PRODUCT_NAME = NHHUDExtend;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D5D2F1764D7B6B5B5E4D6D25D5A46BAB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC167B71DCFA9D668CF2C4E300CFDFA9 /* MBProgressHUD.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
-				PRODUCT_MODULE_NAME = MBProgressHUD;
-				PRODUCT_NAME = MBProgressHUD;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FB1C99BEB0BF4CD3A00A4CD39FE4A4DE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E283E77FA28CE8CD076A88C6BCC1E492 /* NHHUDExtend.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/NHHUDExtend/NHHUDExtend-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NHHUDExtend/NHHUDExtend-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/NHHUDExtend/NHHUDExtend.modulemap";
-				PRODUCT_MODULE_NAME = NHHUDExtend;
-				PRODUCT_NAME = NHHUDExtend;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -783,35 +1133,44 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				916E0404255105F480DC4950B7625F7A /* Debug */,
-				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		76F928239A7812B4CC7C06BDF06DADD5 /* Build configuration list for PBXNativeTarget "Pods-NHAVEditorExamples" */ = {
+		70191416B9573C7ABB42333A08FA2DE4 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A2D56B0E7A550399D5B35A516B556881 /* Debug */,
-				9900C26FC685D7C4A981FC33B5983981 /* Release */,
+				F5368EC4373BBAB10C49AC971D030324 /* Debug */,
+				D49F0B99B6455C0241A4C17C3D902CAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B987638F9099098B9389DF186A2278A4 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */ = {
+		95B1B05184BA6C4AF0F23A3EB2BA4736 /* Build configuration list for PBXNativeTarget "NHAVEditor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D5D2F1764D7B6B5B5E4D6D25D5A46BAB /* Debug */,
-				A7B88156A05B6BFFC860C642A6CB6C6E /* Release */,
+				930D1D619D601F627624075E88C4E22E /* Debug */,
+				8796FF3DA3B39568BCF8524DD0822E5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DD35D05B4CE0A8463F1AD86AB38A9238 /* Build configuration list for PBXNativeTarget "NHHUDExtend" */ = {
+		9E99A324D4C31BEB05D0FCF52A11F893 /* Build configuration list for PBXNativeTarget "NHHUDExtend" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FB1C99BEB0BF4CD3A00A4CD39FE4A4DE /* Debug */,
-				C9537784DF35989CB7CD01FA4B54BF66 /* Release */,
+				CB060C78B4315C453B4644E8744ED937 /* Debug */,
+				68263582162C09F57FAF664EA0D04106 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B286FF6E153B9856C4644571A91CE4D0 /* Build configuration list for PBXNativeTarget "Pods-NHAVEditorExamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BB888306DBC2432CF8B3F738E8FC299 /* Debug */,
+				F1DCEB2079BBA9DE2B711568B0BA73B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

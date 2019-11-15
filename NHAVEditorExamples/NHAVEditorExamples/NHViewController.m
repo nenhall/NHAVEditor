@@ -62,13 +62,17 @@
   static int index = 0;
   NSURL *url = [NSURL fileURLWithPath:kMp3Path];
   if (index == 1) {
-     url = [NSURL fileURLWithPath:kMp3Path2];
+    url = [NSURL fileURLWithPath:kMp3Path2];
   }
   index +=1;
   
   [self.mediaEditor addAudioWithAudioURL:url customConfig:^(NHAudioConfig * _Nonnull config) {
-    config.startVolume = -1.0;
+    //开始的音量大小，结束的时音量大小，从开始到结束这段时间的一个音量线性变化
+    config.startVolume = 0.0;
     config.endVolume = 1.0;
+    // 是否关闭视频原声，默认false
+    //  config.removeOriginalAudio = true;
+    config.originalVolume = 0.1;
   } completedBlock:nil];
 }
 
@@ -81,6 +85,7 @@
     config.presetName = AVAssetExportPreset1280x720;
     config.outputFileType = AVFileTypeQuickTimeMovie;
   } completedBlock:^(NSURL * _Nullable outputURL, NSError * _Nullable error) {
+    // do someing sth ...
     
   }];
 }
@@ -159,11 +164,12 @@
     [MBProgressHUD hideHUDForView:self.view];
   });
   
-  
+  // 保存视频到相册
   [NHPicture saveVideoGifToPhotoWithURL:outputURL completionHandler:^(BOOL success, NSError * _Nullable error) {
     NHLog(@"视频保存相册, error:%@", error.localizedDescription);
   }];
   
+  // 生成 Gif 图
   [self.gifWriter buildGifFromVideo:outputURL timeInterval:@(600) completion:^(NSURL * _Nullable url, NSError * _Nullable error) {
     NHLog(@"GIF生成完成:%@", url);
     [NHPicture saveVideoGifToPhotoWithURL:url completionHandler:^(BOOL success, NSError * _Nullable error) {

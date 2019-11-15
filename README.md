@@ -1,15 +1,15 @@
 ## NHAVEditor
 
 
-> 基于 AVFoundation 框架封装的 iOS视频编辑工具，支持给视频添加水印、特效、音乐、导出视频、视频转gif
+> 基于 AVFoundation 框架封装的 iOS视频编辑工具，支持给视频添加水印、特效、音乐、导出视频、视频转gif、去除原声
 
-iOS: >= 9.0
+iOS: >= 8.0
 
 ![预览图](https://github.com/nenhall/NHAVEditor/blob/master/preview.gif)
 
 ### 使用方法：
 
-`    pod 'NHAVEditor', '~> 0.0.1'`
+`    pod 'NHAVEditor', '~> 0.0.2'`
 
 1. 导入头文件：
 
@@ -49,8 +49,12 @@ iOS: >= 9.0
 
    ```objective-c
      [self.mediaEditor addAudioWithAudioURL:url customConfig:^(NHAudioConfig * _Nonnull config) {
-       config.startVolume = -1.0;
-       config.endVolume = 1.0;
+        // 开始的音量大小，结束的时音量大小，从开始到结束这段时间的一个音量线性变化
+        config.startVolume = 0.0;
+        config.endVolume = 1.0;
+        // 是否关闭视频原声，默认false
+        //  config.removeOriginalAudio = true;
+        config.originalVolume = 0.1;
      } completedBlock:nil];
    ```
 

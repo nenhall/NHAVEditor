@@ -40,13 +40,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CMTime startTime;
 
 /**
- 设置在指定的timeRange期间的音量坡度：开始音量
+ 设置在指定的timeRange期间的音量坡度：开始音量，只针对新添加的音乐
  @abstract 自定义开始音量，range: 0.0 ~ 1.0, default: 1.0
  */
 @property (nonatomic, assign) float startVolume;
 
 /**
- 设置在指定的timeRange期间的音量坡度：结束音量
+ 设置在指定的timeRange期间的音量坡度：结束音量，只针对新添加的音乐
  @abstract 自定义结束音量，range: 0.0 ~ 1.0, default: 1.0
  */
 @property (nonatomic, assign) float endVolume;
@@ -61,6 +61,11 @@ NS_ASSUME_NONNULL_BEGIN
  是否去除视频原声音，default: false
  */
 @property (nonatomic, assign) BOOL removeOriginalAudio;
+
+/**
+ 视频原声的音量大小，range: 0.0 ~ 1.0, default: 视频原声大小
+ */
+@property (nonatomic, assign) float originalVolume;
 
 @end
 

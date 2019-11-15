@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.name         = "NHAVEditor"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "基于 AVFoundation 框架封装的 iOS视频编辑工具"
   spec.description  = <<-DESC
   基于 AVFoundation 框架封装的 iOS视频编辑工具，支持给视频添加水印、特效、音乐、导出视频、视频转gif
@@ -19,8 +19,8 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/nenhall/NHAVEditor"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "nenhall" => "nenhall@126.com" }
-  spec.platform     = :ios, "9.0"
-  spec.ios.deployment_target = "9.0"
+  spec.platform     = :ios, "8.0"
+  spec.ios.deployment_target = "8.0"
   spec.source       = { :git => "https://github.com/nenhall/NHAVEditor.git", :tag => "#{spec.version}" }
   spec.source_files = "NHAVEditor/*.{h,m}", "NHAVEditor/Unit/*.{h,m}"
   # spec.exclude_files = "Classes/Exclude"

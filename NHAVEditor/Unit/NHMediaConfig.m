@@ -17,6 +17,7 @@
     _startVolume = 1.0;
     _endVolume = 1.0;
     _removeOriginalAudio = NO;
+    _originalVolume = 1.0;
   }
   return self;
 }
