@@ -6,6 +6,7 @@
 iOS: >= 8.0
 
 **Swift**：https://github.com/nenhall/NHAVKit2 (功能还未完善，开发中)
+
 **Objective-C**：https://github.com/nenhall/NHAVKit
 
 ![预览图](https://github.com/nenhall/NHAVEditor/blob/master/preview.gif)
