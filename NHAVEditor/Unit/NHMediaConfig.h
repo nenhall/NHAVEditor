@@ -40,14 +40,14 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CMTime startTime;
 
 /**
- 设置在指定的timeRange期间的音量坡度：开始音量，只针对新添加的音乐
- @abstract 自定义开始音量，range: 0.0 ~ 1.0, default: 1.0
+ 开始音量：在指定的`timeRange`期间的开始音量坡度
+ @abstract range: 0.0 ~ 1.0, default: 1.0，只针对新添加的音乐（之前存在的音轨不变化）
  */
 @property (nonatomic, assign) float startVolume;
 
 /**
- 设置在指定的timeRange期间的音量坡度：结束音量，只针对新添加的音乐
- @abstract 自定义结束音量，range: 0.0 ~ 1.0, default: 1.0
+ 结束音量：在指定的`timeRange`期间的结束音量坡度
+ @abstract range: 0.0 ~ 1.0, default: 1.0，只针对新添加的音乐（之前存在的音轨不变化）
  */
 @property (nonatomic, assign) float endVolume;
 
