@@ -5,6 +5,10 @@
 
 iOS: >= 8.0
 
+**Swift**：https://github.com/nenhall/NHAVEditor2 (功能还未完善，开发中)
+
+**Objective-C**：https://github.com/nenhall/NHAVEditor
+
 ![预览图](https://github.com/nenhall/NHAVEditor/blob/master/preview.gif)
 
 ### 使用方法：
@@ -121,4 +125,5 @@ iOS: >= 8.0
 
 
 音视频开发技术交流群：纯做此项技术，如做推广、营销人员匆扰
-![音视频开发技术交流](https://upload-images.jianshu.io/upload_images/2443108-8ed463259d0099bc.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/305)
+
+![音视频开发技术交流](https://upload-images.jianshu.io/upload_images/2443108-a7493c9f2f56cec8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/620)
