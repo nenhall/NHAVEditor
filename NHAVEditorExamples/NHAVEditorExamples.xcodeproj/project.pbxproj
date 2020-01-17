@@ -7,269 +7,243 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DD1919602306B10400510E22 /* NSData+NH.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1919432306B10400510E22 /* NSData+NH.m */; };
-		DD1919612306B10400510E22 /* NHMediaConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1919452306B10400510E22 /* NHMediaConfig.m */; };
-		DD1919622306B10400510E22 /* NHProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1919462306B10400510E22 /* NHProxy.m */; };
-		DD1919632306B10400510E22 /* NHTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1919472306B10400510E22 /* NHTimer.m */; };
-		DD1919642306B10400510E22 /* NSDate+NH.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1919482306B10400510E22 /* NSDate+NH.m */; };
-		DD1919652306B10400510E22 /* NHThread.m in Sources */ = {isa = PBXBuildFile; fileRef = DD19194A2306B10400510E22 /* NHThread.m */; };
-		DD1919662306B10400510E22 /* NHGifWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1919522306B10400510E22 /* NHGifWriter.m */; };
-		DD1919672306B10400510E22 /* NHAddWatermarkCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1919572306B10400510E22 /* NHAddWatermarkCommand.m */; };
-		DD1919682306B10400510E22 /* NHMediaCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1919582306B10400510E22 /* NHMediaCommand.m */; };
-		DD1919692306B10400510E22 /* NHPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = DD19195B2306B10400510E22 /* NHPicture.m */; };
-		DD19196A2306B10400510E22 /* NHMediaWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DD19195C2306B10400510E22 /* NHMediaWriter.m */; };
-		DD19196B2306B10400510E22 /* NHAddAudioCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = DD19195D2306B10400510E22 /* NHAddAudioCommand.m */; };
-		DD19196C2306B10400510E22 /* NHAVEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = DD19195E2306B10400510E22 /* NHAVEditor.m */; };
-		DD19196D2306B10400510E22 /* NHMediaExportCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = DD19195F2306B10400510E22 /* NHMediaExportCommand.m */; };
-		DD33FE9F230552F500100A72 /* NHCaptureSession.m in Sources */ = {isa = PBXBuildFile; fileRef = DD33FE9E230552F500100A72 /* NHCaptureSession.m */; };
-		DD33FEA22305530B00100A72 /* NHVideoConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = DD33FEA02305530A00100A72 /* NHVideoConfiguration.m */; };
-		DD33FEA82305544900100A72 /* NHCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD33FEA72305544900100A72 /* NHCaptureViewController.m */; };
-		DD751F2922F57ED500340C8D /* NHDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD751F2822F57ED500340C8D /* NHDisplayView.m */; };
-		DDAAEFAB2304298600B56F65 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAAEFAA2304298600B56F65 /* ImageIO.framework */; };
-		DDAAEFAD2304298D00B56F65 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAAEFAC2304298D00B56F65 /* CoreServices.framework */; };
-		DDB61AB522F568BE00EDC3C6 /* Бамбинтон-Зая.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DDB61AB422F568BE00EDC3C6 /* Бамбинтон-Зая.mp4 */; };
-		DDB61AB722F5691500EDC3C6 /* 黑龙-38度6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDB61AB622F5691500EDC3C6 /* 黑龙-38度6.mp3 */; };
-		DDB61ABA22F5748C00EDC3C6 /* NHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB61AB922F5748C00EDC3C6 /* NHViewController.m */; };
-		DDB61ABC22F574BD00EDC3C6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB61ABB22F574BD00EDC3C6 /* AVFoundation.framework */; };
-		DDC9985222FD60F100651D89 /* 一生有你-赵海洋.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDC9985122FD60F100651D89 /* 一生有你-赵海洋.mp3 */; };
-		DDC9985422FD61EA00651D89 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC9985322FD61EA00651D89 /* logo.png */; };
-		DDD9AA9A22F5271500A77702 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD9AA9922F5271500A77702 /* AppDelegate.m */; };
-		DDD9AAA022F5271500A77702 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDD9AA9E22F5271500A77702 /* Main.storyboard */; };
-		DDD9AAA222F5271600A77702 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDD9AAA122F5271600A77702 /* Assets.xcassets */; };
-		DDD9AAA522F5271600A77702 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDD9AAA322F5271600A77702 /* LaunchScreen.storyboard */; };
-		DDD9AAA822F5271600A77702 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD9AAA722F5271600A77702 /* main.m */; };
-		FC4249C7BCE9C0CDF84E8A9D /* Pods_NHAVEditorExamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2776AB7BC82B5C5FA84053A0 /* Pods_NHAVEditorExamples.framework */; };
+		EE06686023ACE233008CC9AE /* Бамбинтон-Зая.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EE06685C23ACE233008CC9AE /* Бамбинтон-Зая.mp4 */; };
+		EE06686123ACE233008CC9AE /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EE06685D23ACE233008CC9AE /* logo.png */; };
+		EE3BBD0823B75E5400376CEE /* AVEditorExtend.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3BBCFD23B75E5400376CEE /* AVEditorExtend.swift */; };
+		EE3BBD0923B75E5400376CEE /* AudioCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3BBCFF23B75E5400376CEE /* AudioCommand.swift */; };
+		EE3BBD0A23B75E5400376CEE /* MediaConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3BBD0023B75E5400376CEE /* MediaConfig.swift */; };
+		EE3BBD0B23B75E5400376CEE /* ExportCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3BBD0123B75E5400376CEE /* ExportCommand.swift */; };
+		EE3BBD0C23B75E5400376CEE /* MediaCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3BBD0223B75E5400376CEE /* MediaCommand.swift */; };
+		EE3BBD0D23B75E5400376CEE /* WatermarkCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3BBD0323B75E5400376CEE /* WatermarkCommand.swift */; };
+		EE3BBD0E23B75E5400376CEE /* MediaEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3BBD0423B75E5400376CEE /* MediaEditor.swift */; };
+		EE3BBD0F23B75E5400376CEE /* NHAVEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3BBD0523B75E5400376CEE /* NHAVEditor.swift */; };
+		EE3BBD1023B75E5400376CEE /* PictureEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3BBD0723B75E5400376CEE /* PictureEditor.swift */; };
+		EE3BBD1223B79ED000376CEE /* 黑龙-38度6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE3BBD1123B79ECF00376CEE /* 黑龙-38度6.mp3 */; };
+		EE742D30239A294A00EE0846 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE742D2F239A294A00EE0846 /* AppDelegate.swift */; };
+		EE742D32239A294A00EE0846 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE742D31239A294A00EE0846 /* SceneDelegate.swift */; };
+		EE742D34239A294A00EE0846 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE742D33239A294A00EE0846 /* ViewController.swift */; };
+		EE742D37239A294A00EE0846 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE742D35239A294A00EE0846 /* Main.storyboard */; };
+		EE742D39239A294D00EE0846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE742D38239A294D00EE0846 /* Assets.xcassets */; };
+		EE742D3C239A294D00EE0846 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE742D3A239A294D00EE0846 /* LaunchScreen.storyboard */; };
+		EE742D47239A294E00EE0846 /* NHAVEditorExamplesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE742D46239A294E00EE0846 /* NHAVEditorExamplesTests.swift */; };
+		EE742D52239A294E00EE0846 /* NHAVEditorExamplesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE742D51239A294E00EE0846 /* NHAVEditorExamplesUITests.swift */; };
+		EEC17BE223BB64180058E8A9 /* ViewExtend.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC17BE123BB64180058E8A9 /* ViewExtend.swift */; };
+		FEFD66BE120BE4824E035E2B /* Pods_NHAVEditorExamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0371B3A70596D2130F846170 /* Pods_NHAVEditorExamples.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		EE742D43239A294E00EE0846 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE742D24239A294A00EE0846 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE742D2B239A294A00EE0846;
+			remoteInfo = NHAVEditorExamples;
+		};
+		EE742D4E239A294E00EE0846 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE742D24239A294A00EE0846 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE742D2B239A294A00EE0846;
+			remoteInfo = NHAVEditorExamples;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		2776AB7BC82B5C5FA84053A0 /* Pods_NHAVEditorExamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NHAVEditorExamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		98363D3779A452B47E34410D /* Pods-NHAVEditorExamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHAVEditorExamples.debug.xcconfig"; path = "Target Support Files/Pods-NHAVEditorExamples/Pods-NHAVEditorExamples.debug.xcconfig"; sourceTree = "<group>"; };
-		9B6C0CF4BE57C407F9B6C7BD /* Pods-NHAVEditorExamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHAVEditorExamples.release.xcconfig"; path = "Target Support Files/Pods-NHAVEditorExamples/Pods-NHAVEditorExamples.release.xcconfig"; sourceTree = "<group>"; };
-		DD1919402306B10400510E22 /* NHAddWatermarkCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHAddWatermarkCommand.h; sourceTree = "<group>"; };
-		DD1919422306B10400510E22 /* NSDate+NH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+NH.h"; sourceTree = "<group>"; };
-		DD1919432306B10400510E22 /* NSData+NH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+NH.m"; sourceTree = "<group>"; };
-		DD1919442306B10400510E22 /* NHThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHThread.h; sourceTree = "<group>"; };
-		DD1919452306B10400510E22 /* NHMediaConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHMediaConfig.m; sourceTree = "<group>"; };
-		DD1919462306B10400510E22 /* NHProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHProxy.m; sourceTree = "<group>"; };
-		DD1919472306B10400510E22 /* NHTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHTimer.m; sourceTree = "<group>"; };
-		DD1919482306B10400510E22 /* NSDate+NH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+NH.m"; sourceTree = "<group>"; };
-		DD1919492306B10400510E22 /* NSData+NH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+NH.h"; sourceTree = "<group>"; };
-		DD19194A2306B10400510E22 /* NHThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHThread.m; sourceTree = "<group>"; };
-		DD19194B2306B10400510E22 /* NHMediaConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHMediaConfig.h; sourceTree = "<group>"; };
-		DD19194C2306B10400510E22 /* NHAVEditorDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHAVEditorDefine.h; sourceTree = "<group>"; };
-		DD19194D2306B10400510E22 /* NHTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHTimer.h; sourceTree = "<group>"; };
-		DD19194E2306B10400510E22 /* NHProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHProxy.h; sourceTree = "<group>"; };
-		DD19194F2306B10400510E22 /* NHMediaCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHMediaCommand.h; sourceTree = "<group>"; };
-		DD1919502306B10400510E22 /* NHMediaWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHMediaWriter.h; sourceTree = "<group>"; };
-		DD1919512306B10400510E22 /* NHPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHPicture.h; sourceTree = "<group>"; };
-		DD1919522306B10400510E22 /* NHGifWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHGifWriter.m; sourceTree = "<group>"; };
-		DD1919532306B10400510E22 /* NHMediaExportCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHMediaExportCommand.h; sourceTree = "<group>"; };
-		DD1919542306B10400510E22 /* NHAVEditorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHAVEditorProtocol.h; sourceTree = "<group>"; };
-		DD1919552306B10400510E22 /* NHAVEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHAVEditor.h; sourceTree = "<group>"; };
-		DD1919562306B10400510E22 /* NHAddAudioCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHAddAudioCommand.h; sourceTree = "<group>"; };
-		DD1919572306B10400510E22 /* NHAddWatermarkCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHAddWatermarkCommand.m; sourceTree = "<group>"; };
-		DD1919582306B10400510E22 /* NHMediaCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHMediaCommand.m; sourceTree = "<group>"; };
-		DD1919592306B10400510E22 /* NHMediaCommandProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHMediaCommandProtocol.h; sourceTree = "<group>"; };
-		DD19195A2306B10400510E22 /* NHGifWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHGifWriter.h; sourceTree = "<group>"; };
-		DD19195B2306B10400510E22 /* NHPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHPicture.m; sourceTree = "<group>"; };
-		DD19195C2306B10400510E22 /* NHMediaWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHMediaWriter.m; sourceTree = "<group>"; };
-		DD19195D2306B10400510E22 /* NHAddAudioCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHAddAudioCommand.m; sourceTree = "<group>"; };
-		DD19195E2306B10400510E22 /* NHAVEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHAVEditor.m; sourceTree = "<group>"; };
-		DD19195F2306B10400510E22 /* NHMediaExportCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHMediaExportCommand.m; sourceTree = "<group>"; };
-		DD33FE9D230552F500100A72 /* NHCaptureSession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHCaptureSession.h; sourceTree = "<group>"; };
-		DD33FE9E230552F500100A72 /* NHCaptureSession.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHCaptureSession.m; sourceTree = "<group>"; };
-		DD33FEA02305530A00100A72 /* NHVideoConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHVideoConfiguration.m; sourceTree = "<group>"; };
-		DD33FEA12305530B00100A72 /* NHVideoConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHVideoConfiguration.h; sourceTree = "<group>"; };
-		DD33FEA42305536E00100A72 /* NHCaptureSessionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHCaptureSessionProtocol.h; sourceTree = "<group>"; };
-		DD33FEA62305544900100A72 /* NHCaptureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHCaptureViewController.h; sourceTree = "<group>"; };
-		DD33FEA72305544900100A72 /* NHCaptureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHCaptureViewController.m; sourceTree = "<group>"; };
-		DD751F2722F57ED500340C8D /* NHDisplayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHDisplayView.h; sourceTree = "<group>"; };
-		DD751F2822F57ED500340C8D /* NHDisplayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHDisplayView.m; sourceTree = "<group>"; };
-		DDAAEFAA2304298600B56F65 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
-		DDAAEFAC2304298D00B56F65 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
-		DDB61AB422F568BE00EDC3C6 /* Бамбинтон-Зая.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Бамбинтон-Зая.mp4"; sourceTree = "<group>"; };
-		DDB61AB622F5691500EDC3C6 /* 黑龙-38度6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "黑龙-38度6.mp3"; sourceTree = "<group>"; };
-		DDB61AB822F5748C00EDC3C6 /* NHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHViewController.h; sourceTree = "<group>"; };
-		DDB61AB922F5748C00EDC3C6 /* NHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHViewController.m; sourceTree = "<group>"; };
-		DDB61ABB22F574BD00EDC3C6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		DDC9985122FD60F100651D89 /* 一生有你-赵海洋.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "一生有你-赵海洋.mp3"; sourceTree = "<group>"; };
-		DDC9985322FD61EA00651D89 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
-		DDD9AA9522F5271500A77702 /* NHAVEditorExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NHAVEditorExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDD9AA9822F5271500A77702 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		DDD9AA9922F5271500A77702 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DDD9AA9F22F5271500A77702 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DDD9AAA122F5271600A77702 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DDD9AAA422F5271600A77702 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DDD9AAA622F5271600A77702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DDD9AAA722F5271600A77702 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0371B3A70596D2130F846170 /* Pods_NHAVEditorExamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NHAVEditorExamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		057F23FCA7103EFE1D7332B4 /* Pods-NHAVEditorExamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHAVEditorExamples.debug.xcconfig"; path = "Target Support Files/Pods-NHAVEditorExamples/Pods-NHAVEditorExamples.debug.xcconfig"; sourceTree = "<group>"; };
+		B5C2509810C1ADB28CFFB653 /* Pods-NHAVEditorExamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHAVEditorExamples.release.xcconfig"; path = "Target Support Files/Pods-NHAVEditorExamples/Pods-NHAVEditorExamples.release.xcconfig"; sourceTree = "<group>"; };
+		EE06685C23ACE233008CC9AE /* Бамбинтон-Зая.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Бамбинтон-Зая.mp4"; sourceTree = "<group>"; };
+		EE06685D23ACE233008CC9AE /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		EE3BBCFD23B75E5400376CEE /* AVEditorExtend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVEditorExtend.swift; sourceTree = "<group>"; };
+		EE3BBCFF23B75E5400376CEE /* AudioCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioCommand.swift; sourceTree = "<group>"; };
+		EE3BBD0023B75E5400376CEE /* MediaConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaConfig.swift; sourceTree = "<group>"; };
+		EE3BBD0123B75E5400376CEE /* ExportCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportCommand.swift; sourceTree = "<group>"; };
+		EE3BBD0223B75E5400376CEE /* MediaCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaCommand.swift; sourceTree = "<group>"; };
+		EE3BBD0323B75E5400376CEE /* WatermarkCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatermarkCommand.swift; sourceTree = "<group>"; };
+		EE3BBD0423B75E5400376CEE /* MediaEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaEditor.swift; sourceTree = "<group>"; };
+		EE3BBD0523B75E5400376CEE /* NHAVEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NHAVEditor.swift; sourceTree = "<group>"; };
+		EE3BBD0723B75E5400376CEE /* PictureEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureEditor.swift; sourceTree = "<group>"; };
+		EE3BBD1123B79ECF00376CEE /* 黑龙-38度6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "黑龙-38度6.mp3"; sourceTree = "<group>"; };
+		EE742D2C239A294A00EE0846 /* NHAVEditorExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NHAVEditorExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE742D2F239A294A00EE0846 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE742D31239A294A00EE0846 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EE742D33239A294A00EE0846 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE742D36239A294A00EE0846 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE742D38239A294D00EE0846 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE742D3B239A294D00EE0846 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE742D3D239A294E00EE0846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE742D42239A294E00EE0846 /* NHAVEditorExamplesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NHAVEditorExamplesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE742D46239A294E00EE0846 /* NHAVEditorExamplesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NHAVEditorExamplesTests.swift; sourceTree = "<group>"; };
+		EE742D48239A294E00EE0846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE742D4D239A294E00EE0846 /* NHAVEditorExamplesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NHAVEditorExamplesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE742D51239A294E00EE0846 /* NHAVEditorExamplesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NHAVEditorExamplesUITests.swift; sourceTree = "<group>"; };
+		EE742D53239A294E00EE0846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEC17BE123BB64180058E8A9 /* ViewExtend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtend.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DDD9AA9222F5271500A77702 /* Frameworks */ = {
+		EE742D29239A294A00EE0846 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDAAEFAD2304298D00B56F65 /* CoreServices.framework in Frameworks */,
-				DDAAEFAB2304298600B56F65 /* ImageIO.framework in Frameworks */,
-				DDB61ABC22F574BD00EDC3C6 /* AVFoundation.framework in Frameworks */,
-				FC4249C7BCE9C0CDF84E8A9D /* Pods_NHAVEditorExamples.framework in Frameworks */,
+				FEFD66BE120BE4824E035E2B /* Pods_NHAVEditorExamples.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE742D3F239A294E00EE0846 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE742D4A239A294E00EE0846 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3FF3EA24008BB81E2CDD64B1 /* Pods */ = {
+		79B17F6C02F342A5CA4EDAA9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				98363D3779A452B47E34410D /* Pods-NHAVEditorExamples.debug.xcconfig */,
-				9B6C0CF4BE57C407F9B6C7BD /* Pods-NHAVEditorExamples.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		7B772784DD8CE94E441419C9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DDAAEFAC2304298D00B56F65 /* CoreServices.framework */,
-				DDAAEFAA2304298600B56F65 /* ImageIO.framework */,
-				DDB61ABB22F574BD00EDC3C6 /* AVFoundation.framework */,
-				2776AB7BC82B5C5FA84053A0 /* Pods_NHAVEditorExamples.framework */,
+				0371B3A70596D2130F846170 /* Pods_NHAVEditorExamples.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DD19193F2306B10400510E22 /* NHAVEditor */ = {
+		D29040F5A7E6B75E658B36FA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DD1919562306B10400510E22 /* NHAddAudioCommand.h */,
-				DD19195D2306B10400510E22 /* NHAddAudioCommand.m */,
-				DD1919402306B10400510E22 /* NHAddWatermarkCommand.h */,
-				DD1919572306B10400510E22 /* NHAddWatermarkCommand.m */,
-				DD1919552306B10400510E22 /* NHAVEditor.h */,
-				DD19195E2306B10400510E22 /* NHAVEditor.m */,
-				DD1919542306B10400510E22 /* NHAVEditorProtocol.h */,
-				DD19195A2306B10400510E22 /* NHGifWriter.h */,
-				DD1919522306B10400510E22 /* NHGifWriter.m */,
-				DD19194F2306B10400510E22 /* NHMediaCommand.h */,
-				DD1919582306B10400510E22 /* NHMediaCommand.m */,
-				DD1919592306B10400510E22 /* NHMediaCommandProtocol.h */,
-				DD1919532306B10400510E22 /* NHMediaExportCommand.h */,
-				DD19195F2306B10400510E22 /* NHMediaExportCommand.m */,
-				DD1919502306B10400510E22 /* NHMediaWriter.h */,
-				DD19195C2306B10400510E22 /* NHMediaWriter.m */,
-				DD1919512306B10400510E22 /* NHPicture.h */,
-				DD19195B2306B10400510E22 /* NHPicture.m */,
-				DD1919412306B10400510E22 /* Unit */,
+				057F23FCA7103EFE1D7332B4 /* Pods-NHAVEditorExamples.debug.xcconfig */,
+				B5C2509810C1ADB28CFFB653 /* Pods-NHAVEditorExamples.release.xcconfig */,
 			);
-			name = NHAVEditor;
-			path = ../../NHAVEditor;
+			path = Pods;
 			sourceTree = "<group>";
 		};
-		DD1919412306B10400510E22 /* Unit */ = {
+		EE06685A23ACE233008CC9AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DD19194C2306B10400510E22 /* NHAVEditorDefine.h */,
-				DD19194B2306B10400510E22 /* NHMediaConfig.h */,
-				DD1919452306B10400510E22 /* NHMediaConfig.m */,
-				DD19194E2306B10400510E22 /* NHProxy.h */,
-				DD1919462306B10400510E22 /* NHProxy.m */,
-				DD1919442306B10400510E22 /* NHThread.h */,
-				DD19194A2306B10400510E22 /* NHThread.m */,
-				DD19194D2306B10400510E22 /* NHTimer.h */,
-				DD1919472306B10400510E22 /* NHTimer.m */,
-				DD1919492306B10400510E22 /* NSData+NH.h */,
-				DD1919432306B10400510E22 /* NSData+NH.m */,
-				DD1919422306B10400510E22 /* NSDate+NH.h */,
-				DD1919482306B10400510E22 /* NSDate+NH.m */,
-			);
-			path = Unit;
-			sourceTree = "<group>";
-		};
-		DD33FEA52305541300100A72 /* Tool */ = {
-			isa = PBXGroup;
-			children = (
-				DD33FE9D230552F500100A72 /* NHCaptureSession.h */,
-				DD33FE9E230552F500100A72 /* NHCaptureSession.m */,
-				DD33FEA42305536E00100A72 /* NHCaptureSessionProtocol.h */,
-				DD33FEA12305530B00100A72 /* NHVideoConfiguration.h */,
-				DD33FEA02305530A00100A72 /* NHVideoConfiguration.m */,
-			);
-			path = Tool;
-			sourceTree = "<group>";
-		};
-		DDB61AB322F568A400EDC3C6 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				DDC9985322FD61EA00651D89 /* logo.png */,
-				DDC9985122FD60F100651D89 /* 一生有你-赵海洋.mp3 */,
-				DDB61AB622F5691500EDC3C6 /* 黑龙-38度6.mp3 */,
-				DDB61AB422F568BE00EDC3C6 /* Бамбинтон-Зая.mp4 */,
+				EE3BBD1123B79ECF00376CEE /* 黑龙-38度6.mp3 */,
+				EE06685C23ACE233008CC9AE /* Бамбинтон-Зая.mp4 */,
+				EE06685D23ACE233008CC9AE /* logo.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		DDB61ABD22F5790A00EDC3C6 /* Libraries */ = {
+		EE3BBCFB23B75E5400376CEE /* NHAVEditor */ = {
 			isa = PBXGroup;
 			children = (
+				EE3BBCFC23B75E5400376CEE /* Unit */,
+				EE3BBCFE23B75E5400376CEE /* Core */,
+				EE3BBD0523B75E5400376CEE /* NHAVEditor.swift */,
+				EE3BBD0623B75E5400376CEE /* Accessory */,
 			);
-			path = Libraries;
+			name = NHAVEditor;
+			path = ../NHAVEditor;
 			sourceTree = "<group>";
 		};
-		DDD9AA8C22F5271500A77702 = {
+		EE3BBCFC23B75E5400376CEE /* Unit */ = {
 			isa = PBXGroup;
 			children = (
-				DDD9AA9722F5271500A77702 /* NHAVEditorExamples */,
-				DDD9AA9622F5271500A77702 /* Products */,
-				3FF3EA24008BB81E2CDD64B1 /* Pods */,
-				7B772784DD8CE94E441419C9 /* Frameworks */,
+				EE3BBCFD23B75E5400376CEE /* AVEditorExtend.swift */,
+			);
+			path = Unit;
+			sourceTree = "<group>";
+		};
+		EE3BBCFE23B75E5400376CEE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EE3BBCFF23B75E5400376CEE /* AudioCommand.swift */,
+				EE3BBD0023B75E5400376CEE /* MediaConfig.swift */,
+				EE3BBD0123B75E5400376CEE /* ExportCommand.swift */,
+				EE3BBD0223B75E5400376CEE /* MediaCommand.swift */,
+				EE3BBD0323B75E5400376CEE /* WatermarkCommand.swift */,
+				EE3BBD0423B75E5400376CEE /* MediaEditor.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EE3BBD0623B75E5400376CEE /* Accessory */ = {
+			isa = PBXGroup;
+			children = (
+				EE3BBD0723B75E5400376CEE /* PictureEditor.swift */,
+			);
+			path = Accessory;
+			sourceTree = "<group>";
+		};
+		EE742D23239A294A00EE0846 = {
+			isa = PBXGroup;
+			children = (
+				EE3BBCFB23B75E5400376CEE /* NHAVEditor */,
+				EE742D2E239A294A00EE0846 /* NHAVEditorExamples */,
+				EE742D45239A294E00EE0846 /* NHAVEditorExamplesTests */,
+				EE742D50239A294E00EE0846 /* NHAVEditorExamplesUITests */,
+				EE742D2D239A294A00EE0846 /* Products */,
+				D29040F5A7E6B75E658B36FA /* Pods */,
+				79B17F6C02F342A5CA4EDAA9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		DDD9AA9622F5271500A77702 /* Products */ = {
+		EE742D2D239A294A00EE0846 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DDD9AA9522F5271500A77702 /* NHAVEditorExamples.app */,
+				EE742D2C239A294A00EE0846 /* NHAVEditorExamples.app */,
+				EE742D42239A294E00EE0846 /* NHAVEditorExamplesTests.xctest */,
+				EE742D4D239A294E00EE0846 /* NHAVEditorExamplesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DDD9AA9722F5271500A77702 /* NHAVEditorExamples */ = {
+		EE742D2E239A294A00EE0846 /* NHAVEditorExamples */ = {
 			isa = PBXGroup;
 			children = (
-				DD19193F2306B10400510E22 /* NHAVEditor */,
-				DDB61AB322F568A400EDC3C6 /* Resources */,
-				DDB61ABD22F5790A00EDC3C6 /* Libraries */,
-				DD33FEA52305541300100A72 /* Tool */,
-				DDD9AA9822F5271500A77702 /* AppDelegate.h */,
-				DDD9AA9922F5271500A77702 /* AppDelegate.m */,
-				DDB61AB822F5748C00EDC3C6 /* NHViewController.h */,
-				DDB61AB922F5748C00EDC3C6 /* NHViewController.m */,
-				DD33FEA62305544900100A72 /* NHCaptureViewController.h */,
-				DD33FEA72305544900100A72 /* NHCaptureViewController.m */,
-				DD751F2722F57ED500340C8D /* NHDisplayView.h */,
-				DD751F2822F57ED500340C8D /* NHDisplayView.m */,
-				DDD9AA9E22F5271500A77702 /* Main.storyboard */,
-				DDD9AAA122F5271600A77702 /* Assets.xcassets */,
-				DDD9AAA322F5271600A77702 /* LaunchScreen.storyboard */,
-				DDD9AAA622F5271600A77702 /* Info.plist */,
-				DDD9AAA722F5271600A77702 /* main.m */,
+				EE742D2F239A294A00EE0846 /* AppDelegate.swift */,
+				EE742D31239A294A00EE0846 /* SceneDelegate.swift */,
+				EE742D33239A294A00EE0846 /* ViewController.swift */,
+				EEC17BE123BB64180058E8A9 /* ViewExtend.swift */,
+				EE742D35239A294A00EE0846 /* Main.storyboard */,
+				EE06685A23ACE233008CC9AE /* Resources */,
+				EE742D38239A294D00EE0846 /* Assets.xcassets */,
+				EE742D3A239A294D00EE0846 /* LaunchScreen.storyboard */,
+				EE742D3D239A294E00EE0846 /* Info.plist */,
 			);
 			path = NHAVEditorExamples;
+			sourceTree = "<group>";
+		};
+		EE742D45239A294E00EE0846 /* NHAVEditorExamplesTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE742D46239A294E00EE0846 /* NHAVEditorExamplesTests.swift */,
+				EE742D48239A294E00EE0846 /* Info.plist */,
+			);
+			path = NHAVEditorExamplesTests;
+			sourceTree = "<group>";
+		};
+		EE742D50239A294E00EE0846 /* NHAVEditorExamplesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EE742D51239A294E00EE0846 /* NHAVEditorExamplesUITests.swift */,
+				EE742D53239A294E00EE0846 /* Info.plist */,
+			);
+			path = NHAVEditorExamplesUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DDD9AA9422F5271500A77702 /* NHAVEditorExamples */ = {
+		EE742D2B239A294A00EE0846 /* NHAVEditorExamples */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DDD9AAAB22F5271600A77702 /* Build configuration list for PBXNativeTarget "NHAVEditorExamples" */;
+			buildConfigurationList = EE742D56239A294E00EE0846 /* Build configuration list for PBXNativeTarget "NHAVEditorExamples" */;
 			buildPhases = (
-				82DFC4FE3C4AE51C232CC907 /* [CP] Check Pods Manifest.lock */,
-				DDD9AA9122F5271500A77702 /* Sources */,
-				DDD9AA9222F5271500A77702 /* Frameworks */,
-				DDD9AA9322F5271500A77702 /* Resources */,
-				62ED16EA74166BAA3876446F /* [CP] Embed Pods Frameworks */,
+				0E5CE37F002D7A80BDDEA0F9 /* [CP] Check Pods Manifest.lock */,
+				EE742D28239A294A00EE0846 /* Sources */,
+				EE742D29239A294A00EE0846 /* Frameworks */,
+				EE742D2A239A294A00EE0846 /* Resources */,
+				FA5B20C85D235666A87CD92A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -277,26 +251,69 @@
 			);
 			name = NHAVEditorExamples;
 			productName = NHAVEditorExamples;
-			productReference = DDD9AA9522F5271500A77702 /* NHAVEditorExamples.app */;
+			productReference = EE742D2C239A294A00EE0846 /* NHAVEditorExamples.app */;
 			productType = "com.apple.product-type.application";
+		};
+		EE742D41239A294E00EE0846 /* NHAVEditorExamplesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE742D59239A294E00EE0846 /* Build configuration list for PBXNativeTarget "NHAVEditorExamplesTests" */;
+			buildPhases = (
+				EE742D3E239A294E00EE0846 /* Sources */,
+				EE742D3F239A294E00EE0846 /* Frameworks */,
+				EE742D40239A294E00EE0846 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE742D44239A294E00EE0846 /* PBXTargetDependency */,
+			);
+			name = NHAVEditorExamplesTests;
+			productName = NHAVEditorExamplesTests;
+			productReference = EE742D42239A294E00EE0846 /* NHAVEditorExamplesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EE742D4C239A294E00EE0846 /* NHAVEditorExamplesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE742D5C239A294E00EE0846 /* Build configuration list for PBXNativeTarget "NHAVEditorExamplesUITests" */;
+			buildPhases = (
+				EE742D49239A294E00EE0846 /* Sources */,
+				EE742D4A239A294E00EE0846 /* Frameworks */,
+				EE742D4B239A294E00EE0846 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE742D4F239A294E00EE0846 /* PBXTargetDependency */,
+			);
+			name = NHAVEditorExamplesUITests;
+			productName = NHAVEditorExamplesUITests;
+			productReference = EE742D4D239A294E00EE0846 /* NHAVEditorExamplesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DDD9AA8D22F5271500A77702 /* Project object */ = {
+		EE742D24239A294A00EE0846 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = NH;
-				LastUpgradeCheck = 1020;
-				ORGANIZATIONNAME = XiuDan;
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = nenhall;
 				TargetAttributes = {
-					DDD9AA9422F5271500A77702 = {
-						CreatedOnToolsVersion = 10.2.1;
-						LastSwiftMigration = 1020;
+					EE742D2B239A294A00EE0846 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					EE742D41239A294E00EE0846 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = EE742D2B239A294A00EE0846;
+					};
+					EE742D4C239A294E00EE0846 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = EE742D2B239A294A00EE0846;
 					};
 				};
 			};
-			buildConfigurationList = DDD9AA9022F5271500A77702 /* Build configuration list for PBXProject "NHAVEditorExamples" */;
+			buildConfigurationList = EE742D27239A294A00EE0846 /* Build configuration list for PBXProject "NHAVEditorExamples" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -304,52 +321,50 @@
 				en,
 				Base,
 			);
-			mainGroup = DDD9AA8C22F5271500A77702;
-			productRefGroup = DDD9AA9622F5271500A77702 /* Products */;
+			mainGroup = EE742D23239A294A00EE0846;
+			productRefGroup = EE742D2D239A294A00EE0846 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DDD9AA9422F5271500A77702 /* NHAVEditorExamples */,
+				EE742D2B239A294A00EE0846 /* NHAVEditorExamples */,
+				EE742D41239A294E00EE0846 /* NHAVEditorExamplesTests */,
+				EE742D4C239A294E00EE0846 /* NHAVEditorExamplesUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DDD9AA9322F5271500A77702 /* Resources */ = {
+		EE742D2A239A294A00EE0846 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDD9AAA522F5271600A77702 /* LaunchScreen.storyboard in Resources */,
-				DDC9985422FD61EA00651D89 /* logo.png in Resources */,
-				DDD9AAA222F5271600A77702 /* Assets.xcassets in Resources */,
-				DDB61AB722F5691500EDC3C6 /* 黑龙-38度6.mp3 in Resources */,
-				DDD9AAA022F5271500A77702 /* Main.storyboard in Resources */,
-				DDC9985222FD60F100651D89 /* 一生有你-赵海洋.mp3 in Resources */,
-				DDB61AB522F568BE00EDC3C6 /* Бамбинтон-Зая.mp4 in Resources */,
+				EE742D3C239A294D00EE0846 /* LaunchScreen.storyboard in Resources */,
+				EE742D39239A294D00EE0846 /* Assets.xcassets in Resources */,
+				EE06686123ACE233008CC9AE /* logo.png in Resources */,
+				EE3BBD1223B79ED000376CEE /* 黑龙-38度6.mp3 in Resources */,
+				EE06686023ACE233008CC9AE /* Бамбинтон-Зая.mp4 in Resources */,
+				EE742D37239A294A00EE0846 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE742D40239A294E00EE0846 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE742D4B239A294E00EE0846 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		62ED16EA74166BAA3876446F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NHAVEditorExamples/Pods-NHAVEditorExamples-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NHAVEditorExamples/Pods-NHAVEditorExamples-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NHAVEditorExamples/Pods-NHAVEditorExamples-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		82DFC4FE3C4AE51C232CC907 /* [CP] Check Pods Manifest.lock */ = {
+		0E5CE37F002D7A80BDDEA0F9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -371,52 +386,90 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FA5B20C85D235666A87CD92A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NHAVEditorExamples/Pods-NHAVEditorExamples-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NHAVEditorExamples/Pods-NHAVEditorExamples-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NHAVEditorExamples/Pods-NHAVEditorExamples-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DDD9AA9122F5271500A77702 /* Sources */ = {
+		EE742D28239A294A00EE0846 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD1919682306B10400510E22 /* NHMediaCommand.m in Sources */,
-				DDD9AAA822F5271600A77702 /* main.m in Sources */,
-				DD751F2922F57ED500340C8D /* NHDisplayView.m in Sources */,
-				DD19196C2306B10400510E22 /* NHAVEditor.m in Sources */,
-				DD19196B2306B10400510E22 /* NHAddAudioCommand.m in Sources */,
-				DD1919602306B10400510E22 /* NSData+NH.m in Sources */,
-				DD1919632306B10400510E22 /* NHTimer.m in Sources */,
-				DD19196D2306B10400510E22 /* NHMediaExportCommand.m in Sources */,
-				DD33FE9F230552F500100A72 /* NHCaptureSession.m in Sources */,
-				DD1919622306B10400510E22 /* NHProxy.m in Sources */,
-				DD33FEA82305544900100A72 /* NHCaptureViewController.m in Sources */,
-				DD1919672306B10400510E22 /* NHAddWatermarkCommand.m in Sources */,
-				DDB61ABA22F5748C00EDC3C6 /* NHViewController.m in Sources */,
-				DD33FEA22305530B00100A72 /* NHVideoConfiguration.m in Sources */,
-				DD19196A2306B10400510E22 /* NHMediaWriter.m in Sources */,
-				DDD9AA9A22F5271500A77702 /* AppDelegate.m in Sources */,
-				DD1919642306B10400510E22 /* NSDate+NH.m in Sources */,
-				DD1919612306B10400510E22 /* NHMediaConfig.m in Sources */,
-				DD1919692306B10400510E22 /* NHPicture.m in Sources */,
-				DD1919652306B10400510E22 /* NHThread.m in Sources */,
-				DD1919662306B10400510E22 /* NHGifWriter.m in Sources */,
+				EE742D34239A294A00EE0846 /* ViewController.swift in Sources */,
+				EE3BBD0F23B75E5400376CEE /* NHAVEditor.swift in Sources */,
+				EEC17BE223BB64180058E8A9 /* ViewExtend.swift in Sources */,
+				EE3BBD0B23B75E5400376CEE /* ExportCommand.swift in Sources */,
+				EE3BBD0823B75E5400376CEE /* AVEditorExtend.swift in Sources */,
+				EE3BBD0923B75E5400376CEE /* AudioCommand.swift in Sources */,
+				EE3BBD0C23B75E5400376CEE /* MediaCommand.swift in Sources */,
+				EE742D30239A294A00EE0846 /* AppDelegate.swift in Sources */,
+				EE3BBD0D23B75E5400376CEE /* WatermarkCommand.swift in Sources */,
+				EE3BBD0A23B75E5400376CEE /* MediaConfig.swift in Sources */,
+				EE3BBD1023B75E5400376CEE /* PictureEditor.swift in Sources */,
+				EE742D32239A294A00EE0846 /* SceneDelegate.swift in Sources */,
+				EE3BBD0E23B75E5400376CEE /* MediaEditor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE742D3E239A294E00EE0846 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE742D47239A294E00EE0846 /* NHAVEditorExamplesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE742D49239A294E00EE0846 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE742D52239A294E00EE0846 /* NHAVEditorExamplesUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		EE742D44239A294E00EE0846 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE742D2B239A294A00EE0846 /* NHAVEditorExamples */;
+			targetProxy = EE742D43239A294E00EE0846 /* PBXContainerItemProxy */;
+		};
+		EE742D4F239A294E00EE0846 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE742D2B239A294A00EE0846 /* NHAVEditorExamples */;
+			targetProxy = EE742D4E239A294E00EE0846 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
-		DDD9AA9E22F5271500A77702 /* Main.storyboard */ = {
+		EE742D35239A294A00EE0846 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DDD9AA9F22F5271500A77702 /* Base */,
+				EE742D36239A294A00EE0846 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		DDD9AAA322F5271600A77702 /* LaunchScreen.storyboard */ = {
+		EE742D3A239A294D00EE0846 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DDD9AAA422F5271600A77702 /* Base */,
+				EE742D3B239A294D00EE0846 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -424,7 +477,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		DDD9AAA922F5271600A77702 /* Debug */ = {
+		EE742D54239A294E00EE0846 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -456,7 +509,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -475,15 +527,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		DDD9AAAA22F5271600A77702 /* Release */ = {
+		EE742D55239A294E00EE0846 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -515,7 +569,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -528,83 +581,190 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		DDD9AAAC22F5271600A77702 /* Debug */ = {
+		EE742D57239A294E00EE0846 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98363D3779A452B47E34410D /* Pods-NHAVEditorExamples.debug.xcconfig */;
+			baseConfigurationReference = 057F23FCA7103EFE1D7332B4 /* Pods-NHAVEditorExamples.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = T87F8K2DQD;
+				DEVELOPMENT_TEAM = ZPRFW6HFT6;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/NHAVEditor/NHAVEditor.framework/Headers\"",
+					"\"$(SRCROOT)/../NHAVEditor/\"",
+				);
 				INFOPLIST_FILE = NHAVEditorExamples/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nenhall.studio.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nenhall.test5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PRODUCT_MODULE_NAME)-Swift.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		DDD9AAAD22F5271600A77702 /* Release */ = {
+		EE742D58239A294E00EE0846 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9B6C0CF4BE57C407F9B6C7BD /* Pods-NHAVEditorExamples.release.xcconfig */;
+			baseConfigurationReference = B5C2509810C1ADB28CFFB653 /* Pods-NHAVEditorExamples.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = T87F8K2DQD;
+				DEVELOPMENT_TEAM = ZPRFW6HFT6;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/NHAVEditor/NHAVEditor.framework/Headers\"",
+					"\"$(SRCROOT)/../NHAVEditor/\"",
+				);
 				INFOPLIST_FILE = NHAVEditorExamples/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nenhall.studio.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nenhall.test5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PRODUCT_MODULE_NAME)-Swift.h";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EE742D5A239A294E00EE0846 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZPRFW6HFT6;
+				INFOPLIST_FILE = NHAVEditorExamplesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nenhall.test4.NHAVEditorExamplesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NHAVEditorExamples.app/NHAVEditorExamples";
+			};
+			name = Debug;
+		};
+		EE742D5B239A294E00EE0846 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZPRFW6HFT6;
+				INFOPLIST_FILE = NHAVEditorExamplesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nenhall.test4.NHAVEditorExamplesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NHAVEditorExamples.app/NHAVEditorExamples";
+			};
+			name = Release;
+		};
+		EE742D5D239A294E00EE0846 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZPRFW6HFT6;
+				INFOPLIST_FILE = NHAVEditorExamplesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nenhall.test4.NHAVEditorExamplesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NHAVEditorExamples;
+			};
+			name = Debug;
+		};
+		EE742D5E239A294E00EE0846 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZPRFW6HFT6;
+				INFOPLIST_FILE = NHAVEditorExamplesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nenhall.test4.NHAVEditorExamplesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NHAVEditorExamples;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DDD9AA9022F5271500A77702 /* Build configuration list for PBXProject "NHAVEditorExamples" */ = {
+		EE742D27239A294A00EE0846 /* Build configuration list for PBXProject "NHAVEditorExamples" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DDD9AAA922F5271600A77702 /* Debug */,
-				DDD9AAAA22F5271600A77702 /* Release */,
+				EE742D54239A294E00EE0846 /* Debug */,
+				EE742D55239A294E00EE0846 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DDD9AAAB22F5271600A77702 /* Build configuration list for PBXNativeTarget "NHAVEditorExamples" */ = {
+		EE742D56239A294E00EE0846 /* Build configuration list for PBXNativeTarget "NHAVEditorExamples" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DDD9AAAC22F5271600A77702 /* Debug */,
-				DDD9AAAD22F5271600A77702 /* Release */,
+				EE742D57239A294E00EE0846 /* Debug */,
+				EE742D58239A294E00EE0846 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE742D59239A294E00EE0846 /* Build configuration list for PBXNativeTarget "NHAVEditorExamplesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE742D5A239A294E00EE0846 /* Debug */,
+				EE742D5B239A294E00EE0846 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE742D5C239A294E00EE0846 /* Build configuration list for PBXNativeTarget "NHAVEditorExamplesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE742D5D239A294E00EE0846 /* Debug */,
+				EE742D5E239A294E00EE0846 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DDD9AA8D22F5271500A77702 /* Project object */;
+	rootObject = EE742D24239A294A00EE0846 /* Project object */;
 }

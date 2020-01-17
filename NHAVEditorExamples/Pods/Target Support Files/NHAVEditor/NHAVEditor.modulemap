@@ -1,6 +1,0 @@
-framework module NHAVEditor {
-  umbrella header "NHAVEditor-umbrella.h"
-
-  export *
-  module * { export * }
-}

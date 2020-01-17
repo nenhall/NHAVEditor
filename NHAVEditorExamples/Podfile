@@ -1,9 +1,10 @@
-platform :ios, '8.0'
+platform :ios, '9.0'
 
 target 'NHAVEditorExamples' do
   use_frameworks!
   
- pod 'NHAVEditor', :path => '../NHAVEditor.podspec'
-  pod 'NHHUDExtend'
+#  pod 'NHAVEditor', :path => '../NHAVEditor.podspec'
+  pod 'IBAnimatable', '6.0.0'
+  pod 'IQKeyboardManagerSwift'
   
 end

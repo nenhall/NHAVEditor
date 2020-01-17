@@ -1,27 +1,16 @@
 PODS:
-  - MBProgressHUD (1.1.0)
-  - NHAVEditor (0.0.2)
-  - NHHUDExtend (1.0.2):
-    - MBProgressHUD
+  - IBAnimatable (6.0.0)
 
 DEPENDENCIES:
-  - NHAVEditor (from `../NHAVEditor.podspec`)
-  - NHHUDExtend
+  - IBAnimatable (= 6.0.0)
 
 SPEC REPOS:
   trunk:
-    - MBProgressHUD
-    - NHHUDExtend
-
-EXTERNAL SOURCES:
-  NHAVEditor:
-    :path: "../NHAVEditor.podspec"
+    - IBAnimatable
 
 SPEC CHECKSUMS:
-  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
-  NHAVEditor: 255e60985d78e14424bc5eca8705ce8f2a2d973e
-  NHHUDExtend: 1fd914b12b93ac61c1cfdb04485c25db59f27627
+  IBAnimatable: d49f9fee0c401b5b08d31b77256b77fb067e0e92
 
-PODFILE CHECKSUM: 51a88a80b3ed24b40aeb22fb9aa2d9b115233049
+PODFILE CHECKSUM: 68fdcaf06e0b3ee1dce9e8a66864276338f6ca59
 
 COCOAPODS: 1.8.4
