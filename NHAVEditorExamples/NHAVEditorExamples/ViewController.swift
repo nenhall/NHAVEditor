@@ -97,9 +97,8 @@ class ViewController: UIViewController {
     
      @IBAction func addWatermark(_ sender: UIButton) {
         mediaEditor.addWatermark(layer: CALayer.init(), customConfig: {  [weak self] (config) in
-            if let self_ = self {
-                
-            }
+            
+            
         }) { (error) in
             
         }
@@ -111,9 +110,8 @@ class ViewController: UIViewController {
     
      @IBAction func exportVideo(_ sender: UIButton) {
         mediaEditor.exportMedia(outputURL: outpurURL, customConfig: { [weak self] (config) in
-             if let self_ = self {
-                 
-             }
+             
+            
          }, progress: { (progress) in
              debugPrint("export progress:", progress)
          }) { (outputURL, error) in

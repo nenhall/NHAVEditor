@@ -77,11 +77,11 @@ public struct AudioConfig: MediaConfigProtocol {
     
     
     /// 现插入的音频的截取范围
-    var insertAudioCutRange: NHTime
-    var insertAudioFromVideoTime: NHTime
-    var insertAudioVolume: NHVolume
-    var insertAudioVolumeRange: CMTimeRange
-    var originalAudioVolume: NHVolume
+    var insertAudioCutRange: NHTime?
+    var insertAudioFromVideoTime: NHTime?
+    var insertAudioVolume: NHVolume?
+    var insertAudioVolumeRange: CMTimeRange?
+    var originalAudioVolume: NHVolume?
     
 }
 

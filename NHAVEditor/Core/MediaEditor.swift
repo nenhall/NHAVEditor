@@ -134,7 +134,7 @@ open class MediaEditor: NSObject {
         
         var cg: AudioConfig?
         if let config = customConfig {
-            cg = AudioConfig.init()
+            cg = AudioConfig()
             config(&cg!)
         }
         
