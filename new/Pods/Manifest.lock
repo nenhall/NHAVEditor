@@ -1,0 +1,59 @@
+PODS:
+  - Alamofire (5.0.5)
+  - Codextended (0.3.0)
+  - IBAnimatable (6.1.0)
+  - IQKeyboardManagerSwift (6.5.5)
+  - Kingfisher (5.13.3):
+    - Kingfisher/Core (= 5.13.3)
+  - Kingfisher/Core (5.13.3)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - ObjectMapper (3.5.2)
+  - Realm (4.4.1):
+    - Realm/Headers (= 4.4.1)
+  - Realm/Headers (4.4.1)
+  - SnapKit (5.0.1)
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - Codextended
+  - IBAnimatable
+  - IQKeyboardManagerSwift
+  - Kingfisher
+  - Moya
+  - ObjectMapper
+  - Realm
+  - SnapKit
+  - Toast-Swift
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Codextended
+    - IBAnimatable
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - Moya
+    - ObjectMapper
+    - Realm
+    - SnapKit
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
+  Codextended: f384271b8694376ad766ddbf2a011efbfdcee905
+  IBAnimatable: 99dddd4c0625884a301ba3ecbc1615f8a390368e
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  Kingfisher: d2b3d6a7200c93b34de9afcdf25c8dd9282ec277
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  ObjectMapper: b53ae947d370bf89423e86be7d4e2d2b2a8d3f40
+  Realm: 4eb04d7487bd43c0581256f40b424eafb711deff
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: 2d8cb28c99801c858189744d511041c5753aef8d
+
+COCOAPODS: 1.9.1
