@@ -1,0 +1,6 @@
+framework module NHHUDExtend {
+  umbrella header "NHHUDExtend-umbrella.h"
+
+  export *
+  module * { export * }
+}

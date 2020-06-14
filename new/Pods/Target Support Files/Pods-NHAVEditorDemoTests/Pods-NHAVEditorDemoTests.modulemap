@@ -1,6 +1,0 @@
-framework module Pods_NHAVEditorDemoTests {
-  umbrella header "Pods-NHAVEditorDemoTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
